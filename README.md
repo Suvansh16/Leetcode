@@ -6,6 +6,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0045-jump-game-ii](https://github.com/Suvansh16/Leetcode/tree/master/0045-jump-game-ii) |
 | [0983-validate-stack-sequences](https://github.com/Suvansh16/Leetcode/tree/master/0983-validate-stack-sequences) |
+| [1435-xor-queries-of-a-subarray](https://github.com/Suvansh16/Leetcode/tree/master/1435-xor-queries-of-a-subarray) |
 ## Stack
 |  |
 | ------- |
@@ -29,4 +30,12 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0045-jump-game-ii](https://github.com/Suvansh16/Leetcode/tree/master/0045-jump-game-ii) |
+## Bit Manipulation
+|  |
+| ------- |
+| [1435-xor-queries-of-a-subarray](https://github.com/Suvansh16/Leetcode/tree/master/1435-xor-queries-of-a-subarray) |
+## Prefix Sum
+|  |
+| ------- |
+| [1435-xor-queries-of-a-subarray](https://github.com/Suvansh16/Leetcode/tree/master/1435-xor-queries-of-a-subarray) |
 <!---LeetCode Topics End-->
