@@ -1,20 +1,17 @@
 class Solution {
-public: 
-int t[1001];
+public:
 int m=1e9+7;
-int solve(int n)
-{
-    if(n==1 || n==2)
-    return n;
-    if(n==3)
-    return 5;
-    if(t[n]!=-1)
-    return t[n];
-    return t[n]=(2*solve(n-1)%m+solve(n-3)%m)%m;
-
-}
     int numTilings(int n) {
-        memset(t,-1,sizeof(t));
-        return solve(n);
+        if(n==1 || n==2)
+        return n;
+        vector<int>t(n+1,0);
+        t[1]=1;
+        t[2]=2;
+        t[3]=5;
+        for(int i=4;i<=n;i++)
+        {
+            t[i]=(2*t[i-1]%m +t[i-3]%m)%m;
+        }
+        return t[n];      
     }
 };
