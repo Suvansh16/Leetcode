@@ -8,6 +8,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0064-minimum-path-sum](https://github.com/Suvansh16/Leetcode/tree/master/0064-minimum-path-sum) |
 | [0983-validate-stack-sequences](https://github.com/Suvansh16/Leetcode/tree/master/0983-validate-stack-sequences) |
 | [1435-xor-queries-of-a-subarray](https://github.com/Suvansh16/Leetcode/tree/master/1435-xor-queries-of-a-subarray) |
+| [2503-longest-subarray-with-maximum-bitwise-and](https://github.com/Suvansh16/Leetcode/tree/master/2503-longest-subarray-with-maximum-bitwise-and) |
 ## Stack
 |  |
 | ------- |
@@ -37,6 +38,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [1435-xor-queries-of-a-subarray](https://github.com/Suvansh16/Leetcode/tree/master/1435-xor-queries-of-a-subarray) |
+| [2503-longest-subarray-with-maximum-bitwise-and](https://github.com/Suvansh16/Leetcode/tree/master/2503-longest-subarray-with-maximum-bitwise-and) |
 ## Prefix Sum
 |  |
 | ------- |
@@ -61,4 +63,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0064-minimum-path-sum](https://github.com/Suvansh16/Leetcode/tree/master/0064-minimum-path-sum) |
+## Brainteaser
+|  |
+| ------- |
+| [2503-longest-subarray-with-maximum-bitwise-and](https://github.com/Suvansh16/Leetcode/tree/master/2503-longest-subarray-with-maximum-bitwise-and) |
 <!---LeetCode Topics End-->
