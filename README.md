@@ -20,6 +20,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## String
 |  |
 | ------- |
+| [0920-uncommon-words-from-two-sentences](https://github.com/Suvansh16/Leetcode/tree/master/0920-uncommon-words-from-two-sentences) |
 | [0962-flip-string-to-monotone-increasing](https://github.com/Suvansh16/Leetcode/tree/master/0962-flip-string-to-monotone-increasing) |
 | [1250-longest-common-subsequence](https://github.com/Suvansh16/Leetcode/tree/master/1250-longest-common-subsequence) |
 ## Dynamic Programming
@@ -67,4 +68,12 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [2503-longest-subarray-with-maximum-bitwise-and](https://github.com/Suvansh16/Leetcode/tree/master/2503-longest-subarray-with-maximum-bitwise-and) |
+## Hash Table
+|  |
+| ------- |
+| [0920-uncommon-words-from-two-sentences](https://github.com/Suvansh16/Leetcode/tree/master/0920-uncommon-words-from-two-sentences) |
+## Counting
+|  |
+| ------- |
+| [0920-uncommon-words-from-two-sentences](https://github.com/Suvansh16/Leetcode/tree/master/0920-uncommon-words-from-two-sentences) |
 <!---LeetCode Topics End-->
