@@ -1,46 +1,44 @@
-class Solution {
+ class Solution {
 public:
-bool solve(int node,unordered_map<int,vector<int>>&map,vector<bool>&visited,vector<bool>&dfsvisit,vector<int>&ans)
+vector<int> bfs(unordered_map<int,vector<int>>map,vector<vector<int>>& prerequisites,vector<int>&indegree)
 {
-    visited[node]=true;
-    dfsvisit[node]=true;
-    for(auto i:map[node])
+     vector<int>ans;
+    queue<int>q;
+    int count=0;
+    for(int i=0;i<indegree.size();i++)
     {
-        if(!visited[i])
+        if(indegree[i]==0)
+        q.push(i);
+    }
+    while(!q.empty())
+    {
+        int a=q.front();
+        ans.push_back(q.front());
+        q.pop();
+        count++;
+        for(auto i:map[a])
         {
-            bool cycle=solve(i,map,visited,dfsvisit,ans);
-            if(cycle)
-            return true;
-        }
-        else if(dfsvisit[i])
-        {
-            return true;
+            indegree[i]--;
+            if(indegree[i]==0)
+            q.push(i);
         }
     }
-    dfsvisit[node]=false;
-    ans.push_back(node);
-    return false;
+    if(count==indegree.size())
+    return ans;
+    return {};
+
 }
-    vector<int> findOrder(int numCourses, vector<vector<int>>& prerequisites) {
-        vector<int>ans;
+    vector<int> findOrder(int numCourses, vector<vector<int>>& prerequisites){
         unordered_map<int,vector<int>>map;
-        for(int i=0;i<prerequisites.size();i++)
-        {
-            map[prerequisites[i][0]].push_back(prerequisites[i][1]);
-        }
-        int n=numCourses;
-        vector<bool>visited(n,false);
-        vector<bool>dfsvisit(n,false);
+        vector<int>indegree(numCourses,0);
+        int n=prerequisites.size();
         for(int i=0;i<n;i++)
         {
-            if(!visited[i])
-            {
-                bool an= solve(i,map,visited,dfsvisit,ans);
-                if(an)
-                return {};
-            }
-            
+            map[prerequisites[i][1]].push_back(prerequisites[i][0]);
+            indegree[prerequisites[i][0]]++;
         }
-        return ans;
+       
+        return bfs(map,prerequisites,indegree);
+
     }
-}; 
+};
