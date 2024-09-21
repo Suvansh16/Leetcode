@@ -32,8 +32,8 @@ bool bfs(unordered_map<int,vector<int>>map,vector<vector<int>>& prerequisites,ve
         int n=prerequisites.size();
         for(int i=0;i<n;i++)
         {
-            map[prerequisites[i][0]].push_back(prerequisites[i][1]);
-            indegree[prerequisites[i][1]]++;
+            map[prerequisites[i][1]].push_back(prerequisites[i][0]);
+            indegree[prerequisites[i][0]]++;
         }
         return bfs(map,prerequisites,indegree);
 
