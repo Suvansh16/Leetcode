@@ -1,42 +1,41 @@
 class Solution {
 public:
-bool dfs(int i,vector<bool>&visited,vector<bool>&dfsvisit,unordered_map<int,vector<int>>&map)
+bool bfs(unordered_map<int,vector<int>>map,vector<vector<int>>& prerequisites,vector<int>&indegree)
 {
-    visited[i]=true;
-    dfsvisit[i]=true;
-    for(auto neighbour:map[i])
+    queue<int>q;
+    int count=0;
+    for(int i=0;i<indegree.size();i++)
     {
-        if(!visited[neighbour])
-        {
-            bool cycledetect=dfs(neighbour,visited,dfsvisit,map);
-            if(cycledetect==true)
-            return true;
-
-        }
-        else if(dfsvisit[neighbour])
-        return true;
+        if(indegree[i]==0)
+        q.push(i);
     }
-    dfsvisit[i]=false;
-    return false;
-}
-    bool canFinish(int numCourses, vector<vector<int>>& prerequisites){
-        unordered_map<int,vector<int>>map;
-        for(int i=0;i<prerequisites.size();i++)
+    while(!q.empty())
+    {
+        int a=q.front();
+        q.pop();
+        count++;
+        for(auto i:map[a])
         {
-            map[prerequisites[i][0]].push_back(prerequisites[i][1]);
+            indegree[i]--;
+            if(indegree[i]==0)
+            q.push(i);
         }
-        int n=numCourses;
-        vector<bool>visited(n,0);
-        vector<bool>dfsvisit(n,0);
+    }
+    if(count==indegree.size())
+    return true;
+    return false;
+
+}
+    bool canFinish(int numCourses, vector<vector<int>>& prerequisites) {
+        unordered_map<int,vector<int>>map;
+        vector<int>indegree(numCourses,0);
+        int n=prerequisites.size();
         for(int i=0;i<n;i++)
         {
-            if(!visited[i])
-            {
-                bool ans=dfs(i,visited,dfsvisit,map);
-                if(ans==true)
-                return false;
-            }
+            map[prerequisites[i][0]].push_back(prerequisites[i][1]);
+            indegree[prerequisites[i][1]]++;
         }
-        return true;
+        return bfs(map,prerequisites,indegree);
+
     }
 };
