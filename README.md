@@ -73,6 +73,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0207-course-schedule](https://github.com/Suvansh16/Leetcode/tree/master/0207-course-schedule) |
 | [0210-course-schedule-ii](https://github.com/Suvansh16/Leetcode/tree/master/0210-course-schedule-ii) |
 | [0547-number-of-provinces](https://github.com/Suvansh16/Leetcode/tree/master/0547-number-of-provinces) |
+| [0801-is-graph-bipartite](https://github.com/Suvansh16/Leetcode/tree/master/0801-is-graph-bipartite) |
 | [1484-linked-list-in-binary-tree](https://github.com/Suvansh16/Leetcode/tree/master/1484-linked-list-in-binary-tree) |
 ## Binary Tree
 |  |
@@ -129,16 +130,19 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0207-course-schedule](https://github.com/Suvansh16/Leetcode/tree/master/0207-course-schedule) |
 | [0210-course-schedule-ii](https://github.com/Suvansh16/Leetcode/tree/master/0210-course-schedule-ii) |
 | [0547-number-of-provinces](https://github.com/Suvansh16/Leetcode/tree/master/0547-number-of-provinces) |
+| [0801-is-graph-bipartite](https://github.com/Suvansh16/Leetcode/tree/master/0801-is-graph-bipartite) |
 ## Union Find
 |  |
 | ------- |
 | [0547-number-of-provinces](https://github.com/Suvansh16/Leetcode/tree/master/0547-number-of-provinces) |
+| [0801-is-graph-bipartite](https://github.com/Suvansh16/Leetcode/tree/master/0801-is-graph-bipartite) |
 ## Graph
 |  |
 | ------- |
 | [0207-course-schedule](https://github.com/Suvansh16/Leetcode/tree/master/0207-course-schedule) |
 | [0210-course-schedule-ii](https://github.com/Suvansh16/Leetcode/tree/master/0210-course-schedule-ii) |
 | [0547-number-of-provinces](https://github.com/Suvansh16/Leetcode/tree/master/0547-number-of-provinces) |
+| [0801-is-graph-bipartite](https://github.com/Suvansh16/Leetcode/tree/master/0801-is-graph-bipartite) |
 ## Topological Sort
 |  |
 | ------- |
