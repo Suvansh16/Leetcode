@@ -152,4 +152,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [2096-find-the-longest-valid-obstacle-course-at-each-position](https://github.com/Suvansh16/Leetcode/tree/master/2096-find-the-longest-valid-obstacle-course-at-each-position) |
+## Trie
+|  |
+| ------- |
+| [0440-k-th-smallest-in-lexicographical-order](https://github.com/Suvansh16/Leetcode/tree/master/0440-k-th-smallest-in-lexicographical-order) |
 <!---LeetCode Topics End-->
