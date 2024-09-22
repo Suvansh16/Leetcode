@@ -1,21 +1,28 @@
 class Solution {
 public:
-bool dfs(unordered_map<int,vector<int>>&map,int curr,int currcolor,vector<int>&color)
+bool bfs(unordered_map<int,vector<int>>&map,int curr,int currcolor,vector<int>&color)
 {
+    queue<int>q;
+    q.push(curr);
     color[curr]=currcolor;
-    for(auto &i:map[curr])
+   while(!q.empty())
+   {
+    int a=q.front();
+    q.pop();
+    for(auto &i:map[a])
     {
-        if(color[i]==currcolor)
+        if(color[i]==color[a])
         {
             return false;
         }
         if(color[i]==-1)
         {
-            int colori=1-currcolor;
-            if(dfs(map,i,colori,color)==false)
-            return false;
+            q.push(i);
+            currcolor=1-color[a];
+              color[i]=currcolor;
         }
     }
+   }
     return true;
 }
     bool isBipartite(vector<vector<int>>& graph) {
@@ -33,7 +40,7 @@ bool dfs(unordered_map<int,vector<int>>&map,int curr,int currcolor,vector<int>&c
         {
             if(color[i]==-1)
             {
-                if(dfs(map,i,1,color)==false)
+                if(bfs(map,i,1,color)==false)
                 return false;
             }
         }
