@@ -31,6 +31,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## String
 |  |
 | ------- |
+| [0072-edit-distance](https://github.com/Suvansh16/Leetcode/tree/master/0072-edit-distance) |
 | [0214-shortest-palindrome](https://github.com/Suvansh16/Leetcode/tree/master/0214-shortest-palindrome) |
 | [0241-different-ways-to-add-parentheses](https://github.com/Suvansh16/Leetcode/tree/master/0241-different-ways-to-add-parentheses) |
 | [0539-minimum-time-difference](https://github.com/Suvansh16/Leetcode/tree/master/0539-minimum-time-difference) |
@@ -47,6 +48,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0045-jump-game-ii](https://github.com/Suvansh16/Leetcode/tree/master/0045-jump-game-ii) |
 | [0064-minimum-path-sum](https://github.com/Suvansh16/Leetcode/tree/master/0064-minimum-path-sum) |
+| [0072-edit-distance](https://github.com/Suvansh16/Leetcode/tree/master/0072-edit-distance) |
 | [0241-different-ways-to-add-parentheses](https://github.com/Suvansh16/Leetcode/tree/master/0241-different-ways-to-add-parentheses) |
 | [0806-domino-and-tromino-tiling](https://github.com/Suvansh16/Leetcode/tree/master/0806-domino-and-tromino-tiling) |
 | [0909-stone-game](https://github.com/Suvansh16/Leetcode/tree/master/0909-stone-game) |
