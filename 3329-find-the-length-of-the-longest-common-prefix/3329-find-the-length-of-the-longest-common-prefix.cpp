@@ -1,32 +1,67 @@
+struct Trienode{
+    char digit;
+    Trienode*children[10];
+
+};
 class Solution {
 public:
-    int longestCommonPrefix(vector<int>& arr1, vector<int>& arr2) {
-        unordered_set<int>st;
-        for(int i=0;i<arr1.size();i++)
-        {
-            int a=arr1[i];
-            while(a)
-            {
-                st.insert(a);
-                a/=10;
-            }
-        }
-        int maxans=0;
-        for(int i=0;i<arr2.size();i++)
-        {
-            int a=arr2[i];
-            while(a)
-            {
-                if(st.count(a))
-                {
-                    int val=floor(log10(a))+1;
-                    maxans=max(maxans,val);
-                    break;
-                }
-                a/=10;
-            }
-        
-        }
-        return maxans;
+Trienode*getnode()
+{
+    Trienode*node=new Trienode;
+    for(int i=0;i<10;i++)
+    {
+        node->children[i]=nullptr;
     }
+    return node;
+}
+void insert(int num,Trienode*root)
+{
+    Trienode*crawl=root;
+    string numstr=to_string(num);
+    for(char ch:numstr)
+    {
+        int idx=ch-'0';
+        if(!crawl->children[idx])
+        {
+            crawl->children[idx]=getnode();
+        }
+        
+            crawl=crawl->children[idx];
+    }
+}
+int search(int num,Trienode*root)
+{
+    Trienode*crawl=root;
+    string numstr=to_string(num);
+    int length=0;
+    for(char ch:numstr)
+    {
+        int idx=ch-'0';
+        if(crawl->children[idx])
+        {
+            length++;
+            crawl=crawl->children[idx];
+        }
+        else
+        {
+            break;
+        }
+    }
+    return length;
+}
+    int longestCommonPrefix(vector<int>& arr1, vector<int>& arr2) {
+        
+        Trienode*root=getnode();
+        for(int num:arr1)
+        {
+            insert(num,root);
+        }
+        int result=0;
+        for(int num:arr2)
+        {
+            result=max(result,search(num,root));
+        }
+        return result;
+    }
+
 };
