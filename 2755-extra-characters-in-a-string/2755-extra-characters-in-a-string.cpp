@@ -1,23 +1,32 @@
 class Solution {
- public:
-  // Similar to 139. Word Break
-  int minExtraChar(string s, vector<string>& dictionary) {
-    const int n = s.length();
-    const unordered_set<string> dictionarySet{dictionary.begin(),
-                                              dictionary.end()};
-    // dp[i] := the minimum extra letters if breaking up s[0..i) optimally
-    vector<int> dp(n + 1, n);
-    dp[0] = 0;
+public:
+int dp[51];
+int solve(int i,unordered_set<string>&st,string s)
+{
+    if(i>=s.length())
+    return 0;
+    if(dp[i]!=-1)
+    return dp[i];
+    int res=1+solve(i+1,st,s);
 
-    for (int i = 1; i <= n; ++i)
-      for (int j = 0; j < i; ++j)
-        // s[j..i) is in `dictionarySet`.
-        if (dictionarySet.contains(s.substr(j, i - j)))
-          dp[i] = min(dp[i], dp[j]);
-        // s[j..i) are extra letters.
-        else
-          dp[i] = min(dp[i], dp[j] + i - j);
-
-    return dp[n];
-  }
+    for(int j=i;j<s.length();j++)
+    {
+     string t=s.substr(i,j-i+1);
+     if(st.count(t))
+     {
+        res=min(res,solve(j+1,st,s));
+     }   
+    }
+    return dp[i]=res;
+}
+    int minExtraChar(string s, vector<string>& dictionary) {
+        unordered_set<string>st;
+        memset(dp,-1,sizeof(dp));
+        int n=dictionary.size();
+        for(int i=0;i<n;i++)
+        {
+            st.insert(dictionary[i]);
+        }
+        return solve(0,st,s);
+    }
 };
