@@ -7,6 +7,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0045-jump-game-ii](https://github.com/Suvansh16/Leetcode/tree/master/0045-jump-game-ii) |
 | [0064-minimum-path-sum](https://github.com/Suvansh16/Leetcode/tree/master/0064-minimum-path-sum) |
 | [0539-minimum-time-difference](https://github.com/Suvansh16/Leetcode/tree/master/0539-minimum-time-difference) |
+| [0729-my-calendar-i](https://github.com/Suvansh16/Leetcode/tree/master/0729-my-calendar-i) |
 | [0909-stone-game](https://github.com/Suvansh16/Leetcode/tree/master/0909-stone-game) |
 | [0911-profitable-schemes](https://github.com/Suvansh16/Leetcode/tree/master/0911-profitable-schemes) |
 | [0983-validate-stack-sequences](https://github.com/Suvansh16/Leetcode/tree/master/0983-validate-stack-sequences) |
@@ -174,6 +175,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Binary Search
 |  |
 | ------- |
+| [0729-my-calendar-i](https://github.com/Suvansh16/Leetcode/tree/master/0729-my-calendar-i) |
 | [2096-find-the-longest-valid-obstacle-course-at-each-position](https://github.com/Suvansh16/Leetcode/tree/master/2096-find-the-longest-valid-obstacle-course-at-each-position) |
 ## Binary Indexed Tree
 |  |
@@ -190,4 +192,16 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0909-stone-game](https://github.com/Suvansh16/Leetcode/tree/master/0909-stone-game) |
 | [1522-stone-game-iii](https://github.com/Suvansh16/Leetcode/tree/master/1522-stone-game-iii) |
+## Design
+|  |
+| ------- |
+| [0729-my-calendar-i](https://github.com/Suvansh16/Leetcode/tree/master/0729-my-calendar-i) |
+## Segment Tree
+|  |
+| ------- |
+| [0729-my-calendar-i](https://github.com/Suvansh16/Leetcode/tree/master/0729-my-calendar-i) |
+## Ordered Set
+|  |
+| ------- |
+| [0729-my-calendar-i](https://github.com/Suvansh16/Leetcode/tree/master/0729-my-calendar-i) |
 <!---LeetCode Topics End-->
