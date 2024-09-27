@@ -18,6 +18,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1744-number-of-ways-to-form-a-target-string-given-a-dictionary](https://github.com/Suvansh16/Leetcode/tree/master/1744-number-of-ways-to-form-a-target-string-given-a-dictionary) |
 | [2096-find-the-longest-valid-obstacle-course-at-each-position](https://github.com/Suvansh16/Leetcode/tree/master/2096-find-the-longest-valid-obstacle-course-at-each-position) |
 | [2262-solving-questions-with-brainpower](https://github.com/Suvansh16/Leetcode/tree/master/2262-solving-questions-with-brainpower) |
+| [2494-sum-of-prefix-scores-of-strings](https://github.com/Suvansh16/Leetcode/tree/master/2494-sum-of-prefix-scores-of-strings) |
 | [2503-longest-subarray-with-maximum-bitwise-and](https://github.com/Suvansh16/Leetcode/tree/master/2503-longest-subarray-with-maximum-bitwise-and) |
 | [2755-extra-characters-in-a-string](https://github.com/Suvansh16/Leetcode/tree/master/2755-extra-characters-in-a-string) |
 | [3329-find-the-length-of-the-longest-common-prefix](https://github.com/Suvansh16/Leetcode/tree/master/3329-find-the-length-of-the-longest-common-prefix) |
@@ -42,6 +43,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1250-longest-common-subsequence](https://github.com/Suvansh16/Leetcode/tree/master/1250-longest-common-subsequence) |
 | [1517-restore-the-array](https://github.com/Suvansh16/Leetcode/tree/master/1517-restore-the-array) |
 | [1744-number-of-ways-to-form-a-target-string-given-a-dictionary](https://github.com/Suvansh16/Leetcode/tree/master/1744-number-of-ways-to-form-a-target-string-given-a-dictionary) |
+| [2494-sum-of-prefix-scores-of-strings](https://github.com/Suvansh16/Leetcode/tree/master/2494-sum-of-prefix-scores-of-strings) |
 | [2755-extra-characters-in-a-string](https://github.com/Suvansh16/Leetcode/tree/master/2755-extra-characters-in-a-string) |
 | [3329-find-the-length-of-the-longest-common-prefix](https://github.com/Suvansh16/Leetcode/tree/master/3329-find-the-length-of-the-longest-common-prefix) |
 ## Dynamic Programming
@@ -114,6 +116,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0920-uncommon-words-from-two-sentences](https://github.com/Suvansh16/Leetcode/tree/master/0920-uncommon-words-from-two-sentences) |
+| [2494-sum-of-prefix-scores-of-strings](https://github.com/Suvansh16/Leetcode/tree/master/2494-sum-of-prefix-scores-of-strings) |
 ## Math
 |  |
 | ------- |
@@ -185,6 +188,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0440-k-th-smallest-in-lexicographical-order](https://github.com/Suvansh16/Leetcode/tree/master/0440-k-th-smallest-in-lexicographical-order) |
+| [2494-sum-of-prefix-scores-of-strings](https://github.com/Suvansh16/Leetcode/tree/master/2494-sum-of-prefix-scores-of-strings) |
 | [2755-extra-characters-in-a-string](https://github.com/Suvansh16/Leetcode/tree/master/2755-extra-characters-in-a-string) |
 | [3329-find-the-length-of-the-longest-common-prefix](https://github.com/Suvansh16/Leetcode/tree/master/3329-find-the-length-of-the-longest-common-prefix) |
 ## Game Theory
