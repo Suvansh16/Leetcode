@@ -39,7 +39,7 @@ void findres(Trienode*root,int i,int j, vector<vector<char>>& board)
 {
     if(i<0 || j<0 || i>=n || j>=m)
     return;
-    if(board[i][j]=='$' || !root->children[board[i][j]-'a'])
+    if(board[i][j]=='$' || root->children[board[i][j]-'a']==nullptr)
     return;
     root=root->children[board[i][j]-'a'];
     if(root->isend)
