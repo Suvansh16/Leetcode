@@ -56,12 +56,12 @@ void Union(int x,int y)
         if(values.size()==1)
         return 0;
         long long ans=0;
-        int k=values.size();
-        // for(int i=0;i<k;i++)
+        long long  k=values.size();
+        // for(long long i=0;i<k;i++)
         // {
-        //     for(int j=i+1;j<k;j++)
+        //     for(long long  j=i+1;j<k;j++)
         //     {
-        //         ans+=values[i]*values[j];
+        //         ans+=(long long)values[i]*(long long)values[j];
         //     }
         // }
         //double loop will give run time error
