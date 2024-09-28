@@ -9,6 +9,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0212-word-search-ii](https://github.com/Suvansh16/Leetcode/tree/master/0212-word-search-ii) |
 | [0539-minimum-time-difference](https://github.com/Suvansh16/Leetcode/tree/master/0539-minimum-time-difference) |
 | [0729-my-calendar-i](https://github.com/Suvansh16/Leetcode/tree/master/0729-my-calendar-i) |
+| [0859-design-circular-deque](https://github.com/Suvansh16/Leetcode/tree/master/0859-design-circular-deque) |
 | [0909-stone-game](https://github.com/Suvansh16/Leetcode/tree/master/0909-stone-game) |
 | [0911-profitable-schemes](https://github.com/Suvansh16/Leetcode/tree/master/0911-profitable-schemes) |
 | [0983-validate-stack-sequences](https://github.com/Suvansh16/Leetcode/tree/master/0983-validate-stack-sequences) |
@@ -86,6 +87,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0024-swap-nodes-in-pairs](https://github.com/Suvansh16/Leetcode/tree/master/0024-swap-nodes-in-pairs) |
+| [0859-design-circular-deque](https://github.com/Suvansh16/Leetcode/tree/master/0859-design-circular-deque) |
 | [1484-linked-list-in-binary-tree](https://github.com/Suvansh16/Leetcode/tree/master/1484-linked-list-in-binary-tree) |
 ## Tree
 |  |
@@ -213,6 +215,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0729-my-calendar-i](https://github.com/Suvansh16/Leetcode/tree/master/0729-my-calendar-i) |
+| [0859-design-circular-deque](https://github.com/Suvansh16/Leetcode/tree/master/0859-design-circular-deque) |
 ## Segment Tree
 |  |
 | ------- |
@@ -225,4 +228,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0212-word-search-ii](https://github.com/Suvansh16/Leetcode/tree/master/0212-word-search-ii) |
+## Queue
+|  |
+| ------- |
+| [0859-design-circular-deque](https://github.com/Suvansh16/Leetcode/tree/master/0859-design-circular-deque) |
 <!---LeetCode Topics End-->
