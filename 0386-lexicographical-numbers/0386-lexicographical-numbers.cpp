@@ -8,8 +8,8 @@ void solve(int n,vector<int>&ans,int start)
    for(int i=0;i<=9;i++)
    {
     int newno=start*10+i;
-    // if(start>n)
-    // return;
+    if(newno>n)
+    return;
     solve(n,ans,newno);
 
    }
