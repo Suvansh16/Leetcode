@@ -3,34 +3,30 @@ public:
     bool areSentencesSimilar(string s1, string s2) {
         if(s1.length()<s2.length())
         swap(s1,s2);
-        vector<string>vec1;
-        vector<string>vec2;
         stringstream ss1(s1);
         stringstream ss2(s2);
+        deque<string>d1;
+        deque<string>d2;
         string token1;
         string token2;
         while(ss1>>token1)
         {
-            vec1.push_back(token1);
+            d1.push_back(token1);
         }
          while(ss2>>token2)
         {
-            vec2.push_back(token2);
+            d2.push_back(token2);
         }
-        int i=0,j=vec1.size()-1;//for string 1
-        int k=0,l=vec2.size()-1;//for string 2
-        while(i!=vec1.size() && k!=vec2.size() && vec1[i]==vec2[k])
+        while(!d1.empty() && !d2.empty() && d1.front()==d2.front())
         {
-            i++;
-            k++;
+            d1.pop_front();
+            d2.pop_front();
         }
-        while(l>=k && vec1[j]==vec2[l])
+        while(!d1.empty() && !d2.empty() && d1.back()==d2.back())
         {
-            j--;
-            l--;
+            d2.pop_back();
+            d1.pop_back();
         }
-        if(l<k)
-        return true;
-        return false;
+        return d2.empty();
     }
 };
