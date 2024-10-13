@@ -127,6 +127,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Depth-First Search
 |  |
 | ------- |
+| [0133-clone-graph](https://github.com/Suvansh16/Leetcode/tree/master/0133-clone-graph) |
 | [0199-binary-tree-right-side-view](https://github.com/Suvansh16/Leetcode/tree/master/0199-binary-tree-right-side-view) |
 | [0207-course-schedule](https://github.com/Suvansh16/Leetcode/tree/master/0207-course-schedule) |
 | [0210-course-schedule-ii](https://github.com/Suvansh16/Leetcode/tree/master/0210-course-schedule-ii) |
@@ -165,6 +166,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Hash Table
 |  |
 | ------- |
+| [0133-clone-graph](https://github.com/Suvansh16/Leetcode/tree/master/0133-clone-graph) |
 | [0432-all-oone-data-structure](https://github.com/Suvansh16/Leetcode/tree/master/0432-all-oone-data-structure) |
 | [0648-replace-words](https://github.com/Suvansh16/Leetcode/tree/master/0648-replace-words) |
 | [0869-similar-string-groups](https://github.com/Suvansh16/Leetcode/tree/master/0869-similar-string-groups) |
@@ -223,6 +225,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Breadth-First Search
 |  |
 | ------- |
+| [0133-clone-graph](https://github.com/Suvansh16/Leetcode/tree/master/0133-clone-graph) |
 | [0199-binary-tree-right-side-view](https://github.com/Suvansh16/Leetcode/tree/master/0199-binary-tree-right-side-view) |
 | [0207-course-schedule](https://github.com/Suvansh16/Leetcode/tree/master/0207-course-schedule) |
 | [0210-course-schedule-ii](https://github.com/Suvansh16/Leetcode/tree/master/0210-course-schedule-ii) |
@@ -255,6 +258,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Graph
 |  |
 | ------- |
+| [0133-clone-graph](https://github.com/Suvansh16/Leetcode/tree/master/0133-clone-graph) |
 | [0207-course-schedule](https://github.com/Suvansh16/Leetcode/tree/master/0207-course-schedule) |
 | [0210-course-schedule-ii](https://github.com/Suvansh16/Leetcode/tree/master/0210-course-schedule-ii) |
 | [0547-number-of-provinces](https://github.com/Suvansh16/Leetcode/tree/master/0547-number-of-provinces) |
