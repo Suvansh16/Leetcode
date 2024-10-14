@@ -121,6 +121,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0199-binary-tree-right-side-view](https://github.com/Suvansh16/Leetcode/tree/master/0199-binary-tree-right-side-view) |
 | [0563-binary-tree-tilt](https://github.com/Suvansh16/Leetcode/tree/master/0563-binary-tree-tilt) |
+| [0637-average-of-levels-in-binary-tree](https://github.com/Suvansh16/Leetcode/tree/master/0637-average-of-levels-in-binary-tree) |
 | [1484-linked-list-in-binary-tree](https://github.com/Suvansh16/Leetcode/tree/master/1484-linked-list-in-binary-tree) |
 | [1554-minimum-time-to-collect-all-apples-in-a-tree](https://github.com/Suvansh16/Leetcode/tree/master/1554-minimum-time-to-collect-all-apples-in-a-tree) |
 | [1643-number-of-nodes-in-the-sub-tree-with-the-same-label](https://github.com/Suvansh16/Leetcode/tree/master/1643-number-of-nodes-in-the-sub-tree-with-the-same-label) |
@@ -135,6 +136,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0386-lexicographical-numbers](https://github.com/Suvansh16/Leetcode/tree/master/0386-lexicographical-numbers) |
 | [0547-number-of-provinces](https://github.com/Suvansh16/Leetcode/tree/master/0547-number-of-provinces) |
 | [0563-binary-tree-tilt](https://github.com/Suvansh16/Leetcode/tree/master/0563-binary-tree-tilt) |
+| [0637-average-of-levels-in-binary-tree](https://github.com/Suvansh16/Leetcode/tree/master/0637-average-of-levels-in-binary-tree) |
 | [0801-is-graph-bipartite](https://github.com/Suvansh16/Leetcode/tree/master/0801-is-graph-bipartite) |
 | [0813-all-paths-from-source-to-target](https://github.com/Suvansh16/Leetcode/tree/master/0813-all-paths-from-source-to-target) |
 | [0869-similar-string-groups](https://github.com/Suvansh16/Leetcode/tree/master/0869-similar-string-groups) |
@@ -155,6 +157,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0199-binary-tree-right-side-view](https://github.com/Suvansh16/Leetcode/tree/master/0199-binary-tree-right-side-view) |
 | [0563-binary-tree-tilt](https://github.com/Suvansh16/Leetcode/tree/master/0563-binary-tree-tilt) |
+| [0637-average-of-levels-in-binary-tree](https://github.com/Suvansh16/Leetcode/tree/master/0637-average-of-levels-in-binary-tree) |
 | [1484-linked-list-in-binary-tree](https://github.com/Suvansh16/Leetcode/tree/master/1484-linked-list-in-binary-tree) |
 ## Matrix
 |  |
@@ -234,6 +237,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0210-course-schedule-ii](https://github.com/Suvansh16/Leetcode/tree/master/0210-course-schedule-ii) |
 | [0322-coin-change](https://github.com/Suvansh16/Leetcode/tree/master/0322-coin-change) |
 | [0547-number-of-provinces](https://github.com/Suvansh16/Leetcode/tree/master/0547-number-of-provinces) |
+| [0637-average-of-levels-in-binary-tree](https://github.com/Suvansh16/Leetcode/tree/master/0637-average-of-levels-in-binary-tree) |
 | [0801-is-graph-bipartite](https://github.com/Suvansh16/Leetcode/tree/master/0801-is-graph-bipartite) |
 | [0813-all-paths-from-source-to-target](https://github.com/Suvansh16/Leetcode/tree/master/0813-all-paths-from-source-to-target) |
 | [0869-similar-string-groups](https://github.com/Suvansh16/Leetcode/tree/master/0869-similar-string-groups) |
