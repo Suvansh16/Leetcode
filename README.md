@@ -259,6 +259,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0984-most-stones-removed-with-same-row-or-column](https://github.com/Suvansh16/Leetcode/tree/master/0984-most-stones-removed-with-same-row-or-column) |
 | [1032-satisfiability-of-equality-equations](https://github.com/Suvansh16/Leetcode/tree/master/1032-satisfiability-of-equality-equations) |
 | [1058-lexicographically-smallest-equivalent-string](https://github.com/Suvansh16/Leetcode/tree/master/1058-lexicographically-smallest-equivalent-string) |
+| [1701-remove-max-number-of-edges-to-keep-graph-fully-traversable](https://github.com/Suvansh16/Leetcode/tree/master/1701-remove-max-number-of-edges-to-keep-graph-fully-traversable) |
 | [2121-find-if-path-exists-in-graph](https://github.com/Suvansh16/Leetcode/tree/master/2121-find-if-path-exists-in-graph) |
 | [2403-count-unreachable-pairs-of-nodes-in-an-undirected-graph](https://github.com/Suvansh16/Leetcode/tree/master/2403-count-unreachable-pairs-of-nodes-in-an-undirected-graph) |
 | [2582-minimum-score-of-a-path-between-two-cities](https://github.com/Suvansh16/Leetcode/tree/master/2582-minimum-score-of-a-path-between-two-cities) |
@@ -275,6 +276,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0922-possible-bipartition](https://github.com/Suvansh16/Leetcode/tree/master/0922-possible-bipartition) |
 | [0984-most-stones-removed-with-same-row-or-column](https://github.com/Suvansh16/Leetcode/tree/master/0984-most-stones-removed-with-same-row-or-column) |
 | [1032-satisfiability-of-equality-equations](https://github.com/Suvansh16/Leetcode/tree/master/1032-satisfiability-of-equality-equations) |
+| [1701-remove-max-number-of-edges-to-keep-graph-fully-traversable](https://github.com/Suvansh16/Leetcode/tree/master/1701-remove-max-number-of-edges-to-keep-graph-fully-traversable) |
 | [2121-find-if-path-exists-in-graph](https://github.com/Suvansh16/Leetcode/tree/master/2121-find-if-path-exists-in-graph) |
 | [2364-longest-path-with-different-adjacent-characters](https://github.com/Suvansh16/Leetcode/tree/master/2364-longest-path-with-different-adjacent-characters) |
 | [2403-count-unreachable-pairs-of-nodes-in-an-undirected-graph](https://github.com/Suvansh16/Leetcode/tree/master/2403-count-unreachable-pairs-of-nodes-in-an-undirected-graph) |
