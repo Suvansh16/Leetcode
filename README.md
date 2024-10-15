@@ -32,6 +32,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2488-divide-intervals-into-minimum-number-of-groups](https://github.com/Suvansh16/Leetcode/tree/master/2488-divide-intervals-into-minimum-number-of-groups) |
 | [2494-sum-of-prefix-scores-of-strings](https://github.com/Suvansh16/Leetcode/tree/master/2494-sum-of-prefix-scores-of-strings) |
 | [2503-longest-subarray-with-maximum-bitwise-and](https://github.com/Suvansh16/Leetcode/tree/master/2503-longest-subarray-with-maximum-bitwise-and) |
+| [2616-maximal-score-after-applying-k-operations](https://github.com/Suvansh16/Leetcode/tree/master/2616-maximal-score-after-applying-k-operations) |
 | [2755-extra-characters-in-a-string](https://github.com/Suvansh16/Leetcode/tree/master/2755-extra-characters-in-a-string) |
 | [3329-find-the-length-of-the-longest-common-prefix](https://github.com/Suvansh16/Leetcode/tree/master/3329-find-the-length-of-the-longest-common-prefix) |
 ## Stack
@@ -97,6 +98,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0045-jump-game-ii](https://github.com/Suvansh16/Leetcode/tree/master/0045-jump-game-ii) |
 | [2095-minimum-number-of-swaps-to-make-the-string-balanced](https://github.com/Suvansh16/Leetcode/tree/master/2095-minimum-number-of-swaps-to-make-the-string-balanced) |
 | [2488-divide-intervals-into-minimum-number-of-groups](https://github.com/Suvansh16/Leetcode/tree/master/2488-divide-intervals-into-minimum-number-of-groups) |
+| [2616-maximal-score-after-applying-k-operations](https://github.com/Suvansh16/Leetcode/tree/master/2616-maximal-score-after-applying-k-operations) |
 | [3195-separate-black-and-white-balls](https://github.com/Suvansh16/Leetcode/tree/master/3195-separate-black-and-white-balls) |
 | [3276-minimum-number-of-pushes-to-type-word-ii](https://github.com/Suvansh16/Leetcode/tree/master/3276-minimum-number-of-pushes-to-type-word-ii) |
 ## Bit Manipulation
@@ -355,4 +357,5 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [2488-divide-intervals-into-minimum-number-of-groups](https://github.com/Suvansh16/Leetcode/tree/master/2488-divide-intervals-into-minimum-number-of-groups) |
+| [2616-maximal-score-after-applying-k-operations](https://github.com/Suvansh16/Leetcode/tree/master/2616-maximal-score-after-applying-k-operations) |
 <!---LeetCode Topics End-->
