@@ -1,21 +1,32 @@
 class Solution {
 public:
     int maximumSwap(int num) {
+        vector<int>temp(10,-1);
         string a=to_string(num);
         int n=a.length();
-        vector<int>maxright(n,-1);
-        maxright[n-1]=n-1;
-        for(int i=n-2;i>=0;i--)
+        for(int i=0;i<n;i++)
         {
             int val=a[i]-'0';
-            int rightval=a[maxright[i+1]]-'0';
-            maxright[i]=(val>rightval?i:maxright[i+1]);
+            temp[val]=i;
         }
         for(int i=0;i<n;i++)
         {
-            if(i!=maxright[i] && a[i]!=a[maxright[i]]){
-            swap(a[i],a[maxright[i]]);
-            break;
+            int val=a[i]-'0';
+            int maxi=val;
+            int idx=i;
+            int l=-1;
+            for(int i=maxi+1;i<10;i++)
+            {
+                if(i>maxi && temp[i]>idx)
+                {
+                    maxi=i;
+                   l=temp[i];
+                }
+            }
+            if(maxi!=val)
+            {
+                swap(a[idx],a[l]);
+                break;
             }
         }
         return stoi(a);
