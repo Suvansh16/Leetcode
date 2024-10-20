@@ -43,6 +43,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0983-validate-stack-sequences](https://github.com/Suvansh16/Leetcode/tree/master/0983-validate-stack-sequences) |
+| [1197-parsing-a-boolean-expression](https://github.com/Suvansh16/Leetcode/tree/master/1197-parsing-a-boolean-expression) |
 | [2095-minimum-number-of-swaps-to-make-the-string-balanced](https://github.com/Suvansh16/Leetcode/tree/master/2095-minimum-number-of-swaps-to-make-the-string-balanced) |
 | [2800-minimum-string-length-after-removing-substrings](https://github.com/Suvansh16/Leetcode/tree/master/2800-minimum-string-length-after-removing-substrings) |
 ## Simulation
@@ -66,6 +67,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0962-flip-string-to-monotone-increasing](https://github.com/Suvansh16/Leetcode/tree/master/0962-flip-string-to-monotone-increasing) |
 | [1032-satisfiability-of-equality-equations](https://github.com/Suvansh16/Leetcode/tree/master/1032-satisfiability-of-equality-equations) |
 | [1058-lexicographically-smallest-equivalent-string](https://github.com/Suvansh16/Leetcode/tree/master/1058-lexicographically-smallest-equivalent-string) |
+| [1197-parsing-a-boolean-expression](https://github.com/Suvansh16/Leetcode/tree/master/1197-parsing-a-boolean-expression) |
 | [1250-longest-common-subsequence](https://github.com/Suvansh16/Leetcode/tree/master/1250-longest-common-subsequence) |
 | [1304-longest-happy-string](https://github.com/Suvansh16/Leetcode/tree/master/1304-longest-happy-string) |
 | [1517-restore-the-array](https://github.com/Suvansh16/Leetcode/tree/master/1517-restore-the-array) |
@@ -232,6 +234,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0024-swap-nodes-in-pairs](https://github.com/Suvansh16/Leetcode/tree/master/0024-swap-nodes-in-pairs) |
 | [0241-different-ways-to-add-parentheses](https://github.com/Suvansh16/Leetcode/tree/master/0241-different-ways-to-add-parentheses) |
+| [1197-parsing-a-boolean-expression](https://github.com/Suvansh16/Leetcode/tree/master/1197-parsing-a-boolean-expression) |
 | [1667-find-kth-bit-in-nth-binary-string](https://github.com/Suvansh16/Leetcode/tree/master/1667-find-kth-bit-in-nth-binary-string) |
 ## Memoization
 |  |
