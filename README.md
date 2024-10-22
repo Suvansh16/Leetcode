@@ -320,6 +320,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0984-most-stones-removed-with-same-row-or-column](https://github.com/Suvansh16/Leetcode/tree/master/0984-most-stones-removed-with-same-row-or-column) |
 | [1032-satisfiability-of-equality-equations](https://github.com/Suvansh16/Leetcode/tree/master/1032-satisfiability-of-equality-equations) |
 | [1701-remove-max-number-of-edges-to-keep-graph-fully-traversable](https://github.com/Suvansh16/Leetcode/tree/master/1701-remove-max-number-of-edges-to-keep-graph-fully-traversable) |
+| [1738-maximal-network-rank](https://github.com/Suvansh16/Leetcode/tree/master/1738-maximal-network-rank) |
 | [1815-checking-existence-of-edge-length-limited-paths](https://github.com/Suvansh16/Leetcode/tree/master/1815-checking-existence-of-edge-length-limited-paths) |
 | [2121-find-if-path-exists-in-graph](https://github.com/Suvansh16/Leetcode/tree/master/2121-find-if-path-exists-in-graph) |
 | [2206-detonate-the-maximum-bombs](https://github.com/Suvansh16/Leetcode/tree/master/2206-detonate-the-maximum-bombs) |
