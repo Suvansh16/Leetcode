@@ -64,6 +64,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0399-evaluate-division](https://github.com/Suvansh16/Leetcode/tree/master/0399-evaluate-division) |
 | [0539-minimum-time-difference](https://github.com/Suvansh16/Leetcode/tree/master/0539-minimum-time-difference) |
 | [0648-replace-words](https://github.com/Suvansh16/Leetcode/tree/master/0648-replace-words) |
+| [0812-rotate-string](https://github.com/Suvansh16/Leetcode/tree/master/0812-rotate-string) |
 | [0869-similar-string-groups](https://github.com/Suvansh16/Leetcode/tree/master/0869-similar-string-groups) |
 | [0920-uncommon-words-from-two-sentences](https://github.com/Suvansh16/Leetcode/tree/master/0920-uncommon-words-from-two-sentences) |
 | [0962-flip-string-to-monotone-increasing](https://github.com/Suvansh16/Leetcode/tree/master/0962-flip-string-to-monotone-increasing) |
@@ -264,6 +265,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0214-shortest-palindrome](https://github.com/Suvansh16/Leetcode/tree/master/0214-shortest-palindrome) |
+| [0812-rotate-string](https://github.com/Suvansh16/Leetcode/tree/master/0812-rotate-string) |
 ## Hash Function
 |  |
 | ------- |
