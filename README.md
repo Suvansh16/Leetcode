@@ -81,6 +81,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2095-minimum-number-of-swaps-to-make-the-string-balanced](https://github.com/Suvansh16/Leetcode/tree/master/2095-minimum-number-of-swaps-to-make-the-string-balanced) |
 | [2364-longest-path-with-different-adjacent-characters](https://github.com/Suvansh16/Leetcode/tree/master/2364-longest-path-with-different-adjacent-characters) |
 | [2494-sum-of-prefix-scores-of-strings](https://github.com/Suvansh16/Leetcode/tree/master/2494-sum-of-prefix-scores-of-strings) |
+| [2580-circular-sentence](https://github.com/Suvansh16/Leetcode/tree/master/2580-circular-sentence) |
 | [2755-extra-characters-in-a-string](https://github.com/Suvansh16/Leetcode/tree/master/2755-extra-characters-in-a-string) |
 | [2800-minimum-string-length-after-removing-substrings](https://github.com/Suvansh16/Leetcode/tree/master/2800-minimum-string-length-after-removing-substrings) |
 | [3174-minimum-number-of-changes-to-make-binary-string-beautiful](https://github.com/Suvansh16/Leetcode/tree/master/3174-minimum-number-of-changes-to-make-binary-string-beautiful) |
