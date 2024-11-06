@@ -24,11 +24,6 @@ public:
             break;
             
         }
-        for(int i=0;i<nums.size();i++)
-        cout<<nums[i]<<" ";
-        sort(temp.begin(),temp.end());
-        if(temp==nums)
-        return true;
-        return false;
+       return true;
     }
 };
