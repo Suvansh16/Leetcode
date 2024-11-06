@@ -12,59 +12,39 @@
 class Solution {
 public:
     TreeNode* replaceValueInTree(TreeNode* root) {
-        //step1 store sum of each level
-    vector<int>levelsum;
-    queue<TreeNode*>q;
-    q.push(root);
-    while(!q.empty())
-    {
-        int n=q.size();
-        int sum=0;
-
-        while(n--)
-        {
-            TreeNode*a=q.front();
-            q.pop();
-            sum+=a->val;
-            if(a->left)
-            q.push(a->left);
-            if(a->right)
-            q.push(a->right);
-
-        }
-        levelsum.push_back(sum);
-    }
-    //step 2 subtract node val with levelsum-sibling sum
-    int i=1;
-    q.push(root);
-    root->val=0;
-    while(!q.empty())
-    {
+       if(root==NULL)
+       return NULL;
+       queue<TreeNode*>q;
+       int levelsum=root->val;
+       q.push(root);
+       
+       while(!q.empty())
+       {
+        int nextlevelsum=0;
         int n=q.size();
         while(n--)
         {
-            TreeNode*a=q.front();
+            TreeNode*curr=q.front();
             q.pop();
-            int siblingsum=0;
-            if(a->left)
+            curr->val=levelsum-curr->val;
+            int siblingsum=(curr->left!=NULL?curr->left->val:0);
+            siblingsum+=(curr->right!=NULL?curr->right->val:0);
+            if(curr->left)
             {
-                siblingsum+=a->left->val;
+                nextlevelsum+=curr->left->val;
+                curr->left->val=siblingsum;
+                q.push(curr->left);
             }
-            if(a->right)
-            siblingsum+=a->right->val;
-            if(a->left){
-            a->left->val=levelsum[i]-siblingsum;
-            q.push(a->left);
+            if(curr->right)
+            {
+                nextlevelsum+=curr->right->val;
+                curr->right->val=siblingsum;
+                q.push(curr->right);
             }
-            if(a->right){
-            a->right->val=levelsum[i]-siblingsum;
-            q.push(a->right);
-            }
-
 
         }
-        i++;
-    }
-    return root;
+        levelsum=nextlevelsum;
+       }
+       return root;
     }
 };
