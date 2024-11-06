@@ -1,29 +1,27 @@
 class Solution {
-public:
-    bool canSortArray(vector<int>& nums) {
-        vector<int>temp=nums;
-        for(int i=0;i<nums.size()-1;i++)
-        {
-            bool swapped=false;
-            for(int j=0;j<nums.size()-1-i;j++)
-            {
-                if(nums[j]<=nums[j+1])
-                continue;
-                else{
-                
-                if(nums[j]>nums[j+1] && __builtin_popcount(nums[j])==__builtin_popcount(nums[j+1]))
-                {
-                swap(nums[j],nums[j+1]);
-                swapped=true;
-               }
-            else
-            return false;
-            }
-            }
-            if(swapped==false)
-            break;
-            
-        }
-       return true;
+ public:
+  bool canSortArray(vector<int>& nums) {
+    
+    int prevSetBits = 0;
+    int prevMax = INT_MIN;  
+    int currMax = INT_MIN;  
+    int currMin = INT_MAX;  
+
+    for (const int num : nums) {
+      const int setBits = __builtin_popcount(num);
+      if (setBits != prevSetBits) {  
+        if (prevMax > currMin)
+          return false;
+        prevSetBits = setBits;
+        prevMax = currMax;
+        currMax = num;
+        currMin = num;
+      } else {  // Continue with the current segment.
+        currMax = max(currMax, num);
+        currMin = min(currMin, num);
+      }
     }
+
+    return prevMax <= currMin;
+  }
 };
