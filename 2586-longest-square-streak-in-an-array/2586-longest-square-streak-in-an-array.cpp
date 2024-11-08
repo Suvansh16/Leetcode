@@ -1,22 +1,21 @@
 class Solution {
 public:
     int longestSquareStreak(vector<int>& nums) {
-        sort(nums.begin(),nums.end());
-        unordered_map<int,int>map;
-        int maxi=1;
-        for(int i=0;i<nums.size();i++)
+        int maxstreak=0;
+        unordered_set<int>st(nums.begin(),nums.end());
+        for(int &num:nums)
         {
-            int a=(int)sqrt(nums[i]);
-            if(a*a==nums[i] && map.find(a)!=map.end())
+            int currstreak=0;
+            long long curr=num;
+            while(st.find(curr)!=st.end())
             {
-                map[nums[i]]=map[a]+1;
-               
+                currstreak+=1;
+                if(curr*curr>1e5)
+                break;
+                curr=curr*curr;
             }
-            else
-            map[nums[i]]=1;
-             maxi=max(maxi,map[nums[i]]);
+            maxstreak=max(maxstreak,currstreak);
         }
-        return maxi==1?-1:maxi;
-
+        return maxstreak==1?-1:maxstreak;
     }
 };
