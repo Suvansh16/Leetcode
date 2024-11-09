@@ -33,6 +33,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2038-nearest-exit-from-entrance-in-maze](https://github.com/Suvansh16/Leetcode/tree/master/2038-nearest-exit-from-entrance-in-maze) |
 | [2096-find-the-longest-valid-obstacle-course-at-each-position](https://github.com/Suvansh16/Leetcode/tree/master/2096-find-the-longest-valid-obstacle-course-at-each-position) |
 | [2170-count-number-of-maximum-bitwise-or-subsets](https://github.com/Suvansh16/Leetcode/tree/master/2170-count-number-of-maximum-bitwise-or-subsets) |
+| [2176-parallel-courses-iii](https://github.com/Suvansh16/Leetcode/tree/master/2176-parallel-courses-iii) |
 | [2206-detonate-the-maximum-bombs](https://github.com/Suvansh16/Leetcode/tree/master/2206-detonate-the-maximum-bombs) |
 | [2262-solving-questions-with-brainpower](https://github.com/Suvansh16/Leetcode/tree/master/2262-solving-questions-with-brainpower) |
 | [2356-largest-combination-with-bitwise-and-greater-than-zero](https://github.com/Suvansh16/Leetcode/tree/master/2356-largest-combination-with-bitwise-and-greater-than-zero) |
@@ -112,6 +113,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1517-restore-the-array](https://github.com/Suvansh16/Leetcode/tree/master/1517-restore-the-array) |
 | [1522-stone-game-iii](https://github.com/Suvansh16/Leetcode/tree/master/1522-stone-game-iii) |
 | [1744-number-of-ways-to-form-a-target-string-given-a-dictionary](https://github.com/Suvansh16/Leetcode/tree/master/1744-number-of-ways-to-form-a-target-string-given-a-dictionary) |
+| [2176-parallel-courses-iii](https://github.com/Suvansh16/Leetcode/tree/master/2176-parallel-courses-iii) |
 | [2262-solving-questions-with-brainpower](https://github.com/Suvansh16/Leetcode/tree/master/2262-solving-questions-with-brainpower) |
 | [2586-longest-square-streak-in-an-array](https://github.com/Suvansh16/Leetcode/tree/master/2586-longest-square-streak-in-an-array) |
 | [2755-extra-characters-in-a-string](https://github.com/Suvansh16/Leetcode/tree/master/2755-extra-characters-in-a-string) |
@@ -360,6 +362,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1738-maximal-network-rank](https://github.com/Suvansh16/Leetcode/tree/master/1738-maximal-network-rank) |
 | [1815-checking-existence-of-edge-length-limited-paths](https://github.com/Suvansh16/Leetcode/tree/master/1815-checking-existence-of-edge-length-limited-paths) |
 | [2121-find-if-path-exists-in-graph](https://github.com/Suvansh16/Leetcode/tree/master/2121-find-if-path-exists-in-graph) |
+| [2176-parallel-courses-iii](https://github.com/Suvansh16/Leetcode/tree/master/2176-parallel-courses-iii) |
 | [2206-detonate-the-maximum-bombs](https://github.com/Suvansh16/Leetcode/tree/master/2206-detonate-the-maximum-bombs) |
 | [2364-longest-path-with-different-adjacent-characters](https://github.com/Suvansh16/Leetcode/tree/master/2364-longest-path-with-different-adjacent-characters) |
 | [2403-count-unreachable-pairs-of-nodes-in-an-undirected-graph](https://github.com/Suvansh16/Leetcode/tree/master/2403-count-unreachable-pairs-of-nodes-in-an-undirected-graph) |
@@ -372,6 +375,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0207-course-schedule](https://github.com/Suvansh16/Leetcode/tree/master/0207-course-schedule) |
 | [0210-course-schedule-ii](https://github.com/Suvansh16/Leetcode/tree/master/0210-course-schedule-ii) |
 | [0820-find-eventual-safe-states](https://github.com/Suvansh16/Leetcode/tree/master/0820-find-eventual-safe-states) |
+| [2176-parallel-courses-iii](https://github.com/Suvansh16/Leetcode/tree/master/2176-parallel-courses-iii) |
 | [2364-longest-path-with-different-adjacent-characters](https://github.com/Suvansh16/Leetcode/tree/master/2364-longest-path-with-different-adjacent-characters) |
 | [2439-longest-cycle-in-a-graph](https://github.com/Suvansh16/Leetcode/tree/master/2439-longest-cycle-in-a-graph) |
 ## Binary Search
