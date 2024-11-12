@@ -163,6 +163,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0199-binary-tree-right-side-view](https://github.com/Suvansh16/Leetcode/tree/master/0199-binary-tree-right-side-view) |
 | [0501-find-mode-in-binary-search-tree](https://github.com/Suvansh16/Leetcode/tree/master/0501-find-mode-in-binary-search-tree) |
+| [0538-convert-bst-to-greater-tree](https://github.com/Suvansh16/Leetcode/tree/master/0538-convert-bst-to-greater-tree) |
 | [0563-binary-tree-tilt](https://github.com/Suvansh16/Leetcode/tree/master/0563-binary-tree-tilt) |
 | [0637-average-of-levels-in-binary-tree](https://github.com/Suvansh16/Leetcode/tree/master/0637-average-of-levels-in-binary-tree) |
 | [0988-flip-equivalent-binary-trees](https://github.com/Suvansh16/Leetcode/tree/master/0988-flip-equivalent-binary-trees) |
@@ -183,6 +184,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0386-lexicographical-numbers](https://github.com/Suvansh16/Leetcode/tree/master/0386-lexicographical-numbers) |
 | [0399-evaluate-division](https://github.com/Suvansh16/Leetcode/tree/master/0399-evaluate-division) |
 | [0501-find-mode-in-binary-search-tree](https://github.com/Suvansh16/Leetcode/tree/master/0501-find-mode-in-binary-search-tree) |
+| [0538-convert-bst-to-greater-tree](https://github.com/Suvansh16/Leetcode/tree/master/0538-convert-bst-to-greater-tree) |
 | [0547-number-of-provinces](https://github.com/Suvansh16/Leetcode/tree/master/0547-number-of-provinces) |
 | [0563-binary-tree-tilt](https://github.com/Suvansh16/Leetcode/tree/master/0563-binary-tree-tilt) |
 | [0637-average-of-levels-in-binary-tree](https://github.com/Suvansh16/Leetcode/tree/master/0637-average-of-levels-in-binary-tree) |
@@ -210,6 +212,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0199-binary-tree-right-side-view](https://github.com/Suvansh16/Leetcode/tree/master/0199-binary-tree-right-side-view) |
 | [0501-find-mode-in-binary-search-tree](https://github.com/Suvansh16/Leetcode/tree/master/0501-find-mode-in-binary-search-tree) |
+| [0538-convert-bst-to-greater-tree](https://github.com/Suvansh16/Leetcode/tree/master/0538-convert-bst-to-greater-tree) |
 | [0563-binary-tree-tilt](https://github.com/Suvansh16/Leetcode/tree/master/0563-binary-tree-tilt) |
 | [0637-average-of-levels-in-binary-tree](https://github.com/Suvansh16/Leetcode/tree/master/0637-average-of-levels-in-binary-tree) |
 | [0988-flip-equivalent-binary-trees](https://github.com/Suvansh16/Leetcode/tree/master/0988-flip-equivalent-binary-trees) |
@@ -467,6 +470,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0501-find-mode-in-binary-search-tree](https://github.com/Suvansh16/Leetcode/tree/master/0501-find-mode-in-binary-search-tree) |
+| [0538-convert-bst-to-greater-tree](https://github.com/Suvansh16/Leetcode/tree/master/0538-convert-bst-to-greater-tree) |
 ## Sliding Window
 |  |
 | ------- |
