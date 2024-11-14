@@ -4,7 +4,7 @@ int maxbinary(vector<int>&nums,int num,int upper,int lower,int presentind)
 {
     int l=presentind;
     int r=nums.size()-1;
-     int ans=-1;
+     int ans=0;
     while(l<=r)
     {
         int mid=(l+r)/2;
@@ -25,7 +25,7 @@ int minbinary(vector<int>&nums,int num,int upper,int lower,int presentind)
 {
     int l=presentind+1;
     int r=nums.size()-1;
-    int ans=-1;
+    int ans=0;
     while(l<=r)
     {
         int mid=(l+r)/2;
@@ -49,7 +49,7 @@ int minbinary(vector<int>&nums,int num,int upper,int lower,int presentind)
         {
             int maxindex=maxbinary(nums,nums[i],upper,lower,i);
             int minindex=minbinary(nums,nums[i],upper,lower,i);
-             if (maxindex != -1 && minindex != -1 && maxindex >= minindex) {
+             if (maxindex >= minindex && maxindex!=0 && minindex!=0) {
                 ans += (maxindex - minindex + 1);
 
         }
