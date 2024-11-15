@@ -14,6 +14,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0539-minimum-time-difference](https://github.com/Suvansh16/Leetcode/tree/master/0539-minimum-time-difference) |
 | [0648-replace-words](https://github.com/Suvansh16/Leetcode/tree/master/0648-replace-words) |
 | [0729-my-calendar-i](https://github.com/Suvansh16/Leetcode/tree/master/0729-my-calendar-i) |
+| [0833-bus-routes](https://github.com/Suvansh16/Leetcode/tree/master/0833-bus-routes) |
 | [0859-design-circular-deque](https://github.com/Suvansh16/Leetcode/tree/master/0859-design-circular-deque) |
 | [0869-similar-string-groups](https://github.com/Suvansh16/Leetcode/tree/master/0869-similar-string-groups) |
 | [0909-stone-game](https://github.com/Suvansh16/Leetcode/tree/master/0909-stone-game) |
@@ -244,6 +245,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0133-clone-graph](https://github.com/Suvansh16/Leetcode/tree/master/0133-clone-graph) |
 | [0432-all-oone-data-structure](https://github.com/Suvansh16/Leetcode/tree/master/0432-all-oone-data-structure) |
 | [0648-replace-words](https://github.com/Suvansh16/Leetcode/tree/master/0648-replace-words) |
+| [0833-bus-routes](https://github.com/Suvansh16/Leetcode/tree/master/0833-bus-routes) |
 | [0869-similar-string-groups](https://github.com/Suvansh16/Leetcode/tree/master/0869-similar-string-groups) |
 | [0920-uncommon-words-from-two-sentences](https://github.com/Suvansh16/Leetcode/tree/master/0920-uncommon-words-from-two-sentences) |
 | [0966-binary-subarrays-with-sum](https://github.com/Suvansh16/Leetcode/tree/master/0966-binary-subarrays-with-sum) |
@@ -328,6 +330,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0801-is-graph-bipartite](https://github.com/Suvansh16/Leetcode/tree/master/0801-is-graph-bipartite) |
 | [0813-all-paths-from-source-to-target](https://github.com/Suvansh16/Leetcode/tree/master/0813-all-paths-from-source-to-target) |
 | [0820-find-eventual-safe-states](https://github.com/Suvansh16/Leetcode/tree/master/0820-find-eventual-safe-states) |
+| [0833-bus-routes](https://github.com/Suvansh16/Leetcode/tree/master/0833-bus-routes) |
 | [0869-similar-string-groups](https://github.com/Suvansh16/Leetcode/tree/master/0869-similar-string-groups) |
 | [0871-keys-and-rooms](https://github.com/Suvansh16/Leetcode/tree/master/0871-keys-and-rooms) |
 | [0922-possible-bipartition](https://github.com/Suvansh16/Leetcode/tree/master/0922-possible-bipartition) |
