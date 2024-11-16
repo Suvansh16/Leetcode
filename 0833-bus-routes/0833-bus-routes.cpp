@@ -1,63 +1,53 @@
-#include <unordered_map>
-#include <unordered_set>
-#include <queue>
-#include <vector>
-#include <climits>
-
-using namespace std;
-
 class Solution {
 public:
     int numBusesToDestination(vector<vector<int>>& routes, int source, int target) {
-        if (source == target) return 0; // No need to take any bus if source == target
+        unordered_map<int,vector<int>>map; //one route can present in many buses therefore vector banaya
         
-        unordered_map<int, vector<int>> stopToBuses; // Map each stop to the buses that go through it
-        for (int i = 0; i < routes.size(); i++) {
-            for (int stop : routes[i]) {
-                stopToBuses[stop].push_back(i);
+        if(source==target)
+        return 0;
+        
+       
+        queue<int>q;
+        for(int i=0;i<routes.size();i++)
+        {
+            for(int j=0;j<routes[i].size();j++)
+            {
+                map[routes[i][j]].push_back(i);
             }
         }
-
-        // BFS initialization
-        queue<int> q; // Queue of (current stop, number of buses taken so far)
-        unordered_set<int> visitedStops; // Set of visited bus stops
-        unordered_set<int> visitedBuses; // Set of visited buses to prevent reprocessing the same bus
-
-        q.push(source);
-        visitedStops.insert(source);
-        int busesTaken = 0;
-
-        // Perform BFS
-        while (!q.empty()) {
-            int qSize = q.size();
-            busesTaken++; // We are now moving to the next level (next set of buses)
-
-            for (int i = 0; i < qSize; i++) {
-                int currentStop = q.front();
+        unordered_set<int>visitedbus;
+        for(int &i:map[source]){
+        q.push(i);
+        visitedbus.insert(i);
+        }
+        int count=0;
+       
+        while(!q.empty())
+        {
+            count++;
+            int size=q.size();
+            while(size--)
+            {
+                int a=q.front();
                 q.pop();
-
-                // If we reach the target, return the number of buses taken
-                if (currentStop == target) return busesTaken - 1;
-
-                // Explore all buses that go through this stop
-                for (int bus : stopToBuses[currentStop]) {
-                    if (visitedBuses.find(bus) != visitedBuses.end()) {
-                        continue; // Skip already visited buses
-                    }
-                    visitedBuses.insert(bus);
-
-                    // Explore all stops on this bus route
-                    for (int stop : routes[bus]) {
-                        if (visitedStops.find(stop) == visitedStops.end()) {
-                            visitedStops.insert(stop);
-                            q.push(stop);
-                        }
-                    }
-                }
+               
+                for(int i=0;i<routes[a].size();i++)
+                {
+                    if(routes[a][i]==target)
+                    return count;
+               }
+               for(int i=0;i<routes[a].size();i++){
+               for(int &j:map[routes[a][i]])
+               {
+                 if(visitedbus.find(j)==visitedbus.end()){
+                    q.push(j);
+                    visitedbus.insert(j);
+                 }
+                
+               }
+               }
             }
         }
-
-        // If we exhaust all possibilities without reaching the target, return -1
         return -1;
     }
 };
