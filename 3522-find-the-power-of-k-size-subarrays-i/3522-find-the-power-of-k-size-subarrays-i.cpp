@@ -22,10 +22,9 @@ public:
                 if(val==false)
                 {
                     check=true;
-                   if(k>1)
+                   
                    num=nums[j];
-                   else
-                   num=-1;
+                  
                     ans.push_back(nums[j]);
                 }
             }
