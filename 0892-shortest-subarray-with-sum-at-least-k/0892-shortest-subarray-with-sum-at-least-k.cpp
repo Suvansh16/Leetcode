@@ -1,22 +1,34 @@
 class Solution {
- public:
-  int shortestSubarray(vector<int>& nums, int k) {
-    const int n = nums.size();
-    int ans = n + 1;
-    deque<int> dq;
-    vector<long> prefix{0};
+public:
+    int shortestSubarray(vector<int>& nums, int k) {
+        vector<long long>cum_sum(nums.size(),0);
+        deque<int>dq;
+        long long sum=0;
+        int result=INT_MAX;
+        int j=0;
+        while(j<nums.size())
+        {
+            sum+=nums[j];
+            cum_sum[j]=sum;
+            if(sum>=k)
+            {
+                result=min(result,j+1);
+            }
+            while(!dq.empty() && cum_sum[j]-cum_sum[dq.front()]>=k)
+            {
+                result=min(result,j-dq.front());
+                dq.pop_front();
+            }
+            while(!dq.empty() && cum_sum[dq.back()]>=cum_sum[j])
+            {
 
-    for (int i = 0; i < n; ++i)
-      prefix.push_back(prefix.back() + nums[i]);
+                dq.pop_back();
+            }
+            dq.push_back(j);
+            j++;
 
-    for (int i = 0; i < n + 1; ++i) {
-      while (!dq.empty() && prefix[i] - prefix[dq.front()] >= k)
-        ans = min(ans, i - dq.front()), dq.pop_front();
-      while (!dq.empty() && prefix[i] <= prefix[dq.back()])
-        dq.pop_back();
-      dq.push_back(i);
+
+        }
+        return result==INT_MAX?-1:result;
     }
-
-    return ans <= n ? ans : -1;
-  }
 };
