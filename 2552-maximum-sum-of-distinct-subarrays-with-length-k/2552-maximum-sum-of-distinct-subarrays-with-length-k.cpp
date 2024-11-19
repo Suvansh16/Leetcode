@@ -1,60 +1,8 @@
-// class Solution {
-// public:
-// long long  summation(unordered_map<int,int>&map)
-// {
-//     long long sum=0;
-//     for(auto &i:map)
-//     {
-//         sum+=i.first;
-//     }
-//     return sum;
-// }
-//     long long maximumSubarraySum(vector<int>& nums, int k) {
-//         long long sum=0;
-//         unordered_map<int,int>map;
-//         int i=0;
-//         int j=k-1;
-//         for(int i=0;i<k;i++)
-//         {
-//             map[nums[i]]++;
-//         }
-//         sum=0;
-//         long long temp=0;
-//         temp=summation(map);
-//         while(j<nums.size())
-//         {
-//             if(map.size()==k)
-//             {
-//                 sum=max(sum,temp);
-//                 cout<<sum<<endl;
-//             }
 
-//             map[nums[i]]--;
-//             temp-=nums[i];
-//             if(map[nums[i]]==0)
-//             map.erase(nums[i]);
-            
-//             j++;
-//             i++;
-//             if(j<nums.size()){
-//             map[nums[j]]++;
-//             temp+=nums[j];
-//             }
-//         }
-//         return sum;
-
-//     }
-// };
 
 class Solution {
 public:
-    long long summation(unordered_map<int, int>& map) {
-        long long sum = 0;
-        for (auto& i : map) {
-            sum += i.first; // Summing up the keys of the map
-        }
-        return sum;
-    }
+    
 
     long long maximumSubarraySum(vector<int>& nums, int k) {
         long long sum = 0;
