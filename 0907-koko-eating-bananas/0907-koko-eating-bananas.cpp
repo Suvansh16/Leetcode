@@ -1,6 +1,6 @@
 class Solution {
 public:
-int check(vector<int>&piles,int mid)
+long long check(vector<int>&piles,int mid)
 {
     long long  ans=0;
     for(int i=0;i<piles.size();i++)
