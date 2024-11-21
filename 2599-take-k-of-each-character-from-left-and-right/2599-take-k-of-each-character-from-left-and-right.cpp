@@ -1,23 +1,41 @@
 class Solution {
- public:
-  int takeCharacters(string s, int k) {
-    const int n = s.length();
-    int ans = n;
-    vector<int> count(3);
+public:
+    int takeCharacters(string s, int k) {
+        int total_a = 0, total_b = 0, total_c = 0;
+        int n = s.length();
+        
+        // Count total occurrences of 'a', 'b', and 'c'
+        for (char c : s) {
+            if (c == 'a') total_a++;
+            else if (c == 'b') total_b++;
+            else if (c == 'c') total_c++;
+        }
+        
+        // If any character count is less than k, it's impossible to satisfy
+        if (total_a < k || total_b < k || total_c < k) return -1;
+        
+        // Sliding window to find the longest subarray satisfying constraints
+        int count_a = 0, count_b = 0, count_c = 0;
+        int i = 0, max_window_size = 0;
 
-    for (const char c : s)
-      ++count[c - 'a'];
+        for (int j = 0; j < n; j++) {
+            if (s[j] == 'a') count_a++;
+            else if (s[j] == 'b') count_b++;
+            else if (s[j] == 'c') count_c++;
 
-    if (count[0] < k || count[1] < k || count[2] < k)
-      return -1;
+            // Shrink the window if constraints are violated
+            while (total_a - count_a < k || total_b - count_b < k || total_c - count_c < k) {
+                if (s[i] == 'a') count_a--;
+                else if (s[i] == 'b') count_b--;
+                else if (s[i] == 'c') count_c--;
+                i++;
+            }
 
-    for (int l = 0, r = 0; r < n; ++r) {
-      --count[s[r] - 'a'];
-      while (count[s[r] - 'a'] < k)
-        ++count[s[l++] - 'a'];
-      ans = min(ans, n - (r - l + 1));
+            // Update the maximum window size
+            max_window_size = max(max_window_size, j - i + 1);
+        }
+
+        // Minimum characters to remove = total length - largest valid window
+        return n - max_window_size;
     }
-
-    return ans;
-  }
 };
