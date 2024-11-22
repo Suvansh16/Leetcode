@@ -2,34 +2,39 @@ class Solution {
 public:
     int minimumPushes(string word) {
         unordered_map<char,int>map;
-        unordered_map<char,int>map2;
-        int count=1;
-        int k=2;
-        for(int i=0;i<word.length();i++)
-        map2[word[i]]++;
-        auto lambda=[&](char &ch1,char &ch2)
+        unordered_map<char,int>temp;
+        for(char ch:word)
+        map[ch]++;
+        auto lambda=[&](char &a,char &b)
         {
-            return map2[ch1]>map2[ch2];
+            return map[a]>map[b];
         };
+
         sort(word.begin(),word.end(),lambda);
-        
-        for(int i=0;i<word.length();i++)
-        {
-            if(k==10)
-            {
-                count++;
-                k=2;
-            }
-            if(map.find(word[i])==map.end())
-            {
-                k++;
-                map[word[i]]=count;
-            }
-        }
+        int count=1;
         int result=0;
-        for(int i=0;i<word.length();i++)
+        int k=2;
+        for(char ch:word)
         {
-            result+=map[word[i]];
+            if(temp.find(ch)!=temp.end())
+            continue;
+            else
+            {
+                if(k>9)
+                {
+                    count++;
+                    k=2;
+
+                }
+                k++;
+                temp[ch]=count;
+               
+            }
+
+        }
+        for(char ch:word)
+        {
+            result+=temp[ch];
         }
         return result;
     }
