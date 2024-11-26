@@ -30,6 +30,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1147-flip-columns-for-maximum-number-of-equal-rows](https://github.com/Suvansh16/Leetcode/tree/master/1147-flip-columns-for-maximum-number-of-equal-rows) |
 | [1240-stone-game-ii](https://github.com/Suvansh16/Leetcode/tree/master/1240-stone-game-ii) |
 | [1435-xor-queries-of-a-subarray](https://github.com/Suvansh16/Leetcode/tree/master/1435-xor-queries-of-a-subarray) |
+| [1457-minimum-difficulty-of-a-job-schedule](https://github.com/Suvansh16/Leetcode/tree/master/1457-minimum-difficulty-of-a-job-schedule) |
 | [1522-stone-game-iii](https://github.com/Suvansh16/Leetcode/tree/master/1522-stone-game-iii) |
 | [1620-check-if-array-pairs-are-divisible-by-k](https://github.com/Suvansh16/Leetcode/tree/master/1620-check-if-array-pairs-are-divisible-by-k) |
 | [1679-shortest-subarray-to-be-removed-to-make-array-sorted](https://github.com/Suvansh16/Leetcode/tree/master/1679-shortest-subarray-to-be-removed-to-make-array-sorted) |
@@ -131,6 +132,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1105-uncrossed-lines](https://github.com/Suvansh16/Leetcode/tree/master/1105-uncrossed-lines) |
 | [1240-stone-game-ii](https://github.com/Suvansh16/Leetcode/tree/master/1240-stone-game-ii) |
 | [1250-longest-common-subsequence](https://github.com/Suvansh16/Leetcode/tree/master/1250-longest-common-subsequence) |
+| [1457-minimum-difficulty-of-a-job-schedule](https://github.com/Suvansh16/Leetcode/tree/master/1457-minimum-difficulty-of-a-job-schedule) |
 | [1517-restore-the-array](https://github.com/Suvansh16/Leetcode/tree/master/1517-restore-the-array) |
 | [1522-stone-game-iii](https://github.com/Suvansh16/Leetcode/tree/master/1522-stone-game-iii) |
 | [1744-number-of-ways-to-form-a-target-string-given-a-dictionary](https://github.com/Suvansh16/Leetcode/tree/master/1744-number-of-ways-to-form-a-target-string-given-a-dictionary) |
