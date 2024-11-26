@@ -29,6 +29,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1105-uncrossed-lines](https://github.com/Suvansh16/Leetcode/tree/master/1105-uncrossed-lines) |
 | [1147-flip-columns-for-maximum-number-of-equal-rows](https://github.com/Suvansh16/Leetcode/tree/master/1147-flip-columns-for-maximum-number-of-equal-rows) |
 | [1240-stone-game-ii](https://github.com/Suvansh16/Leetcode/tree/master/1240-stone-game-ii) |
+| [1360-maximum-length-of-a-concatenated-string-with-unique-characters](https://github.com/Suvansh16/Leetcode/tree/master/1360-maximum-length-of-a-concatenated-string-with-unique-characters) |
 | [1435-xor-queries-of-a-subarray](https://github.com/Suvansh16/Leetcode/tree/master/1435-xor-queries-of-a-subarray) |
 | [1457-minimum-difficulty-of-a-job-schedule](https://github.com/Suvansh16/Leetcode/tree/master/1457-minimum-difficulty-of-a-job-schedule) |
 | [1522-stone-game-iii](https://github.com/Suvansh16/Leetcode/tree/master/1522-stone-game-iii) |
@@ -100,6 +101,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1197-parsing-a-boolean-expression](https://github.com/Suvansh16/Leetcode/tree/master/1197-parsing-a-boolean-expression) |
 | [1250-longest-common-subsequence](https://github.com/Suvansh16/Leetcode/tree/master/1250-longest-common-subsequence) |
 | [1304-longest-happy-string](https://github.com/Suvansh16/Leetcode/tree/master/1304-longest-happy-string) |
+| [1360-maximum-length-of-a-concatenated-string-with-unique-characters](https://github.com/Suvansh16/Leetcode/tree/master/1360-maximum-length-of-a-concatenated-string-with-unique-characters) |
 | [1517-restore-the-array](https://github.com/Suvansh16/Leetcode/tree/master/1517-restore-the-array) |
 | [1667-find-kth-bit-in-nth-binary-string](https://github.com/Suvansh16/Leetcode/tree/master/1667-find-kth-bit-in-nth-binary-string) |
 | [1715-split-a-string-into-the-max-number-of-unique-substrings](https://github.com/Suvansh16/Leetcode/tree/master/1715-split-a-string-into-the-max-number-of-unique-substrings) |
@@ -157,6 +159,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Bit Manipulation
 |  |
 | ------- |
+| [1360-maximum-length-of-a-concatenated-string-with-unique-characters](https://github.com/Suvansh16/Leetcode/tree/master/1360-maximum-length-of-a-concatenated-string-with-unique-characters) |
 | [1435-xor-queries-of-a-subarray](https://github.com/Suvansh16/Leetcode/tree/master/1435-xor-queries-of-a-subarray) |
 | [1940-maximum-xor-for-each-query](https://github.com/Suvansh16/Leetcode/tree/master/1940-maximum-xor-for-each-query) |
 | [2170-count-number-of-maximum-bitwise-or-subsets](https://github.com/Suvansh16/Leetcode/tree/master/2170-count-number-of-maximum-bitwise-or-subsets) |
@@ -477,6 +480,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0212-word-search-ii](https://github.com/Suvansh16/Leetcode/tree/master/0212-word-search-ii) |
 | [0813-all-paths-from-source-to-target](https://github.com/Suvansh16/Leetcode/tree/master/0813-all-paths-from-source-to-target) |
+| [1360-maximum-length-of-a-concatenated-string-with-unique-characters](https://github.com/Suvansh16/Leetcode/tree/master/1360-maximum-length-of-a-concatenated-string-with-unique-characters) |
 | [1715-split-a-string-into-the-max-number-of-unique-substrings](https://github.com/Suvansh16/Leetcode/tree/master/1715-split-a-string-into-the-max-number-of-unique-substrings) |
 | [2170-count-number-of-maximum-bitwise-or-subsets](https://github.com/Suvansh16/Leetcode/tree/master/2170-count-number-of-maximum-bitwise-or-subsets) |
 ## Queue
