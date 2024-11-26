@@ -11,6 +11,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0212-word-search-ii](https://github.com/Suvansh16/Leetcode/tree/master/0212-word-search-ii) |
 | [0322-coin-change](https://github.com/Suvansh16/Leetcode/tree/master/0322-coin-change) |
 | [0399-evaluate-division](https://github.com/Suvansh16/Leetcode/tree/master/0399-evaluate-division) |
+| [0442-find-all-duplicates-in-an-array](https://github.com/Suvansh16/Leetcode/tree/master/0442-find-all-duplicates-in-an-array) |
 | [0539-minimum-time-difference](https://github.com/Suvansh16/Leetcode/tree/master/0539-minimum-time-difference) |
 | [0648-replace-words](https://github.com/Suvansh16/Leetcode/tree/master/0648-replace-words) |
 | [0729-my-calendar-i](https://github.com/Suvansh16/Leetcode/tree/master/0729-my-calendar-i) |
@@ -265,6 +266,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0133-clone-graph](https://github.com/Suvansh16/Leetcode/tree/master/0133-clone-graph) |
 | [0432-all-oone-data-structure](https://github.com/Suvansh16/Leetcode/tree/master/0432-all-oone-data-structure) |
+| [0442-find-all-duplicates-in-an-array](https://github.com/Suvansh16/Leetcode/tree/master/0442-find-all-duplicates-in-an-array) |
 | [0648-replace-words](https://github.com/Suvansh16/Leetcode/tree/master/0648-replace-words) |
 | [0833-bus-routes](https://github.com/Suvansh16/Leetcode/tree/master/0833-bus-routes) |
 | [0869-similar-string-groups](https://github.com/Suvansh16/Leetcode/tree/master/0869-similar-string-groups) |
