@@ -1,7 +1,7 @@
 class Solution {
 public:
 int n;
-int memo[5001];
+int memo[50001];
 int next(vector<vector<int>>&temp,int ind,int currend)
 {
     int result=n+1;
