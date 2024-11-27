@@ -1,19 +1,17 @@
 class Solution {
 public:
 int n;
-int solve(vector<int>&nums,int start,vector<int>&dp)
-{
-    if(start>=n)
-    return 0;
-    if(dp[start]!=-1)
-    return dp[start];
-    int take=nums[start]+solve(nums,start+2,dp);
-    int nottake=solve(nums,start+1,dp);
-    return dp[start]=max(take,nottake);
-}
     int rob(vector<int>& nums) {
-        n=nums.size();
-        vector<int>dp(n+1,-1);
-        return solve(nums,0,dp);
+      n=nums.size();
+        vector<int>dp(n+1,0);
+        dp[0]=nums[0];
+        dp[1]=nums[0];
+        for(int i=2;i<=n;i++)
+        {
+            int skip=dp[i-1];
+            int steal=nums[i-1]+dp[i-2];
+            dp[i]=max(steal,skip);
+        }
+        return dp[n];
     }
 };
