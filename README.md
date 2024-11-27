@@ -126,6 +126,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0064-minimum-path-sum](https://github.com/Suvansh16/Leetcode/tree/master/0064-minimum-path-sum) |
 | [0072-edit-distance](https://github.com/Suvansh16/Leetcode/tree/master/0072-edit-distance) |
 | [0241-different-ways-to-add-parentheses](https://github.com/Suvansh16/Leetcode/tree/master/0241-different-ways-to-add-parentheses) |
+| [0279-perfect-squares](https://github.com/Suvansh16/Leetcode/tree/master/0279-perfect-squares) |
 | [0322-coin-change](https://github.com/Suvansh16/Leetcode/tree/master/0322-coin-change) |
 | [0806-domino-and-tromino-tiling](https://github.com/Suvansh16/Leetcode/tree/master/0806-domino-and-tromino-tiling) |
 | [0909-stone-game](https://github.com/Suvansh16/Leetcode/tree/master/0909-stone-game) |
@@ -305,6 +306,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0241-different-ways-to-add-parentheses](https://github.com/Suvansh16/Leetcode/tree/master/0241-different-ways-to-add-parentheses) |
+| [0279-perfect-squares](https://github.com/Suvansh16/Leetcode/tree/master/0279-perfect-squares) |
 | [0539-minimum-time-difference](https://github.com/Suvansh16/Leetcode/tree/master/0539-minimum-time-difference) |
 | [0670-maximum-swap](https://github.com/Suvansh16/Leetcode/tree/master/0670-maximum-swap) |
 | [0909-stone-game](https://github.com/Suvansh16/Leetcode/tree/master/0909-stone-game) |
@@ -355,6 +357,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0200-number-of-islands](https://github.com/Suvansh16/Leetcode/tree/master/0200-number-of-islands) |
 | [0207-course-schedule](https://github.com/Suvansh16/Leetcode/tree/master/0207-course-schedule) |
 | [0210-course-schedule-ii](https://github.com/Suvansh16/Leetcode/tree/master/0210-course-schedule-ii) |
+| [0279-perfect-squares](https://github.com/Suvansh16/Leetcode/tree/master/0279-perfect-squares) |
 | [0322-coin-change](https://github.com/Suvansh16/Leetcode/tree/master/0322-coin-change) |
 | [0399-evaluate-division](https://github.com/Suvansh16/Leetcode/tree/master/0399-evaluate-division) |
 | [0547-number-of-provinces](https://github.com/Suvansh16/Leetcode/tree/master/0547-number-of-provinces) |
