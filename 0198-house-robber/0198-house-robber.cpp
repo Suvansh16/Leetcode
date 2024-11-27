@@ -1,17 +1,15 @@
 class Solution {
 public:
-int n;
     int rob(vector<int>& nums) {
-      n=nums.size();
-        vector<int>dp(n+1,0);
-        dp[0]=nums[0];
-        dp[1]=nums[0];
-        for(int i=2;i<=n;i++)
+        vector<int>t(nums.size()+1,0);
+        t[0]=0;
+        t[1]=nums[0];
+        for(int i=2;i<=nums.size();i++)
         {
-            int skip=dp[i-1];
-            int steal=nums[i-1]+dp[i-2];
-            dp[i]=max(steal,skip);
+            int skip=t[i-1];
+            int steal=nums[i-1]+t[i-2];
+            t[i]=max(skip,steal);
         }
-        return dp[n];
+        return t[nums.size()];
     }
 };
