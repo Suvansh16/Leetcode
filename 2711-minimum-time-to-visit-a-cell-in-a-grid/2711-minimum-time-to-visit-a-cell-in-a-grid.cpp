@@ -32,8 +32,10 @@ typedef pair<int,pair<int,int>> p;
                 visited[new_i][new_j]=true;
                 int extrawait=(grid[new_i][new_j]-a)%2==0?1:0;
                 int time=max(a+1,grid[new_i][new_j]+extrawait);
+                if(result[new_i][new_j]>time){
                 result[new_i][new_j]=time;
                 pq.push({time,{new_i,new_j}});
+                }
 
               
             }
