@@ -1,68 +1,64 @@
 class Solution {
 public:
-    bool solve(vector<int>& ans, vector<bool>& visited, vector<bool>& inrecursion, int val, unordered_map<int, vector<int>>& graph) {
-        visited[val] = true;
-        inrecursion[val] = true;
 
-        for (auto neighbor : graph[val]) {
-            if (!visited[neighbor]) {
-                if (!solve(ans, visited, inrecursion, neighbor, graph)) {
-                    return false; // Cycle detected
-                }
-            } else if (inrecursion[neighbor]) {
-                return false; // Cycle detected via recursion stack
-            }
+bool solve(vector<bool>&visited,vector<bool>&inrecursion,vector<int>&ans,int val,unordered_map<int,vector<int>>&map)
+{
+    visited[val]=true;
+    inrecursion[val]=true;
+    for(auto i:map[val])
+    {
+        if(!visited[i])
+        {
+            if(!solve(visited,inrecursion,ans,i,map))
+            return false;
         }
+        else if(inrecursion[i])
+        return false;
 
-        inrecursion[val] = false; // Mark node as backtracked
-        ans.push_back(val); // Add node to topological order
-        return true;
     }
+    ans.push_back(val);
+    inrecursion[val]=false;
+    return true;
+}
 
-    vector<int> topologicalSort(int k, vector<vector<int>>& conditions) {
-        unordered_map<int, vector<int>> graph;
-        for (auto& condition : conditions) {
-            graph[condition[0]].push_back(condition[1]);
-        }
-
-        vector<bool> visited(k + 1, false);
-        vector<bool> inrecursion(k + 1, false);
-        vector<int> ans;
-
-        for (int i = 1; i <= k; i++) {
-            if (!visited[i]) {
-                if (!solve(ans, visited, inrecursion, i, graph)) {
-                    return {}; // Cycle detected
-                }
-            }
-        }
-
-        reverse(ans.begin(), ans.end()); // Reverse to get the correct topological order
-        return ans;
+vector<int>topologicalsort( vector<vector<int>>& v,int k)
+{
+    unordered_map<int,vector<int>>map;
+    for(vector<int>&i:v)
+    {
+       map[i[0]].push_back(i[1]);
     }
-
+    vector<int>ans;
+    vector<bool>visited(k+1,false);
+    vector<bool>inrecursion(k+1,false);
+    for(int i=1;i<=k;i++)
+    {
+        if(!visited[i])
+        {
+            if(!solve(visited,inrecursion,ans,i,map))
+            return {};
+        }
+    }
+    reverse(ans.begin(),ans.end());
+    return ans;
+}
     vector<vector<int>> buildMatrix(int k, vector<vector<int>>& rowConditions, vector<vector<int>>& colConditions) {
-        // Get topological orders for rows and columns
-        vector<int> rowOrder = topologicalSort(k, rowConditions);
-        vector<int> colOrder = topologicalSort(k, colConditions);
-
-        if (rowOrder.empty() || colOrder.empty()) {
-            return {}; // If a cycle is detected in either condition, return an empty matrix
+        vector<int>rowcond=topologicalsort(rowConditions,k);
+        vector<int>colcond=topologicalsort(colConditions,k);
+        if(rowcond.empty() || colcond.empty())
+        return {};
+        unordered_map<int,int>rowpos;
+        unordered_map<int,int>colpos;
+        for(int i=0;i<k;i++)
+        {
+            rowpos[rowcond[i]]=i;
+            colpos[colcond[i]]=i;
         }
-
-        // Map the order of elements to their positions
-        unordered_map<int, int> rowPos, colPos;
-        for (int i = 0; i < k; i++) {
-            rowPos[rowOrder[i]] = i;
-            colPos[colOrder[i]] = i;
+        vector<vector<int>>result(k,vector<int>(k,0));
+        for(int i=1;i<=k;i++)
+        {
+            result[rowpos[i]][colpos[i]]=i;
         }
-
-        // Build the matrix
-        vector<vector<int>> matrix(k, vector<int>(k, 0));
-        for (int i = 1; i <= k; i++) {
-            matrix[rowPos[i]][colPos[i]] = i;
-        }
-
-        return matrix;
+        return result;
     }
 };
