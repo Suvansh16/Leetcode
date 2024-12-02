@@ -1,20 +1,53 @@
 class Solution {
 public:
-    int minFlipsMonoIncr(string s) {
-        int countofones=0;
-        int flip=0;
-        for(int i=0;i<s.length();i++)
+
+int solve(string s,int start,int one,vector<vector<int>>&dp)
+{
+    if(start>=s.length())
+    {
+        return 0;
+    }
+    if(dp[start][one]!=-1)
+    return dp[start][one];
+    int flip,no_flip;
+    flip=INT_MAX;
+    no_flip=INT_MAX;
+    if(s[start]=='1')
+    {
+        if(one==1)
         {
-            if(s[i]=='1')
-            countofones++;
-        
+            no_flip=solve(s,start+1,one,dp);
+        }
         else
         {
-            int a=min(flip+1,countofones);
-            flip=a;
+            flip=1+solve(s,start+1,0,dp);
+            no_flip=solve(s,start+1,1,dp);
         }
-        }
-        return flip;
+
     }
-    
+    else if(s[start]=='0')
+    {
+        if(one==true)
+        {
+            flip=1+solve(s,start+1,1,dp);
+        }
+        else
+        {
+            flip=1+solve(s,start+1,1,dp);
+            no_flip=solve(s,start+1,0,dp);
+        }
+    }
+    return dp[start][one]=min(flip,no_flip);
+  
+
+
+}
+    int minFlipsMonoIncr(string s) {
+        int start=0;
+      
+       int one=0;
+        vector<vector<int>>dp(s.length()+1,vector<int>(2,-1));
+       return solve(s,start,one,dp);
+       
+    }
 };
