@@ -15,6 +15,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0322-coin-change](https://github.com/Suvansh16/Leetcode/tree/master/0322-coin-change) |
 | [0399-evaluate-division](https://github.com/Suvansh16/Leetcode/tree/master/0399-evaluate-division) |
 | [0442-find-all-duplicates-in-an-array](https://github.com/Suvansh16/Leetcode/tree/master/0442-find-all-duplicates-in-an-array) |
+| [0494-target-sum](https://github.com/Suvansh16/Leetcode/tree/master/0494-target-sum) |
 | [0539-minimum-time-difference](https://github.com/Suvansh16/Leetcode/tree/master/0539-minimum-time-difference) |
 | [0648-replace-words](https://github.com/Suvansh16/Leetcode/tree/master/0648-replace-words) |
 | [0729-my-calendar-i](https://github.com/Suvansh16/Leetcode/tree/master/0729-my-calendar-i) |
@@ -144,6 +145,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0279-perfect-squares](https://github.com/Suvansh16/Leetcode/tree/master/0279-perfect-squares) |
 | [0309-best-time-to-buy-and-sell-stock-with-cooldown](https://github.com/Suvansh16/Leetcode/tree/master/0309-best-time-to-buy-and-sell-stock-with-cooldown) |
 | [0322-coin-change](https://github.com/Suvansh16/Leetcode/tree/master/0322-coin-change) |
+| [0494-target-sum](https://github.com/Suvansh16/Leetcode/tree/master/0494-target-sum) |
 | [0806-domino-and-tromino-tiling](https://github.com/Suvansh16/Leetcode/tree/master/0806-domino-and-tromino-tiling) |
 | [0909-stone-game](https://github.com/Suvansh16/Leetcode/tree/master/0909-stone-game) |
 | [0911-profitable-schemes](https://github.com/Suvansh16/Leetcode/tree/master/0911-profitable-schemes) |
@@ -518,6 +520,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0212-word-search-ii](https://github.com/Suvansh16/Leetcode/tree/master/0212-word-search-ii) |
+| [0494-target-sum](https://github.com/Suvansh16/Leetcode/tree/master/0494-target-sum) |
 | [0813-all-paths-from-source-to-target](https://github.com/Suvansh16/Leetcode/tree/master/0813-all-paths-from-source-to-target) |
 | [1360-maximum-length-of-a-concatenated-string-with-unique-characters](https://github.com/Suvansh16/Leetcode/tree/master/1360-maximum-length-of-a-concatenated-string-with-unique-characters) |
 | [1715-split-a-string-into-the-max-number-of-unique-substrings](https://github.com/Suvansh16/Leetcode/tree/master/1715-split-a-string-into-the-max-number-of-unique-substrings) |
