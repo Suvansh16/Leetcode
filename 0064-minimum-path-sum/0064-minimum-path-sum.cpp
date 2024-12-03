@@ -1,26 +1,30 @@
 class Solution {
 public:
+vector<vector<int>>directions={{1,0},{0,1}};
+int n,m;
+int solve(vector<vector<int>>&grid,int i,int j,vector<vector<int>>&dp)
+{
+     if(i<0 || j<0 || i>n ||j>m)
+    return INT_MAX;
+
+    if(i==n && j==m)
+    return grid[n][m];
+    
+   
+    if(dp[i][j]!=-1)
+    return dp[i][j];
+
+   int ans1=INT_MAX,ans2=INT_MAX;
+   if(solve(grid,i+1,j,dp)!=INT_MAX)
+   ans1=grid[i][j]+solve(grid,i+1,j,dp);
+    if(solve(grid,i,j+1,dp)!=INT_MAX)
+   ans2=grid[i][j]+solve(grid,i,j+1,dp);
+   return dp[i][j]=min(ans1,ans2);
+}
     int minPathSum(vector<vector<int>>& grid) {
-        int m=grid.size();
-        int n=grid[0].size();
-        vector<vector<int>>dp(grid.size(),vector<int>(grid[0].size()));
-        dp[0][0]=grid[0][0];
-        for(int i=0;i<m;i++)
-        {
-            for(int j=0;j<n;j++)
-            {
-                if(i==0 && j==0)
-                continue;
-                int val1=INT_MAX;
-                int val2=INT_MAX;
-                if(j-1>=0)
-                val1=dp[i][j-1];
-                if(i-1>=0)
-                val2=dp[i-1][j];
-                int c=min(val1,val2);
-                dp[i][j]=grid[i][j]+c;
-            }
-        }
-        return dp[m-1][n-1];
+        n=grid.size()-1;
+        m=grid[0].size()-1;
+        vector<vector<int>>dp(n+1,vector<int>(m+1,-1));
+        return solve(grid,0,0,dp);
     }
 };
