@@ -54,6 +54,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2176-parallel-courses-iii](https://github.com/Suvansh16/Leetcode/tree/master/2176-parallel-courses-iii) |
 | [2188-minimized-maximum-of-products-distributed-to-any-store](https://github.com/Suvansh16/Leetcode/tree/master/2188-minimized-maximum-of-products-distributed-to-any-store) |
 | [2206-detonate-the-maximum-bombs](https://github.com/Suvansh16/Leetcode/tree/master/2206-detonate-the-maximum-bombs) |
+| [2232-adding-spaces-to-a-string](https://github.com/Suvansh16/Leetcode/tree/master/2232-adding-spaces-to-a-string) |
 | [2262-solving-questions-with-brainpower](https://github.com/Suvansh16/Leetcode/tree/master/2262-solving-questions-with-brainpower) |
 | [2343-count-unguarded-cells-in-the-grid](https://github.com/Suvansh16/Leetcode/tree/master/2343-count-unguarded-cells-in-the-grid) |
 | [2356-largest-combination-with-bitwise-and-greater-than-zero](https://github.com/Suvansh16/Leetcode/tree/master/2356-largest-combination-with-bitwise-and-greater-than-zero) |
@@ -88,6 +89,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0983-validate-stack-sequences](https://github.com/Suvansh16/Leetcode/tree/master/0983-validate-stack-sequences) |
 | [1667-find-kth-bit-in-nth-binary-string](https://github.com/Suvansh16/Leetcode/tree/master/1667-find-kth-bit-in-nth-binary-string) |
+| [2232-adding-spaces-to-a-string](https://github.com/Suvansh16/Leetcode/tree/master/2232-adding-spaces-to-a-string) |
 | [2343-count-unguarded-cells-in-the-grid](https://github.com/Suvansh16/Leetcode/tree/master/2343-count-unguarded-cells-in-the-grid) |
 | [2800-minimum-string-length-after-removing-substrings](https://github.com/Suvansh16/Leetcode/tree/master/2800-minimum-string-length-after-removing-substrings) |
 ## String
@@ -117,6 +119,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1744-number-of-ways-to-form-a-target-string-given-a-dictionary](https://github.com/Suvansh16/Leetcode/tree/master/1744-number-of-ways-to-form-a-target-string-given-a-dictionary) |
 | [1923-sentence-similarity-iii](https://github.com/Suvansh16/Leetcode/tree/master/1923-sentence-similarity-iii) |
 | [2095-minimum-number-of-swaps-to-make-the-string-balanced](https://github.com/Suvansh16/Leetcode/tree/master/2095-minimum-number-of-swaps-to-make-the-string-balanced) |
+| [2232-adding-spaces-to-a-string](https://github.com/Suvansh16/Leetcode/tree/master/2232-adding-spaces-to-a-string) |
 | [2364-longest-path-with-different-adjacent-characters](https://github.com/Suvansh16/Leetcode/tree/master/2364-longest-path-with-different-adjacent-characters) |
 | [2494-sum-of-prefix-scores-of-strings](https://github.com/Suvansh16/Leetcode/tree/master/2494-sum-of-prefix-scores-of-strings) |
 | [2580-circular-sentence](https://github.com/Suvansh16/Leetcode/tree/master/2580-circular-sentence) |
@@ -538,6 +541,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1923-sentence-similarity-iii](https://github.com/Suvansh16/Leetcode/tree/master/1923-sentence-similarity-iii) |
 | [1972-rotating-the-box](https://github.com/Suvansh16/Leetcode/tree/master/1972-rotating-the-box) |
 | [2095-minimum-number-of-swaps-to-make-the-string-balanced](https://github.com/Suvansh16/Leetcode/tree/master/2095-minimum-number-of-swaps-to-make-the-string-balanced) |
+| [2232-adding-spaces-to-a-string](https://github.com/Suvansh16/Leetcode/tree/master/2232-adding-spaces-to-a-string) |
 | [2488-divide-intervals-into-minimum-number-of-groups](https://github.com/Suvansh16/Leetcode/tree/master/2488-divide-intervals-into-minimum-number-of-groups) |
 | [2699-count-the-number-of-fair-pairs](https://github.com/Suvansh16/Leetcode/tree/master/2699-count-the-number-of-fair-pairs) |
 | [3195-separate-black-and-white-balls](https://github.com/Suvansh16/Leetcode/tree/master/3195-separate-black-and-white-balls) |
