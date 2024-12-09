@@ -1,36 +1,32 @@
 class Solution {
 public:
     vector<bool> isArraySpecial(vector<int>& nums, vector<vector<int>>& queries) {
-        vector<int>v;
         vector<bool>ans;
-        int sum=0;
-        for(int i=0;i<nums.size();i++)
+        vector<int>validindex;
+        int i=0;int j=0;
+        int n=nums.size();
+        while(i<n)
         {
-          if(i==0)
-          v.push_back(sum);
-          else
-          {
-            bool a=(nums[i]%2==0);
-            bool b=(nums[i-1]%2==0);
-            if(a==b)
+            if(j<i)
             {
-                sum+=1;
-                v.push_back(sum);
+                j=i;
             }
-            else
-            v.push_back(sum);
-          }
+            while(j+1<n && nums[j]%2 !=nums[j+1]%2)
+            {
+                j++;
+            }
+            validindex.push_back(j);
+            i++;
         }
         for(int i=0;i<queries.size();i++)
         {
             int a=queries[i][0];
             int b=queries[i][1];
-            if(v[b]-v[a]==0)
-            {
-                ans.push_back(true);
-            }
+            if(validindex[a]>=b)
+            ans.push_back(true);
             else
             ans.push_back(false);
+
         }
         return ans;
 
