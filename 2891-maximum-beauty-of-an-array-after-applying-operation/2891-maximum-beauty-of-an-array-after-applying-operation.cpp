@@ -10,15 +10,15 @@ public:
 
         sort(intervals.begin(),intervals.end());
 
-        deque<pair<int,int>>dq;
+        deque<int>dq;
         int countmax=0;
         for(auto i:intervals)
         {
-            while(!dq.empty() && dq.front().second<i.first)
+            while(!dq.empty() && dq.front()<i.first)
             {
                 dq.pop_front();
             }
-            dq.push_back({i.first,i.second});
+            dq.push_back(i.second);
             countmax=max(countmax,(int)dq.size());
         }
         return countmax;
