@@ -1,25 +1,19 @@
 class Solution {
 public:
     int maximumBeauty(vector<int>& nums, int k) {
-        vector<pair<int,int>>intervals;
-        for(int i=0;i<nums.size();i++)
-        {
-            intervals.push_back({nums[i]-k,nums[i]+k});
-
-        }
-
-        sort(intervals.begin(),intervals.end());
-
-        deque<int>dq;
+        sort(nums.begin(),nums.end());
+        int j=0,i=0;
         int countmax=0;
-        for(auto i:intervals)
+        int n=nums.size();
+       while(i<n)
         {
-            while(!dq.empty() && dq.front()<i.first)
+            while(j<n && nums[j]<=nums[i]+2*k)
             {
-                dq.pop_front();
+                j++;
             }
-            dq.push_back(i.second);
-            countmax=max(countmax,(int)dq.size());
+            countmax=max(countmax,j-i);
+            i++;
+
         }
         return countmax;
     }
