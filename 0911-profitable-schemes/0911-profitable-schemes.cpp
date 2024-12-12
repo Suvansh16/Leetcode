@@ -2,21 +2,28 @@ class Solution {
 public:
 const int mod=1e9+7;
 int dp[101][101][101];
-int solve(int n,int minProfit,vector<int>&group,vector<int>&profit,int idx)
+int solve(int n,int minprofit,vector<pair<int,int>>&gp,int start,int profit)
 {
-    if(idx>=profit.size())
-    return minProfit<=0?1:0;
-    if(dp[n][minProfit][idx]!=-1)
-    return dp[n][minProfit][idx];
-    int nottaken=solve(n,minProfit,group,profit,idx+1)%mod;
-    int taken=0;
-    if(n>=group[idx])
-    taken=(solve(n-group[idx],max(0,minProfit-profit[idx]),group,profit,idx+1))%mod;
-    return dp[n][minProfit][idx]=(taken+nottaken)%mod;
-
+    if(start>=gp.size() && profit>=minprofit)
+    return 1;
+      if(start>=gp.size() && profit<minprofit)
+    return 0;
+    if(dp[n][start][profit]!=-1)
+    return dp[n][start][profit];
+    int take=0,nottake=0;
+    if(n>=gp[start].first)
+    take=solve(n-gp[start].first,minprofit,gp,start+1,min(minprofit,profit+gp[start].second));
+    nottake=solve(n,minprofit,gp,start+1,profit);
+    return dp[n][start][profit]=(take%mod+nottake%mod)%mod;
 }
     int profitableSchemes(int n, int minProfit, vector<int>& group, vector<int>& profit) {
+        vector<pair<int,int>>gp;
+        for(int i=0;i<group.size();i++)
+        {
+            gp.push_back({group[i],profit[i]});
+        }
+        sort(gp.begin(),gp.end());
         memset(dp,-1,sizeof(dp));
-       return  solve(n,minProfit,group,profit,0);
+       return  solve(n,minProfit,gp,0,0);
     }
 };
