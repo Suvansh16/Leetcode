@@ -1,26 +1,24 @@
 class Solution {
 public:
-int l,h,z,o;
 const int mod=1e9+7;
-int solve(int len,vector<int>&dp)
-{
-    if(len>h)
-    return 0;
-    if(dp[len]!=-1)
-    return dp[len];
-    int add=0;
-    if(len>=l && len<=h)
-    add=1;
-    int m=solve(len+z,dp)%mod;
-    int n=solve(len+o,dp)%mod;
-    return dp[len]=(add+m+n)%mod;
-}
     int countGoodStrings(int low, int high, int zero, int one) {
-        l=low;
-        h=high;
-        z=zero;
-        o=one;
-        vector<int>dp(1e5+1,-1);
-        return solve(0,dp);
+        vector<int>dp(high+1,0);
+        dp[0]=1;
+        for(int i=1;i<=high;i++)
+        {
+             if(i-zero>=0)
+            dp[i]=(dp[i]%mod+dp[i-zero]%mod)%mod;
+            if(i-one>=0)
+            {
+                dp[i]=(dp[i]%mod+dp[i-one]%mod)%mod;
+            }
+           
+        }
+        int ans=0;
+        for(int i=low;i<=high;i++)
+        {
+            ans=(ans%mod+dp[i]%mod)%mod;
+        }
+        return ans;
     }
 };
