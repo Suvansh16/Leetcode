@@ -46,6 +46,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1522-stone-game-iii](https://github.com/Suvansh16/Leetcode/tree/master/1522-stone-game-iii) |
 | [1570-final-prices-with-a-special-discount-in-a-shop](https://github.com/Suvansh16/Leetcode/tree/master/1570-final-prices-with-a-special-discount-in-a-shop) |
 | [1620-check-if-array-pairs-are-divisible-by-k](https://github.com/Suvansh16/Leetcode/tree/master/1620-check-if-array-pairs-are-divisible-by-k) |
+| [1669-minimum-cost-to-cut-a-stick](https://github.com/Suvansh16/Leetcode/tree/master/1669-minimum-cost-to-cut-a-stick) |
 | [1679-shortest-subarray-to-be-removed-to-make-array-sorted](https://github.com/Suvansh16/Leetcode/tree/master/1679-shortest-subarray-to-be-removed-to-make-array-sorted) |
 | [1694-make-sum-divisible-by-p](https://github.com/Suvansh16/Leetcode/tree/master/1694-make-sum-divisible-by-p) |
 | [1744-number-of-ways-to-form-a-target-string-given-a-dictionary](https://github.com/Suvansh16/Leetcode/tree/master/1744-number-of-ways-to-form-a-target-string-given-a-dictionary) |
@@ -186,6 +187,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1503-reducing-dishes](https://github.com/Suvansh16/Leetcode/tree/master/1503-reducing-dishes) |
 | [1517-restore-the-array](https://github.com/Suvansh16/Leetcode/tree/master/1517-restore-the-array) |
 | [1522-stone-game-iii](https://github.com/Suvansh16/Leetcode/tree/master/1522-stone-game-iii) |
+| [1669-minimum-cost-to-cut-a-stick](https://github.com/Suvansh16/Leetcode/tree/master/1669-minimum-cost-to-cut-a-stick) |
 | [1744-number-of-ways-to-form-a-target-string-given-a-dictionary](https://github.com/Suvansh16/Leetcode/tree/master/1744-number-of-ways-to-form-a-target-string-given-a-dictionary) |
 | [2164-two-best-non-overlapping-events](https://github.com/Suvansh16/Leetcode/tree/master/2164-two-best-non-overlapping-events) |
 | [2176-parallel-courses-iii](https://github.com/Suvansh16/Leetcode/tree/master/2176-parallel-courses-iii) |
@@ -390,6 +392,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0539-minimum-time-difference](https://github.com/Suvansh16/Leetcode/tree/master/0539-minimum-time-difference) |
 | [1352-maximum-profit-in-job-scheduling](https://github.com/Suvansh16/Leetcode/tree/master/1352-maximum-profit-in-job-scheduling) |
 | [1503-reducing-dishes](https://github.com/Suvansh16/Leetcode/tree/master/1503-reducing-dishes) |
+| [1669-minimum-cost-to-cut-a-stick](https://github.com/Suvansh16/Leetcode/tree/master/1669-minimum-cost-to-cut-a-stick) |
 | [1815-checking-existence-of-edge-length-limited-paths](https://github.com/Suvansh16/Leetcode/tree/master/1815-checking-existence-of-edge-length-limited-paths) |
 | [2164-two-best-non-overlapping-events](https://github.com/Suvansh16/Leetcode/tree/master/2164-two-best-non-overlapping-events) |
 | [2488-divide-intervals-into-minimum-number-of-groups](https://github.com/Suvansh16/Leetcode/tree/master/2488-divide-intervals-into-minimum-number-of-groups) |
