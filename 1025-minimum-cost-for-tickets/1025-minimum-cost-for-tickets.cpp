@@ -1,31 +1,28 @@
 class Solution {
 public:
+int solve(int start,vector<int>&days,vector<int>&costs,vector<int>&dp)
+{
+    if(start>=days.size())
+    return 0;
+    if(dp[start]!=-1)
+    return dp[start];
+    int a=costs[0]+solve(start+1,days,costs,dp);
+    int m=start;
+    int s=days[m]+7;
+    while( m<days.size() && s>days[m])
+    m++;
+    int b=costs[1]+solve(m,days,costs,dp);
+     int n=start;
+    int p=days[n]+30;
+    while( n<days.size() && p>days[n])
+    n++;
+    int c=costs[2]+solve(n,days,costs,dp);
+
+
+    return dp[start]=min({a,b,c});
+}
     int mincostTickets(vector<int>& days, vector<int>& costs) {
-        vector<int>dp(days.size()+1,0);
-        dp[0]=0;
-        for(int i=1;i<=days.size();i++)
-        {
-            int cost1=costs[0]+dp[i-1];
-            int l=days[i-1];
-            int idx=i-1;
-
-            while(idx>=0 && days[idx]>(l-7))
-            {
-                idx--;
-            }
-
-            int cost2=costs[1]+dp[idx+1];
-            idx=i-1;
-             while(idx>=0 && days[idx]>(l-30))
-            {
-                idx--;
-            }
-            int cost3=dp[idx+1]+costs[2];
-            dp[i]=min({cost1,cost2,cost3});
-
-
-
-        }
-        return dp[days.size()];
+        vector<int>dp(366,-1);
+        return solve(0,days,costs,dp);
     }
 };
