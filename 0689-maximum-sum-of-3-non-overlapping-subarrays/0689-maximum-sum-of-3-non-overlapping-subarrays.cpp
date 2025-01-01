@@ -1,45 +1,43 @@
 class Solution {
 public:
 int t[20001][4];
-int helper(vector<int>&sums,int k,int idx,int rem)
+int helper(vector<int>&sums,int i,int count,int k)
 {
-    if(rem==0)
+    if(count==0)
     return 0;
-    if(idx>=sums.size())
+    if(i>=sums.size())
     return INT_MIN;
-    if(t[idx][rem]!=-1)
-    return t[idx][rem];
-    int take=sums[idx]+helper(sums,k,idx+k,rem-1);
-    int nottake=helper(sums,k,idx+1,rem);
-    t[idx][rem]=max(take,nottake);
-    return t[idx][rem];
+    if(t[i][count]!=-1)
+    return t[i][count];
+    int take=sums[i]+helper(sums,i+k,count-1,k);
+    int nottake=helper(sums,i+1,count,k);
+    return t[i][count]=max(take,nottake);
 }
-void solve(vector<int>&sums,int k,int idx,int rem,vector<int>&indices)
+void solve(vector<int>&sums,int start,int count,vector<int>&indices,int k)
 {
-    if(rem==0)
+    if(count==0)
     return ;
-    if(idx>=sums.size())
+    if(start>=sums.size())
     return ;
-    int take=sums[idx]+helper(sums,k,idx+k,rem-1);
-    int nottake=helper(sums,k,idx+1,rem);
+    int take=sums[start]+helper(sums,start+k,count-1,k);
+    int nottake=helper(sums,start+1,count,k);
     if(take>=nottake)
     {
-        indices.push_back(idx);
-        solve(sums,k,idx+k,rem-1,indices);
+        indices.push_back(start);
+        solve(sums,start+k,count-1,indices,k);
+
     }
     else
     {
-        solve(sums,k,idx+1,rem,indices);
+        solve(sums,start+1,count,indices,k);
     }
-    
 }
     vector<int> maxSumOfThreeSubarrays(vector<int>& nums, int k) {
-        int n=nums.size();
-        memset(t,-1,sizeof(t));
+        vector<int>sums;
         int i=0;
         int j=0;
         int windowsum=0;
-        vector<int>sums;
+        memset(t,-1,sizeof(t));
         while(j<nums.size())
         {
             windowsum+=nums[j];
@@ -52,8 +50,7 @@ void solve(vector<int>&sums,int k,int idx,int rem,vector<int>&indices)
             j++;
         }
         vector<int>indices;
-        solve(sums,k,0,3,indices);
+        solve(sums,0,3,indices,k);
         return indices;
-
     }
 };
