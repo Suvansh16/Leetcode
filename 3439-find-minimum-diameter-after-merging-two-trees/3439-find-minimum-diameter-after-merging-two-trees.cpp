@@ -1,33 +1,64 @@
 class Solution {
 public:
-    int minimumDiameterAfterMerge(vector<vector<int>>& edges1, vector<vector<int>>& edges2) {
-        int d1 = treeDiameter(edges1);
-        int d2 = treeDiameter(edges2);
-        return max({d1, d2, (d1 + 1) / 2 + (d2 + 1) / 2 + 1});
-    }
-
-    int treeDiameter(vector<vector<int>>& edges) {
-        int n = edges.size() + 1;
-        vector<int> g[n];
-        for (auto& e : edges) {
-            int a = e[0], b = e[1];
-            g[a].push_back(b);
-            g[b].push_back(a);
-        }
-        int ans = 0, a = 0;
-        auto dfs = [&](this auto&& dfs, int i, int fa, int t) -> void {
-            for (int j : g[i]) {
-                if (j != fa) {
-                    dfs(j, i, t + 1);
+pair<int,int>BFS(unordered_map<int,vector<int>>&map,int node)
+{
+    int farthestnode=0;
+    int diameter=0;
+    queue<int>q;
+    q.push(node);
+    unordered_map<int,bool>visited;
+    visited[node]=true;
+    while(!q.empty())
+    {
+        int size=q.size();
+        while(size--)
+        {
+            int curr=q.front();
+            farthestnode=curr;
+            q.pop();
+            for(auto &ngbr:map[curr])
+            {
+                if(visited[ngbr]==false)
+                {
+                    q.push(ngbr);
+                    visited[ngbr]=true;
                 }
             }
-            if (ans < t) {
-                ans = t;
-                a = i;
-            }
-        };
-        dfs(0, -1, 0);
-        dfs(a, -1, 0);
-        return ans;
+        }
+        if(!q.empty())
+        {
+            diameter++;
+        }
+    }   
+    return {farthestnode,diameter};
+}
+int finddia(unordered_map<int,vector<int>>map)
+{
+ //step-1 find the farthest node from a random node - 0   
+    auto [farthestnode,dist]=BFS(map,0);
+      //step-2 : the farthestNode we got above is nothing but one end of the diameter of adj
+
+        //step-3 : Find the farthestnode from the node we got above , that will be the other end of diameter - diameter
+    auto[othernode,diameter]=BFS(map,farthestnode);
+    return diameter;
+}
+unordered_map<int,vector<int>>buildadj(vector<vector<int>>& edges1)
+{
+    unordered_map<int,vector<int>>map;
+    for(auto &v:edges1)
+    {
+        map[v[0]].push_back(v[1]);
+        map[v[1]].push_back(v[0]);
+    }
+    return map;
+}
+    int minimumDiameterAfterMerge(vector<vector<int>>& edges1, vector<vector<int>>& edges2) {
+        unordered_map<int,vector<int>>map1=buildadj(edges1);
+        unordered_map<int,vector<int>>map2=buildadj(edges2);
+
+        int dia1=finddia(map1);
+        int dia2=finddia(map2);
+
+        return max({dia1,dia2,((dia1+1)/2) + ((dia2+1)/2) +1});
     }
 };
