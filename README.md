@@ -33,6 +33,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0966-binary-subarrays-with-sum](https://github.com/Suvansh16/Leetcode/tree/master/0966-binary-subarrays-with-sum) |
 | [0967-minimum-falling-path-sum](https://github.com/Suvansh16/Leetcode/tree/master/0967-minimum-falling-path-sum) |
 | [0983-validate-stack-sequences](https://github.com/Suvansh16/Leetcode/tree/master/0983-validate-stack-sequences) |
+| [0993-tallest-billboard](https://github.com/Suvansh16/Leetcode/tree/master/0993-tallest-billboard) |
 | [1025-minimum-cost-for-tickets](https://github.com/Suvansh16/Leetcode/tree/master/1025-minimum-cost-for-tickets) |
 | [1032-satisfiability-of-equality-equations](https://github.com/Suvansh16/Leetcode/tree/master/1032-satisfiability-of-equality-equations) |
 | [1063-best-sightseeing-pair](https://github.com/Suvansh16/Leetcode/tree/master/1063-best-sightseeing-pair) |
@@ -188,6 +189,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0911-profitable-schemes](https://github.com/Suvansh16/Leetcode/tree/master/0911-profitable-schemes) |
 | [0962-flip-string-to-monotone-increasing](https://github.com/Suvansh16/Leetcode/tree/master/0962-flip-string-to-monotone-increasing) |
 | [0967-minimum-falling-path-sum](https://github.com/Suvansh16/Leetcode/tree/master/0967-minimum-falling-path-sum) |
+| [0993-tallest-billboard](https://github.com/Suvansh16/Leetcode/tree/master/0993-tallest-billboard) |
 | [1025-minimum-cost-for-tickets](https://github.com/Suvansh16/Leetcode/tree/master/1025-minimum-cost-for-tickets) |
 | [1063-best-sightseeing-pair](https://github.com/Suvansh16/Leetcode/tree/master/1063-best-sightseeing-pair) |
 | [1105-uncrossed-lines](https://github.com/Suvansh16/Leetcode/tree/master/1105-uncrossed-lines) |
