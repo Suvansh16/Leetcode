@@ -1,29 +1,38 @@
+//Approach-2 (Using Recursion + Memo) using Binary Search for next event - T.C. - O(n⋅k⋅log(n))
 class Solution {
 public:
-int solve(int start,vector<vector<int>>&events,int k,vector<vector<int>>&dp){
-if(k<=0)
-return 0;
-if(start>=events.size())
-return 0;
-if(dp[start][k]!=-1)
-return dp[start][k];
-//find the next event which we can attend
-int j=start+1;
-for(;j<events.size();j++)
-{
-    if(events[j][0]>events[start][1])
-    {
-        break;
+    int n;
+    vector<vector<int>> t;
+    int solve(vector<vector<int>>& events, int i, int k) {
+        
+        if(k <= 0 || i >= n)
+            return 0;
+        
+        int start = events[i][0];
+        int endt   = events[i][1];
+        int value = events[i][2];
+        
+        if(t[i][k] != -1)
+            return t[i][k];
+        
+        // finding the next event which we can attend
+        vector<int> temp = {endt, INT_MAX, INT_MAX};
+        int j = upper_bound(events.begin(), events.end(), temp) - events.begin();
+        
+        int take = value + solve(events, j, k-1);
+        int skip = solve(events, i+1, k);
+        
+        return t[i][k] = max(take, skip);
+        
     }
-}
-
-int doing=events[start][2]+solve(j,events,k-1,dp);
-int notdo=solve(start+1,events,k,dp);
-return dp[start][k]=max(doing,notdo);
-}
+    
     int maxValue(vector<vector<int>>& events, int k) {
-        sort(events.begin(),events.end());
-        vector<vector<int>>dp(events.size()+1,vector<int>(k+1,-1));
-        return solve(0,events,k,dp);
+        sort(begin(events), end(events));
+        
+        n = events.size();
+        
+        t.resize(n+1, vector<int>(k+1, -1));
+        
+        return solve(events, 0, k);
     }
 };
