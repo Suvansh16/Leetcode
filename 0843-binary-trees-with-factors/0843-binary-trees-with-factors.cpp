@@ -1,25 +1,51 @@
 class Solution {
 public:
-    int numFactoredBinaryTrees(vector<int>& arr) {
-        const int MOD = 1e9 + 7;
-        sort(arr.begin(), arr.end());
-        
-        unordered_map<int, long long> dp;  // Store number of trees rooted at each element
-        for (int num : arr) dp[num] = 1;   // Each number alone is a valid tree
-        
-        for (int i = 0; i < arr.size(); i++) {
+    int numFactoredBinaryTrees(vector<int>& v) {
+        sort(v.begin(), v.end());
+        unordered_map<int, long long> dp;
+        unordered_set<int> s(v.begin(), v.end());
+        long long mod = 1e9 + 7;
+        long long ans = 0;
+
+        for (int i = 0; i < v.size(); i++) {
+            dp[v[i]] = 1; // Each element can be a single-node tree
             for (int j = 0; j < i; j++) {
-                if (arr[i] % arr[j] == 0) {  // arr[j] is a factor
-                    int right = arr[i] / arr[j];
-                    if (dp.find(right) != dp.end()) {  // right must also exist in arr
-                        dp[arr[i]] = (dp[arr[i]] + dp[arr[j]] * dp[right]) % MOD;
+                if (v[i] % v[j] == 0) { // v[j] is a factor
+                    int x = v[i] / v[j];
+                    if (s.count(x)) { // Ensure the other factor is present in the array
+                        dp[v[i]] = (dp[v[i]] + (dp[v[j]] * dp[x])) ;
                     }
                 }
             }
+            ans = (ans + dp[v[i]]) % mod;
         }
-        
-        long long ans = 0;
-        for (auto& [key, val] : dp) ans = (ans + val) % MOD;
         return ans;
     }
 };
+
+
+// class Solution {
+// public:
+//     int numFactoredBinaryTrees(vector<int>& v) {
+//         unordered_set<int>s;
+//         sort(v.begin(),v.end());
+//         for (auto it:v){
+//             s.insert(it);
+//         }
+//         int op=0;
+//         unordered_map<int,int>m;
+//         int ans=0;
+//         for (int i =0;i<v.size();i++){
+//             for (int j=0;j<v.size();j++){
+//                 int x= v[i]/v[j];
+//                 int m=v[i]%v[j];
+//                 if (m.find(v[i])!=m.end()) ans+=m[v[i]];
+//                 if (m.find(v[j])!=m.end()) ans+=m[v[j]];
+//                 if (s.find(x)!=s.end() && m==0) ans++;
+//             }
+//             op+=ans;
+//             m[x]=ans;
+//         }
+//         return op+v.size();
+//     }
+// };
