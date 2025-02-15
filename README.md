@@ -450,6 +450,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1477-product-of-the-last-k-numbers](https://github.com/Suvansh16/Leetcode/tree/master/1477-product-of-the-last-k-numbers) |
 | [1522-stone-game-iii](https://github.com/Suvansh16/Leetcode/tree/master/1522-stone-game-iii) |
 | [2206-detonate-the-maximum-bombs](https://github.com/Suvansh16/Leetcode/tree/master/2206-detonate-the-maximum-bombs) |
+| [2802-find-the-punishment-number-of-an-integer](https://github.com/Suvansh16/Leetcode/tree/master/2802-find-the-punishment-number-of-an-integer) |
 | [3555-final-array-state-after-k-multiplication-operations-i](https://github.com/Suvansh16/Leetcode/tree/master/3555-final-array-state-after-k-multiplication-operations-i) |
 ## Sorting
 |  |
@@ -673,6 +674,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1360-maximum-length-of-a-concatenated-string-with-unique-characters](https://github.com/Suvansh16/Leetcode/tree/master/1360-maximum-length-of-a-concatenated-string-with-unique-characters) |
 | [1715-split-a-string-into-the-max-number-of-unique-substrings](https://github.com/Suvansh16/Leetcode/tree/master/1715-split-a-string-into-the-max-number-of-unique-substrings) |
 | [2170-count-number-of-maximum-bitwise-or-subsets](https://github.com/Suvansh16/Leetcode/tree/master/2170-count-number-of-maximum-bitwise-or-subsets) |
+| [2802-find-the-punishment-number-of-an-integer](https://github.com/Suvansh16/Leetcode/tree/master/2802-find-the-punishment-number-of-an-integer) |
 ## Queue
 |  |
 | ------- |
