@@ -6,7 +6,7 @@ bool midpossible(long long mid,vector<int>&ranks,int cars)
     for(int i=0;i<ranks.size();i++)
     {
         long long c=mid/ranks[i];
-        carsdone+=floor(sqrt(c));
+        carsdone+=sqrt(c);
     }
     return carsdone>=cars;
 }
