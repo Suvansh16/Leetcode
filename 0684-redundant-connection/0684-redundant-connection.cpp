@@ -1,38 +1,55 @@
-class Solution {
+class DSU {
 public:
-bool bfs(unordered_map<int,vector<int>>&adj,int a,int b, vector<bool>&visited)
+vector<int>parent;
+vector<int>rank;
+DSU(int n)
 {
- queue<int>q;
- q.push(a);
- while(!q.empty())
- {
-    int curr=q.front();
-    q.pop();
-    visited[curr]=true;
-    if(curr==b)
-    return true;
-    for(int &i:adj[curr])
+    parent.resize(n+1);
+    rank.resize(n+1);
+    for(int i=1;i<=n;i++)
     {
-        if(!visited[i])
-        q.push(i);
-
+        parent[i]=i;
+        rank[i]=0;
     }
-
- }  
- return false; 
 }
+int find(int x)
+{
+    if(parent[x]==x)
+    return x;
+    return parent[x]=find(parent[x]);
+}
+void Union(int a,int b)
+{
+int x_parent=find(a);
+int y_parent=find(b);
+if(x_parent==y_parent)
+return ;
+if(rank[x_parent]>rank[y_parent])
+{
+    parent[y_parent]=x_parent;
+}
+else if(rank[y_parent]>rank[x_parent]){
+     parent[x_parent]=y_parent;
+}
+else
+{
+    parent[y_parent]=x_parent;
+    rank[x_parent]++;
+}
+}
+};
+class Solution{
+    public:
     vector<int> findRedundantConnection(vector<vector<int>>& edges) {
         int n=edges.size();
-        unordered_map<int,vector<int>>adj;
-        for(vector<int>&e:edges)
+        DSU dsu(n);
+        for(auto &edge:edges)
         {
-            int a=e[0];
-            int b=e[1];
-            vector<bool>visited(n+1,false);
-            if(adj.find(a)!=adj.end() && adj.find(b)!=adj.end() && bfs(adj,a,b,visited))
-            return e; 
-            adj[a].push_back(b);
-            adj[b].push_back(a);
+            int u=edge[0];
+            int v=edge[1];
+            if(dsu.find(u)==dsu.find(v))
+            return edge;
+            dsu.Union(u,v);
         }
         return {};
     }
