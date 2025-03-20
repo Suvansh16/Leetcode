@@ -1,55 +1,57 @@
 class Solution {
 public:
-vector<int>parent;
-int find(int x)
-{
-    if(parent[x]==x)
-    return x;
-    return parent[x]=find(parent[x]);
-}
-void Union(int x,int y)
-{
-    parent[y]=x;
-}
+    vector<int> parent, rank, cost;
+
+    int find(int x) {
+        if (parent[x] != x)
+            parent[x] = find(parent[x]);  // Path compression
+        return parent[x];
+    }
+
+    void Union(int x, int y, int edge_cost) {
+        int rootX = find(x);
+        int rootY = find(y);
+
+        if (rootX != rootY) {
+            if (rank[rootX] > rank[rootY]) {
+                parent[rootY] = rootX;
+                cost[rootX] &= cost[rootY];
+            } else if (rank[rootX] < rank[rootY]) {
+                parent[rootX] = rootY;
+                cost[rootY] &= cost[rootX];
+            } else {
+                parent[rootY] = rootX;
+                cost[rootX] &= cost[rootY];
+                rank[rootX]++;  // Increase rank only when merging equal rank sets
+            }
+        }
+        cost[find(x)] &= edge_cost;  // Update the cost of the new representative
+    }
+
     vector<int> minimumCost(int n, vector<vector<int>>& edges, vector<vector<int>>& query) {
         parent.resize(n);
-        vector<int>cost(n);
-        vector<int>result;
-        for(int i=0;i<n;i++)
-        {
-            parent[i]=i;
-            cost[i]=-1;
+        rank.resize(n, 1);
+        cost.resize(n, -1);
+        
+        for (int i = 0; i < n; i++) {
+            parent[i] = i;
         }
-        for(int i=0;i<edges.size();i++)
-        {
-            int a=edges[i][0];
-            int b=edges[i][1];
-            int c=edges[i][2];
-            int par_a=find(a);
-            int par_b=find(b);
-            if(par_a!=par_b)
-            {
-                 cost[par_a]&=cost[par_b];
-                Union(par_a,par_b);
-               
-            }
-            cost[par_a]&=c;
+
+        for (auto& edge : edges) {
+            int a = edge[0], b = edge[1], c = edge[2];
+            Union(a, b, c);
         }
-        for(int i=0;i<query.size();i++)
-        {
-            int a=query[i][0];
-            int b=query[i][1];
-            int par_a=find(a);
-            int par_b=find(b);
-            if(a==b)
-            result.push_back(0);
-            else if(par_a!=par_b)
-            {
+
+        vector<int> result;
+        for (auto& q : query) {
+            int a = q[0], b = q[1];
+            if (a == b) {
+                result.push_back(0);
+            } else if (find(a) != find(b)) {
                 result.push_back(-1);
-               
+            } else {
+                result.push_back(cost[find(a)]);
             }
-            else
-             result.push_back(cost[par_a]);
         }
         return result;
     }
