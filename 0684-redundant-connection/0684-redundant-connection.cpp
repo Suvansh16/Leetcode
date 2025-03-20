@@ -1,22 +1,26 @@
 class Solution {
 public:
-bool dfs(unordered_map<int,vector<int>>&adj,int a,int b, vector<bool>&visited)
+bool bfs(unordered_map<int,vector<int>>&adj,int a,int b, vector<bool>&visited)
 {
-    if(a==b)
+ queue<int>q;
+ q.push(a);
+ while(!q.empty())
+ {
+    int curr=q.front();
+    q.pop();
+    visited[curr]=true;
+    if(curr==b)
     return true;
-    visited[a]=true;
-    for(int &i:adj[a])
+    for(int &i:adj[curr])
     {
         if(!visited[i])
-        {
-            if(dfs(adj,i,b,visited))
-            return true;
-        }
+        q.push(i);
 
     }
-    return false;
-}
 
+ }  
+ return false; 
+}
     vector<int> findRedundantConnection(vector<vector<int>>& edges) {
         int n=edges.size();
         unordered_map<int,vector<int>>adj;
@@ -25,7 +29,7 @@ bool dfs(unordered_map<int,vector<int>>&adj,int a,int b, vector<bool>&visited)
             int a=e[0];
             int b=e[1];
             vector<bool>visited(n+1,false);
-            if(adj.find(a)!=adj.end() && adj.find(b)!=adj.end() && dfs(adj,a,b,visited))
+            if(adj.find(a)!=adj.end() && adj.find(b)!=adj.end() && bfs(adj,a,b,visited))
             return e; 
             adj[a].push_back(b);
             adj[b].push_back(a);
