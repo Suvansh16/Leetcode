@@ -241,6 +241,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1680-count-all-possible-routes](https://github.com/Suvansh16/Leetcode/tree/master/1680-count-all-possible-routes) |
 | [1744-number-of-ways-to-form-a-target-string-given-a-dictionary](https://github.com/Suvansh16/Leetcode/tree/master/1744-number-of-ways-to-form-a-target-string-given-a-dictionary) |
 | [1851-maximum-number-of-events-that-can-be-attended-ii](https://github.com/Suvansh16/Leetcode/tree/master/1851-maximum-number-of-events-that-can-be-attended-ii) |
+| [2090-number-of-ways-to-arrive-at-destination](https://github.com/Suvansh16/Leetcode/tree/master/2090-number-of-ways-to-arrive-at-destination) |
 | [2164-two-best-non-overlapping-events](https://github.com/Suvansh16/Leetcode/tree/master/2164-two-best-non-overlapping-events) |
 | [2176-parallel-courses-iii](https://github.com/Suvansh16/Leetcode/tree/master/2176-parallel-courses-iii) |
 | [2262-solving-questions-with-brainpower](https://github.com/Suvansh16/Leetcode/tree/master/2262-solving-questions-with-brainpower) |
@@ -617,6 +618,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1738-maximal-network-rank](https://github.com/Suvansh16/Leetcode/tree/master/1738-maximal-network-rank) |
 | [1815-checking-existence-of-edge-length-limited-paths](https://github.com/Suvansh16/Leetcode/tree/master/1815-checking-existence-of-edge-length-limited-paths) |
 | [1916-find-center-of-star-graph](https://github.com/Suvansh16/Leetcode/tree/master/1916-find-center-of-star-graph) |
+| [2090-number-of-ways-to-arrive-at-destination](https://github.com/Suvansh16/Leetcode/tree/master/2090-number-of-ways-to-arrive-at-destination) |
 | [2121-find-if-path-exists-in-graph](https://github.com/Suvansh16/Leetcode/tree/master/2121-find-if-path-exists-in-graph) |
 | [2176-parallel-courses-iii](https://github.com/Suvansh16/Leetcode/tree/master/2176-parallel-courses-iii) |
 | [2201-valid-arrangement-of-pairs](https://github.com/Suvansh16/Leetcode/tree/master/2201-valid-arrangement-of-pairs) |
@@ -641,6 +643,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0207-course-schedule](https://github.com/Suvansh16/Leetcode/tree/master/0207-course-schedule) |
 | [0210-course-schedule-ii](https://github.com/Suvansh16/Leetcode/tree/master/0210-course-schedule-ii) |
 | [0820-find-eventual-safe-states](https://github.com/Suvansh16/Leetcode/tree/master/0820-find-eventual-safe-states) |
+| [2090-number-of-ways-to-arrive-at-destination](https://github.com/Suvansh16/Leetcode/tree/master/2090-number-of-ways-to-arrive-at-destination) |
 | [2176-parallel-courses-iii](https://github.com/Suvansh16/Leetcode/tree/master/2176-parallel-courses-iii) |
 | [2364-longest-path-with-different-adjacent-characters](https://github.com/Suvansh16/Leetcode/tree/master/2364-longest-path-with-different-adjacent-characters) |
 | [2409-number-of-increasing-paths-in-a-grid](https://github.com/Suvansh16/Leetcode/tree/master/2409-number-of-increasing-paths-in-a-grid) |
@@ -777,6 +780,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0399-evaluate-division](https://github.com/Suvansh16/Leetcode/tree/master/0399-evaluate-division) |
+| [2090-number-of-ways-to-arrive-at-destination](https://github.com/Suvansh16/Leetcode/tree/master/2090-number-of-ways-to-arrive-at-destination) |
 | [2375-minimum-obstacle-removal-to-reach-corner](https://github.com/Suvansh16/Leetcode/tree/master/2375-minimum-obstacle-removal-to-reach-corner) |
 | [2711-minimum-time-to-visit-a-cell-in-a-grid](https://github.com/Suvansh16/Leetcode/tree/master/2711-minimum-time-to-visit-a-cell-in-a-grid) |
 | [2803-modify-graph-edge-weights](https://github.com/Suvansh16/Leetcode/tree/master/2803-modify-graph-edge-weights) |
