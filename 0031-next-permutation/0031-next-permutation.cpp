@@ -29,7 +29,7 @@ public:
             i--;
         }
         if(flag==true)
-        reverse(nums.begin()+a+1,nums.end());
+        sort(nums.begin()+a+1,nums.end());
         if(flag==false)
         sort(nums.begin(),nums.end());
     }
