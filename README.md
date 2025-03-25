@@ -15,6 +15,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0309-best-time-to-buy-and-sell-stock-with-cooldown](https://github.com/Suvansh16/Leetcode/tree/master/0309-best-time-to-buy-and-sell-stock-with-cooldown) |
 | [0322-coin-change](https://github.com/Suvansh16/Leetcode/tree/master/0322-coin-change) |
 | [0399-evaluate-division](https://github.com/Suvansh16/Leetcode/tree/master/0399-evaluate-division) |
+| [0403-frog-jump](https://github.com/Suvansh16/Leetcode/tree/master/0403-frog-jump) |
 | [0442-find-all-duplicates-in-an-array](https://github.com/Suvansh16/Leetcode/tree/master/0442-find-all-duplicates-in-an-array) |
 | [0494-target-sum](https://github.com/Suvansh16/Leetcode/tree/master/0494-target-sum) |
 | [0539-minimum-time-difference](https://github.com/Suvansh16/Leetcode/tree/master/0539-minimum-time-difference) |
@@ -215,6 +216,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0279-perfect-squares](https://github.com/Suvansh16/Leetcode/tree/master/0279-perfect-squares) |
 | [0309-best-time-to-buy-and-sell-stock-with-cooldown](https://github.com/Suvansh16/Leetcode/tree/master/0309-best-time-to-buy-and-sell-stock-with-cooldown) |
 | [0322-coin-change](https://github.com/Suvansh16/Leetcode/tree/master/0322-coin-change) |
+| [0403-frog-jump](https://github.com/Suvansh16/Leetcode/tree/master/0403-frog-jump) |
 | [0494-target-sum](https://github.com/Suvansh16/Leetcode/tree/master/0494-target-sum) |
 | [0516-longest-palindromic-subsequence](https://github.com/Suvansh16/Leetcode/tree/master/0516-longest-palindromic-subsequence) |
 | [0689-maximum-sum-of-3-non-overlapping-subarrays](https://github.com/Suvansh16/Leetcode/tree/master/0689-maximum-sum-of-3-non-overlapping-subarrays) |
