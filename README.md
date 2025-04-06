@@ -10,6 +10,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0055-jump-game](https://github.com/Suvansh16/Leetcode/tree/master/0055-jump-game) |
 | [0064-minimum-path-sum](https://github.com/Suvansh16/Leetcode/tree/master/0064-minimum-path-sum) |
 | [0090-subsets-ii](https://github.com/Suvansh16/Leetcode/tree/master/0090-subsets-ii) |
+| [0120-triangle](https://github.com/Suvansh16/Leetcode/tree/master/0120-triangle) |
 | [0198-house-robber](https://github.com/Suvansh16/Leetcode/tree/master/0198-house-robber) |
 | [0200-number-of-islands](https://github.com/Suvansh16/Leetcode/tree/master/0200-number-of-islands) |
 | [0212-word-search-ii](https://github.com/Suvansh16/Leetcode/tree/master/0212-word-search-ii) |
@@ -220,6 +221,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0070-climbing-stairs](https://github.com/Suvansh16/Leetcode/tree/master/0070-climbing-stairs) |
 | [0072-edit-distance](https://github.com/Suvansh16/Leetcode/tree/master/0072-edit-distance) |
 | [0087-scramble-string](https://github.com/Suvansh16/Leetcode/tree/master/0087-scramble-string) |
+| [0120-triangle](https://github.com/Suvansh16/Leetcode/tree/master/0120-triangle) |
 | [0198-house-robber](https://github.com/Suvansh16/Leetcode/tree/master/0198-house-robber) |
 | [0241-different-ways-to-add-parentheses](https://github.com/Suvansh16/Leetcode/tree/master/0241-different-ways-to-add-parentheses) |
 | [0279-perfect-squares](https://github.com/Suvansh16/Leetcode/tree/master/0279-perfect-squares) |
