@@ -49,6 +49,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1105-uncrossed-lines](https://github.com/Suvansh16/Leetcode/tree/master/1105-uncrossed-lines) |
 | [1147-flip-columns-for-maximum-number-of-equal-rows](https://github.com/Suvansh16/Leetcode/tree/master/1147-flip-columns-for-maximum-number-of-equal-rows) |
 | [1171-shortest-path-in-binary-matrix](https://github.com/Suvansh16/Leetcode/tree/master/1171-shortest-path-in-binary-matrix) |
+| [1220-smallest-sufficient-team](https://github.com/Suvansh16/Leetcode/tree/master/1220-smallest-sufficient-team) |
 | [1240-stone-game-ii](https://github.com/Suvansh16/Leetcode/tree/master/1240-stone-game-ii) |
 | [1352-maximum-profit-in-job-scheduling](https://github.com/Suvansh16/Leetcode/tree/master/1352-maximum-profit-in-job-scheduling) |
 | [1360-maximum-length-of-a-concatenated-string-with-unique-characters](https://github.com/Suvansh16/Leetcode/tree/master/1360-maximum-length-of-a-concatenated-string-with-unique-characters) |
@@ -246,6 +247,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1025-minimum-cost-for-tickets](https://github.com/Suvansh16/Leetcode/tree/master/1025-minimum-cost-for-tickets) |
 | [1063-best-sightseeing-pair](https://github.com/Suvansh16/Leetcode/tree/master/1063-best-sightseeing-pair) |
 | [1105-uncrossed-lines](https://github.com/Suvansh16/Leetcode/tree/master/1105-uncrossed-lines) |
+| [1220-smallest-sufficient-team](https://github.com/Suvansh16/Leetcode/tree/master/1220-smallest-sufficient-team) |
 | [1240-stone-game-ii](https://github.com/Suvansh16/Leetcode/tree/master/1240-stone-game-ii) |
 | [1250-longest-common-subsequence](https://github.com/Suvansh16/Leetcode/tree/master/1250-longest-common-subsequence) |
 | [1352-maximum-profit-in-job-scheduling](https://github.com/Suvansh16/Leetcode/tree/master/1352-maximum-profit-in-job-scheduling) |
@@ -295,6 +297,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0090-subsets-ii](https://github.com/Suvansh16/Leetcode/tree/master/0090-subsets-ii) |
+| [1220-smallest-sufficient-team](https://github.com/Suvansh16/Leetcode/tree/master/1220-smallest-sufficient-team) |
 | [1360-maximum-length-of-a-concatenated-string-with-unique-characters](https://github.com/Suvansh16/Leetcode/tree/master/1360-maximum-length-of-a-concatenated-string-with-unique-characters) |
 | [1435-xor-queries-of-a-subarray](https://github.com/Suvansh16/Leetcode/tree/master/1435-xor-queries-of-a-subarray) |
 | [1940-maximum-xor-for-each-query](https://github.com/Suvansh16/Leetcode/tree/master/1940-maximum-xor-for-each-query) |
@@ -881,4 +884,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [1993-sum-of-all-subset-xor-totals](https://github.com/Suvansh16/Leetcode/tree/master/1993-sum-of-all-subset-xor-totals) |
+## Bitmask
+|  |
+| ------- |
+| [1220-smallest-sufficient-team](https://github.com/Suvansh16/Leetcode/tree/master/1220-smallest-sufficient-team) |
 <!---LeetCode Topics End-->
