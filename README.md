@@ -19,6 +19,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0368-largest-divisible-subset](https://github.com/Suvansh16/Leetcode/tree/master/0368-largest-divisible-subset) |
 | [0399-evaluate-division](https://github.com/Suvansh16/Leetcode/tree/master/0399-evaluate-division) |
 | [0403-frog-jump](https://github.com/Suvansh16/Leetcode/tree/master/0403-frog-jump) |
+| [0416-partition-equal-subset-sum](https://github.com/Suvansh16/Leetcode/tree/master/0416-partition-equal-subset-sum) |
 | [0442-find-all-duplicates-in-an-array](https://github.com/Suvansh16/Leetcode/tree/master/0442-find-all-duplicates-in-an-array) |
 | [0494-target-sum](https://github.com/Suvansh16/Leetcode/tree/master/0494-target-sum) |
 | [0539-minimum-time-difference](https://github.com/Suvansh16/Leetcode/tree/master/0539-minimum-time-difference) |
@@ -229,6 +230,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0322-coin-change](https://github.com/Suvansh16/Leetcode/tree/master/0322-coin-change) |
 | [0368-largest-divisible-subset](https://github.com/Suvansh16/Leetcode/tree/master/0368-largest-divisible-subset) |
 | [0403-frog-jump](https://github.com/Suvansh16/Leetcode/tree/master/0403-frog-jump) |
+| [0416-partition-equal-subset-sum](https://github.com/Suvansh16/Leetcode/tree/master/0416-partition-equal-subset-sum) |
 | [0494-target-sum](https://github.com/Suvansh16/Leetcode/tree/master/0494-target-sum) |
 | [0516-longest-palindromic-subsequence](https://github.com/Suvansh16/Leetcode/tree/master/0516-longest-palindromic-subsequence) |
 | [0689-maximum-sum-of-3-non-overlapping-subarrays](https://github.com/Suvansh16/Leetcode/tree/master/0689-maximum-sum-of-3-non-overlapping-subarrays) |
