@@ -1,43 +1,39 @@
 class Solution {
 public:
-int n;
-void solve(vector<vector<int>>&ans,vector<int>output,unordered_map<int,vector<int>>&map,int start)
+vector<vector<int>>ans;
+void solve(int src,int dest,unordered_map<int,vector<int>>&map,vector<int>output,vector<int>&visited)
 {
-    if(start==n-1)
+    if(src==dest)
     {
         ans.push_back(output);
         return ;
     }
-    
-   
-    for(auto i:map[start])
+    visited[src]=true;
+    for(auto i:map[src])
     {
-       
-            output.push_back(i);
-            solve(ans,output,map,i);
-            output.pop_back();
-      
-    }
+        if(visited[i])
+        return;
+        output.push_back(i);
+        solve(i,dest,map,output,visited);
+        output.pop_back();
 
+    }
+    visited[src]=false;
 
 }
     vector<vector<int>> allPathsSourceTarget(vector<vector<int>>& graph) {
         unordered_map<int,vector<int>>map;
-         n=graph.size();
-        for(int i=0;i<n;i++)
+        int l=0;
+        for(auto i:graph)
         {
-            vector<int>a=graph[i];
-            for(auto s:a)
-            {
-                map[i].push_back(s);
-            }
+            map[l]=(i);
+            l++;
         }
-        vector<vector<int>>ans;
-        
-       vector<int> output = {0};
-
-        solve(ans,output,map,0);
+        int dest=graph.size()-1;
+        vector<int>output;
+        vector<int>visited(dest+1,false);
+        output.push_back(0);
+        solve(0,dest,map,output,visited);
         return ans;
-
     }
 };
