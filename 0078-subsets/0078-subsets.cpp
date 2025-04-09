@@ -9,11 +9,11 @@ void solve(int start,vector<int>&nums,vector<int>output)
         return ;
     }
 
-        if(output.size()==0 || nums[start]!=nums[start-1]){
+        
         output.push_back(nums[start]);
         solve(start+1,nums,output);
         output.pop_back();
-        }
+        
         solve(start+1,nums,output);
 
 
