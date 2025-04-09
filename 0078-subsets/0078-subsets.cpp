@@ -20,7 +20,7 @@ void solve(int start,vector<int>&nums,vector<int>output)
 }
     vector<vector<int>> subsets(vector<int>& nums) {
         vector<int>output;
-        sort(nums.begin(),nums.end());
+        // sort(nums.begin(),nums.end());
         solve(0,nums,output);
         return ans;
     }
