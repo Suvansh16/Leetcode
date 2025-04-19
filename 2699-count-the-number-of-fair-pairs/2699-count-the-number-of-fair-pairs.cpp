@@ -1,59 +1,52 @@
 class Solution {
 public:
-int maxbinary(vector<int>&nums,int num,int upper,int lower,int presentind)
+int findmaxindex(int num,vector<int>&nums,int upper,int presentind)
 {
-    int l=presentind;
-    int r=nums.size()-1;
-     int ans=0;
-    while(l<=r)
+    int n=nums.size();
+    int i=presentind;
+    int j=n-1;
+    int ans=-1;
+    while(i<=j)
     {
-        int mid=(l+r)/2;
-        if(nums[mid]+num<=upper)
-        {
-            ans=mid;
-            l=mid+1;
+        int mid=(i+j)/2;
+        if(nums[mid]+num<=upper){
+        ans=mid;
+        i=mid+1;
         }
         else
-        {
-            r=mid-1;
-        }
+        j=mid-1;
 
     }
     return ans;
 }
-int minbinary(vector<int>&nums,int num,int upper,int lower,int presentind)
+int findminindex(int num,vector<int>&nums,int lower,int presentind)
 {
-    int l=presentind+1;
-    int r=nums.size()-1;
-    int ans=0;
-    while(l<=r)
+    int i=presentind;
+    int j=nums.size()-1;
+    int ans=-1;
+    while(i<=j)
     {
-        int mid=(l+r)/2;
+        int mid=(i+j)/2;
         if(nums[mid]+num>=lower)
         {
             ans=mid;
-           r=mid-1;
+            j=mid-1;
         }
         else
-        {
-           l=mid+1;
-        }
-
+        i=mid+1;
     }
     return ans;
 }
     long long countFairPairs(vector<int>& nums, int lower, int upper) {
-        long long ans=0;
         sort(nums.begin(),nums.end());
+        long long count=0;
         for(int i=0;i<nums.size();i++)
         {
-            int maxindex=maxbinary(nums,nums[i],upper,lower,i);
-            int minindex=minbinary(nums,nums[i],upper,lower,i);
-             if (maxindex >= minindex && maxindex!=0 && minindex!=0) {
-                ans += (maxindex - minindex + 1);
-
+            int maxindex=findmaxindex(nums[i],nums,upper,i+1);
+            int minindex=findminindex(nums[i],nums,lower,i+1);
+            if(minindex!=-1 && maxindex!=-1 && maxindex>=minindex)
+            count+=(maxindex-minindex+1);
         }
-        }
-        return ans;
+        return count;
     }
 };
