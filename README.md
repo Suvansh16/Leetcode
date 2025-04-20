@@ -264,6 +264,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1352-maximum-profit-in-job-scheduling](https://github.com/Suvansh16/Leetcode/tree/master/1352-maximum-profit-in-job-scheduling) |
 | [1393-maximum-value-of-k-coins-from-piles](https://github.com/Suvansh16/Leetcode/tree/master/1393-maximum-value-of-k-coins-from-piles) |
 | [1437-minimum-insertion-steps-to-make-a-string-palindrome](https://github.com/Suvansh16/Leetcode/tree/master/1437-minimum-insertion-steps-to-make-a-string-palindrome) |
+| [1456-find-the-city-with-the-smallest-number-of-neighbors-at-a-threshold-distance](https://github.com/Suvansh16/Leetcode/tree/master/1456-find-the-city-with-the-smallest-number-of-neighbors-at-a-threshold-distance) |
 | [1457-minimum-difficulty-of-a-job-schedule](https://github.com/Suvansh16/Leetcode/tree/master/1457-minimum-difficulty-of-a-job-schedule) |
 | [1503-reducing-dishes](https://github.com/Suvansh16/Leetcode/tree/master/1503-reducing-dishes) |
 | [1517-restore-the-array](https://github.com/Suvansh16/Leetcode/tree/master/1517-restore-the-array) |
@@ -678,6 +679,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0922-possible-bipartition](https://github.com/Suvansh16/Leetcode/tree/master/0922-possible-bipartition) |
 | [0984-most-stones-removed-with-same-row-or-column](https://github.com/Suvansh16/Leetcode/tree/master/0984-most-stones-removed-with-same-row-or-column) |
 | [1032-satisfiability-of-equality-equations](https://github.com/Suvansh16/Leetcode/tree/master/1032-satisfiability-of-equality-equations) |
+| [1456-find-the-city-with-the-smallest-number-of-neighbors-at-a-threshold-distance](https://github.com/Suvansh16/Leetcode/tree/master/1456-find-the-city-with-the-smallest-number-of-neighbors-at-a-threshold-distance) |
 | [1701-remove-max-number-of-edges-to-keep-graph-fully-traversable](https://github.com/Suvansh16/Leetcode/tree/master/1701-remove-max-number-of-edges-to-keep-graph-fully-traversable) |
 | [1738-maximal-network-rank](https://github.com/Suvansh16/Leetcode/tree/master/1738-maximal-network-rank) |
 | [1815-checking-existence-of-edge-length-limited-paths](https://github.com/Suvansh16/Leetcode/tree/master/1815-checking-existence-of-edge-length-limited-paths) |
@@ -859,6 +861,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0399-evaluate-division](https://github.com/Suvansh16/Leetcode/tree/master/0399-evaluate-division) |
+| [1456-find-the-city-with-the-smallest-number-of-neighbors-at-a-threshold-distance](https://github.com/Suvansh16/Leetcode/tree/master/1456-find-the-city-with-the-smallest-number-of-neighbors-at-a-threshold-distance) |
 | [2090-number-of-ways-to-arrive-at-destination](https://github.com/Suvansh16/Leetcode/tree/master/2090-number-of-ways-to-arrive-at-destination) |
 | [2375-minimum-obstacle-removal-to-reach-corner](https://github.com/Suvansh16/Leetcode/tree/master/2375-minimum-obstacle-removal-to-reach-corner) |
 | [2711-minimum-time-to-visit-a-cell-in-a-grid](https://github.com/Suvansh16/Leetcode/tree/master/2711-minimum-time-to-visit-a-cell-in-a-grid) |
