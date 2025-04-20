@@ -74,6 +74,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1815-checking-existence-of-edge-length-limited-paths](https://github.com/Suvansh16/Leetcode/tree/master/1815-checking-existence-of-edge-length-limited-paths) |
 | [1819-construct-the-lexicographically-largest-valid-sequence](https://github.com/Suvansh16/Leetcode/tree/master/1819-construct-the-lexicographically-largest-valid-sequence) |
 | [1851-maximum-number-of-events-that-can-be-attended-ii](https://github.com/Suvansh16/Leetcode/tree/master/1851-maximum-number-of-events-that-can-be-attended-ii) |
+| [1866-restore-the-array-from-adjacent-pairs](https://github.com/Suvansh16/Leetcode/tree/master/1866-restore-the-array-from-adjacent-pairs) |
 | [1878-check-if-array-is-sorted-and-rotated](https://github.com/Suvansh16/Leetcode/tree/master/1878-check-if-array-is-sorted-and-rotated) |
 | [1895-minimum-number-of-operations-to-move-all-balls-to-each-box](https://github.com/Suvansh16/Leetcode/tree/master/1895-minimum-number-of-operations-to-move-all-balls-to-each-box) |
 | [1917-maximum-average-pass-ratio](https://github.com/Suvansh16/Leetcode/tree/master/1917-maximum-average-pass-ratio) |
@@ -405,6 +406,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1484-linked-list-in-binary-tree](https://github.com/Suvansh16/Leetcode/tree/master/1484-linked-list-in-binary-tree) |
 | [1554-minimum-time-to-collect-all-apples-in-a-tree](https://github.com/Suvansh16/Leetcode/tree/master/1554-minimum-time-to-collect-all-apples-in-a-tree) |
 | [1643-number-of-nodes-in-the-sub-tree-with-the-same-label](https://github.com/Suvansh16/Leetcode/tree/master/1643-number-of-nodes-in-the-sub-tree-with-the-same-label) |
+| [1866-restore-the-array-from-adjacent-pairs](https://github.com/Suvansh16/Leetcode/tree/master/1866-restore-the-array-from-adjacent-pairs) |
 | [2121-find-if-path-exists-in-graph](https://github.com/Suvansh16/Leetcode/tree/master/2121-find-if-path-exists-in-graph) |
 | [2201-valid-arrangement-of-pairs](https://github.com/Suvansh16/Leetcode/tree/master/2201-valid-arrangement-of-pairs) |
 | [2206-detonate-the-maximum-bombs](https://github.com/Suvansh16/Leetcode/tree/master/2206-detonate-the-maximum-bombs) |
@@ -484,6 +486,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1643-number-of-nodes-in-the-sub-tree-with-the-same-label](https://github.com/Suvansh16/Leetcode/tree/master/1643-number-of-nodes-in-the-sub-tree-with-the-same-label) |
 | [1694-make-sum-divisible-by-p](https://github.com/Suvansh16/Leetcode/tree/master/1694-make-sum-divisible-by-p) |
 | [1715-split-a-string-into-the-max-number-of-unique-substrings](https://github.com/Suvansh16/Leetcode/tree/master/1715-split-a-string-into-the-max-number-of-unique-substrings) |
+| [1866-restore-the-array-from-adjacent-pairs](https://github.com/Suvansh16/Leetcode/tree/master/1866-restore-the-array-from-adjacent-pairs) |
 | [1915-check-if-one-string-swap-can-make-strings-equal](https://github.com/Suvansh16/Leetcode/tree/master/1915-check-if-one-string-swap-can-make-strings-equal) |
 | [2059-unique-length-3-palindromic-subsequences](https://github.com/Suvansh16/Leetcode/tree/master/2059-unique-length-3-palindromic-subsequences) |
 | [2300-construct-string-with-repeat-limit](https://github.com/Suvansh16/Leetcode/tree/master/2300-construct-string-with-repeat-limit) |
