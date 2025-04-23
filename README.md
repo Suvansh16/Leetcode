@@ -145,6 +145,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3555-final-array-state-after-k-multiplication-operations-i](https://github.com/Suvansh16/Leetcode/tree/master/3555-final-array-state-after-k-multiplication-operations-i) |
 | [3621-minimum-operations-to-make-array-values-equal-to-k](https://github.com/Suvansh16/Leetcode/tree/master/3621-minimum-operations-to-make-array-values-equal-to-k) |
 | [3656-minimum-number-of-operations-to-make-elements-in-array-distinct](https://github.com/Suvansh16/Leetcode/tree/master/3656-minimum-number-of-operations-to-make-elements-in-array-distinct) |
+| [3831-find-x-value-of-array-i](https://github.com/Suvansh16/Leetcode/tree/master/3831-find-x-value-of-array-i) |
 ## Stack
 |  |
 | ------- |
@@ -288,6 +289,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2755-extra-characters-in-a-string](https://github.com/Suvansh16/Leetcode/tree/master/2755-extra-characters-in-a-string) |
 | [2794-maximum-number-of-moves-in-a-grid](https://github.com/Suvansh16/Leetcode/tree/master/2794-maximum-number-of-moves-in-a-grid) |
 | [3243-count-the-number-of-powerful-integers](https://github.com/Suvansh16/Leetcode/tree/master/3243-count-the-number-of-powerful-integers) |
+| [3831-find-x-value-of-array-i](https://github.com/Suvansh16/Leetcode/tree/master/3831-find-x-value-of-array-i) |
 ## Greedy
 |  |
 | ------- |
@@ -552,6 +554,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3243-count-the-number-of-powerful-integers](https://github.com/Suvansh16/Leetcode/tree/master/3243-count-the-number-of-powerful-integers) |
 | [3548-find-the-count-of-good-integers](https://github.com/Suvansh16/Leetcode/tree/master/3548-find-the-count-of-good-integers) |
 | [3555-final-array-state-after-k-multiplication-operations-i](https://github.com/Suvansh16/Leetcode/tree/master/3555-final-array-state-after-k-multiplication-operations-i) |
+| [3831-find-x-value-of-array-i](https://github.com/Suvansh16/Leetcode/tree/master/3831-find-x-value-of-array-i) |
 ## Sorting
 |  |
 | ------- |
