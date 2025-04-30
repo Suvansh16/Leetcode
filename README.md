@@ -57,6 +57,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1352-maximum-profit-in-job-scheduling](https://github.com/Suvansh16/Leetcode/tree/master/1352-maximum-profit-in-job-scheduling) |
 | [1360-maximum-length-of-a-concatenated-string-with-unique-characters](https://github.com/Suvansh16/Leetcode/tree/master/1360-maximum-length-of-a-concatenated-string-with-unique-characters) |
 | [1393-maximum-value-of-k-coins-from-piles](https://github.com/Suvansh16/Leetcode/tree/master/1393-maximum-value-of-k-coins-from-piles) |
+| [1421-find-numbers-with-even-number-of-digits](https://github.com/Suvansh16/Leetcode/tree/master/1421-find-numbers-with-even-number-of-digits) |
 | [1435-xor-queries-of-a-subarray](https://github.com/Suvansh16/Leetcode/tree/master/1435-xor-queries-of-a-subarray) |
 | [1457-minimum-difficulty-of-a-job-schedule](https://github.com/Suvansh16/Leetcode/tree/master/1457-minimum-difficulty-of-a-job-schedule) |
 | [1477-product-of-the-last-k-numbers](https://github.com/Suvansh16/Leetcode/tree/master/1477-product-of-the-last-k-numbers) |
@@ -548,6 +549,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0797-rabbits-in-forest](https://github.com/Suvansh16/Leetcode/tree/master/0797-rabbits-in-forest) |
 | [0909-stone-game](https://github.com/Suvansh16/Leetcode/tree/master/0909-stone-game) |
 | [1240-stone-game-ii](https://github.com/Suvansh16/Leetcode/tree/master/1240-stone-game-ii) |
+| [1421-find-numbers-with-even-number-of-digits](https://github.com/Suvansh16/Leetcode/tree/master/1421-find-numbers-with-even-number-of-digits) |
 | [1477-product-of-the-last-k-numbers](https://github.com/Suvansh16/Leetcode/tree/master/1477-product-of-the-last-k-numbers) |
 | [1500-count-largest-group](https://github.com/Suvansh16/Leetcode/tree/master/1500-count-largest-group) |
 | [1522-stone-game-iii](https://github.com/Suvansh16/Leetcode/tree/master/1522-stone-game-iii) |
