@@ -11,24 +11,24 @@
  */
 class Solution {
 public:
-unordered_map<TreeNode*,int>map;
-unordered_map<TreeNode*,int>map_size;
-int solve(TreeNode*root){
+unordered_map<TreeNode*,pair<int,int>>map;
+// unordered_map<TreeNode*,int>map_size;
+pair<int,int> solve(TreeNode*root){
 if(root==NULL)
-return 0;
-int left_sum=solve(root->left);
-int right_sum=solve(root->right);
+return {0,0};
+pair<int,int>left=solve(root->left);
+pair<int,int> right=solve(root->right);
 
-return map[root]=left_sum+right_sum+root->val;
+return map[root]={left.first+right.first+root->val,left.second+right.second+1};
 }
-int cal_size(TreeNode*root)
-{
-    if(root==NULL)
-    return 0;
-    int left_size=cal_size(root->left);
-    int right_size=cal_size(root->right);
-    return map_size[root]=left_size+right_size+1;
-}
+// int cal_size(TreeNode*root)
+// {
+//     if(root==NULL)
+//     return 0;
+//     int left_size=cal_size(root->left);
+//     int right_size=cal_size(root->right);
+//     return map_size[root]=left_size+right_size+1;
+// }
 int count=0;
 void check(TreeNode*root)
 {
@@ -36,7 +36,7 @@ void check(TreeNode*root)
     return ;
     check(root->left);
     check(root->right);
-    if(map[root]/map_size[root]==root->val)
+    if(map[root].first/map[root].second==root->val)
     {
         count++;
     }
@@ -44,7 +44,7 @@ void check(TreeNode*root)
 }
     int averageOfSubtree(TreeNode* root) {
         solve(root);
-        cal_size(root);
+        // cal_size(root);
         
         check(root);
         return count;
