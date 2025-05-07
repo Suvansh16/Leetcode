@@ -1,50 +1,34 @@
 class Solution {
 public:
-vector<vector<int>>directions={{-1,0},{1,0},{0,-1},{0,1}};
-int mintime=INT_MAX;
-vector<vector<int>>minreach;
-void solve(int i,int j,int n,int m,int time,vector<vector<int>>&grid,vector<vector<bool>>&visited)
-{
-   if(time>=minreach[i][j])
-   return ;
-   minreach[i][j]=time;
-    if(i==n && j==m)
-    {
-        mintime=min(time,mintime);
-        return ;
-    }
-     visited[i][j]=true;
-    
-    for(auto &dir:directions)
-    {
-        int a=dir[0];
-        int b=dir[1];
-        int new_i=i+a;
-        int new_j=j+b;
-        if(new_i<=n && new_j<=m && new_i>=0 && new_j>=0 && !visited[new_i][new_j])
+typedef pair<int,int> p;
+    int minTimeToReach(vector<vector<int>>& a) {
+        int n=a.size(),m=a[0].size();
+        priority_queue<pair<int,pair<int,int>>>q;
+        q.push({0,{0,0}});
+        vector<vector<int>>dist(n,vector<int>(m,INT_MAX));
+        while(!q.empty())
         {
-            if(time>grid[new_i][new_j])
-            {
-                solve(new_i,new_j,n,m,time+1,grid,visited);
+            int newdist=q.top().first;
+            int b=q.top().second.first;
+            int c=q.top().second.second;
+            q.pop();
+            if(b+1<n && dist[b+1][c]>max(newdist+1,a[b+1][c]+1)){
+            q.push({max(newdist+1,a[b+1][c]+1),{b+1,c}});
+            dist[b+1][c]=max(newdist+1,a[b+1][c]+1);
             }
-            else
-            {
-                solve(new_i,new_j,n,m,grid[new_i][new_j]+1,grid,visited);
+            if(b-1>=0 && dist[b-1][c]>max(newdist+1,a[b-1][c]+1)){
+            q.push({max(newdist+1,a[b-1][c]+1),{b-1,c}});
+            dist[b-1][c]=max(newdist+1,a[b-1][c]+1);
+            }
+            if(c-1>=0 && dist[b][c-1]>max(newdist+1,a[b][c-1]+1)){
+            q.push({max(newdist+1,a[b][c-1]+1),{b,c-1}});
+            dist[b][c-1]=max(newdist+1,a[b][c-1]+1);
+            }
+            if(c+1<m && dist[b][c+1]>max(newdist+1,a[b][c+1]+1)){
+            q.push({max(newdist+1,a[b][c+1]+1),{b,c+1}});
+            dist[b][c+1]=max(newdist+1,a[b][c+1]+1);
             }
         }
-
-    }
-    visited[i][j]=false;
-    
-}
-    int minTimeToReach(vector<vector<int>>& moveTime) {
-         int n = moveTime.size();
-        int m = moveTime[0].size();
-        vector<vector<bool>>visited(moveTime.size(),vector<bool>(moveTime[0].size(),false));
-         minreach = vector<vector<int>>(n, vector<int>(m, INT_MAX));
-                
-
-        solve(0,0,moveTime.size()-1,moveTime[0].size()-1,0,moveTime,visited);
-        return mintime;
+        return dist[n-1][m-1];
     }
 };
