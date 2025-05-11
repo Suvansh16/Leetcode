@@ -56,6 +56,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1220-smallest-sufficient-team](https://github.com/Suvansh16/Leetcode/tree/master/1220-smallest-sufficient-team) |
 | [1227-number-of-equivalent-domino-pairs](https://github.com/Suvansh16/Leetcode/tree/master/1227-number-of-equivalent-domino-pairs) |
 | [1240-stone-game-ii](https://github.com/Suvansh16/Leetcode/tree/master/1240-stone-game-ii) |
+| [1293-three-consecutive-odds](https://github.com/Suvansh16/Leetcode/tree/master/1293-three-consecutive-odds) |
 | [1352-maximum-profit-in-job-scheduling](https://github.com/Suvansh16/Leetcode/tree/master/1352-maximum-profit-in-job-scheduling) |
 | [1360-maximum-length-of-a-concatenated-string-with-unique-characters](https://github.com/Suvansh16/Leetcode/tree/master/1360-maximum-length-of-a-concatenated-string-with-unique-characters) |
 | [1393-maximum-value-of-k-coins-from-piles](https://github.com/Suvansh16/Leetcode/tree/master/1393-maximum-value-of-k-coins-from-piles) |
