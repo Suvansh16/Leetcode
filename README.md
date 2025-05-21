@@ -9,6 +9,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0045-jump-game-ii](https://github.com/Suvansh16/Leetcode/tree/master/0045-jump-game-ii) |
 | [0055-jump-game](https://github.com/Suvansh16/Leetcode/tree/master/0055-jump-game) |
 | [0064-minimum-path-sum](https://github.com/Suvansh16/Leetcode/tree/master/0064-minimum-path-sum) |
+| [0073-set-matrix-zeroes](https://github.com/Suvansh16/Leetcode/tree/master/0073-set-matrix-zeroes) |
 | [0078-subsets](https://github.com/Suvansh16/Leetcode/tree/master/0078-subsets) |
 | [0090-subsets-ii](https://github.com/Suvansh16/Leetcode/tree/master/0090-subsets-ii) |
 | [0120-triangle](https://github.com/Suvansh16/Leetcode/tree/master/0120-triangle) |
@@ -484,6 +485,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0064-minimum-path-sum](https://github.com/Suvansh16/Leetcode/tree/master/0064-minimum-path-sum) |
+| [0073-set-matrix-zeroes](https://github.com/Suvansh16/Leetcode/tree/master/0073-set-matrix-zeroes) |
 | [0200-number-of-islands](https://github.com/Suvansh16/Leetcode/tree/master/0200-number-of-islands) |
 | [0212-word-search-ii](https://github.com/Suvansh16/Leetcode/tree/master/0212-word-search-ii) |
 | [0733-flood-fill](https://github.com/Suvansh16/Leetcode/tree/master/0733-flood-fill) |
@@ -511,6 +513,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Hash Table
 |  |
 | ------- |
+| [0073-set-matrix-zeroes](https://github.com/Suvansh16/Leetcode/tree/master/0073-set-matrix-zeroes) |
 | [0133-clone-graph](https://github.com/Suvansh16/Leetcode/tree/master/0133-clone-graph) |
 | [0432-all-oone-data-structure](https://github.com/Suvansh16/Leetcode/tree/master/0432-all-oone-data-structure) |
 | [0442-find-all-duplicates-in-an-array](https://github.com/Suvansh16/Leetcode/tree/master/0442-find-all-duplicates-in-an-array) |
