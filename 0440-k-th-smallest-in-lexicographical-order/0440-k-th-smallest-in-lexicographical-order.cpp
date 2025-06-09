@@ -1,30 +1,32 @@
 class Solution {
- public:
-  int findKthNumber(int n, int k) {
-    long ans = 1;
-
-    for (int i = 1; i < k;) {
-      const long gap = getGap(ans, ans + 1, n);
-      if (i + gap <= k) {
-        i += gap;
-        ++ans;
-      } else {
-        ++i;
-        ans *= 10;
-      }
+public:
+    int countPrefix(long prefix, int n) {
+        long curr = prefix, next = prefix + 1;
+        long count = 0;
+        while (curr <= n) {
+            count += min((long)n + 1, next) - curr;
+            curr *= 10;
+            next *= 10;
+        }
+        return count;
     }
 
-    return ans;
-  }
+    int findKthNumber(int n, int k) {
+        int curr = 1;
+        k--; // because we start from 1 already
 
- private:
-  long getGap(long a, long b, long n) {
-    long gap = 0;
-    while (a <= n) {
-      gap += min(n + 1, b) - a;
-      a *= 10;
-      b *= 10;
+        while (k > 0) {
+            int count = countPrefix(curr, n);
+            if (count <= k) {
+                // Skip this whole subtree
+                k -= count;
+                curr += 1;
+            } else {
+                // Go deeper in the tree
+                curr *= 10;
+                k -= 1;
+            }
+        }
+        return curr;
     }
-    return gap;
-  };
 };
