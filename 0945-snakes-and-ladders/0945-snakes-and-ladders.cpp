@@ -2,16 +2,15 @@ class Solution {
 public:
     int snakesAndLadders(vector<vector<int>>& board) {
         int n=board.size();
-        vector<int>grid(n*n+1,-1);
-        int idx=1;
+        vector<int>grid(n*n+1);
         bool right=true;
+        int idx=1;
         for(int i=n-1;i>=0;i--)
         {
             if(right)
             {
                 for(int j=0;j<n;j++)
                 grid[idx++]=board[i][j];
-
             }
             else
             {
@@ -23,8 +22,8 @@ public:
         queue<int>q;
         q.push(1);
         int moves=0;
-        vector<int>visited(n*n+1,0);
-        visited[1]=1;
+        vector<bool>visited(n*n+1,false);
+        visited[1]=true;
         while(!q.empty())
         {
             int size=q.size();
@@ -34,16 +33,17 @@ public:
                 q.pop();
                 if(curr==n*n)
                 return moves;
-                for(int dice=1;dice<=6 && curr+dice<=n*n;dice++)
+                for(int i=1;i<=6 && curr+i<=n*n;i++)
                 {
-                    int next=curr+dice;
+                    int next=curr+i;
                     if(grid[next]!=-1)
-                    next=grid[next];
+                    {
+                        next=grid[next];
+                    }
                     if(!visited[next])
                     {
-                        visited[next]=1;
+                        visited[next]=true;
                         q.push(next);
-
                     }
                 }
             }
