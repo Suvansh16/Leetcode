@@ -45,6 +45,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0907-koko-eating-bananas](https://github.com/Suvansh16/Leetcode/tree/master/0907-koko-eating-bananas) |
 | [0909-stone-game](https://github.com/Suvansh16/Leetcode/tree/master/0909-stone-game) |
 | [0911-profitable-schemes](https://github.com/Suvansh16/Leetcode/tree/master/0911-profitable-schemes) |
+| [0945-snakes-and-ladders](https://github.com/Suvansh16/Leetcode/tree/master/0945-snakes-and-ladders) |
 | [0966-binary-subarrays-with-sum](https://github.com/Suvansh16/Leetcode/tree/master/0966-binary-subarrays-with-sum) |
 | [0967-minimum-falling-path-sum](https://github.com/Suvansh16/Leetcode/tree/master/0967-minimum-falling-path-sum) |
 | [0983-validate-stack-sequences](https://github.com/Suvansh16/Leetcode/tree/master/0983-validate-stack-sequences) |
@@ -502,6 +503,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0212-word-search-ii](https://github.com/Suvansh16/Leetcode/tree/master/0212-word-search-ii) |
 | [0733-flood-fill](https://github.com/Suvansh16/Leetcode/tree/master/0733-flood-fill) |
 | [0787-sliding-puzzle](https://github.com/Suvansh16/Leetcode/tree/master/0787-sliding-puzzle) |
+| [0945-snakes-and-ladders](https://github.com/Suvansh16/Leetcode/tree/master/0945-snakes-and-ladders) |
 | [0967-minimum-falling-path-sum](https://github.com/Suvansh16/Leetcode/tree/master/0967-minimum-falling-path-sum) |
 | [1147-flip-columns-for-maximum-number-of-equal-rows](https://github.com/Suvansh16/Leetcode/tree/master/1147-flip-columns-for-maximum-number-of-equal-rows) |
 | [1171-shortest-path-in-binary-matrix](https://github.com/Suvansh16/Leetcode/tree/master/1171-shortest-path-in-binary-matrix) |
@@ -703,6 +705,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0869-similar-string-groups](https://github.com/Suvansh16/Leetcode/tree/master/0869-similar-string-groups) |
 | [0871-keys-and-rooms](https://github.com/Suvansh16/Leetcode/tree/master/0871-keys-and-rooms) |
 | [0922-possible-bipartition](https://github.com/Suvansh16/Leetcode/tree/master/0922-possible-bipartition) |
+| [0945-snakes-and-ladders](https://github.com/Suvansh16/Leetcode/tree/master/0945-snakes-and-ladders) |
 | [1171-shortest-path-in-binary-matrix](https://github.com/Suvansh16/Leetcode/tree/master/1171-shortest-path-in-binary-matrix) |
 | [1218-lowest-common-ancestor-of-deepest-leaves](https://github.com/Suvansh16/Leetcode/tree/master/1218-lowest-common-ancestor-of-deepest-leaves) |
 | [1554-minimum-time-to-collect-all-apples-in-a-tree](https://github.com/Suvansh16/Leetcode/tree/master/1554-minimum-time-to-collect-all-apples-in-a-tree) |
