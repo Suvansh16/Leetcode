@@ -10,18 +10,11 @@ public:
         {
             if(i%2!=0)
             maxodd=max(maxodd,i);
-            else
-            maxeven=max(maxeven,i);
-        }
-        if(maxodd>=maxeven)
-        return maxodd-maxeven;
-          for(int i:t)
-        {
-            if(i%2!=0)
-            maxodd=max(maxodd,i);
-            else if(i!=0 && i%2==0)
+              else if(i!=0 && i%2==0)
             maxeven=min(maxeven,i);
         }
-         return maxodd-maxeven;
+       
+        return maxodd-maxeven;
+         
     }
 };
