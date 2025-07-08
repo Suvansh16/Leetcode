@@ -1,21 +1,18 @@
 class Solution {
 public:
-bool solve(int start,vector<int>&nums,vector<int>&dp)
-{
-    if(start>=nums.size()-1)
-    return true;
-    if(dp[start]!=-1)
-    return dp[start];
-    for(int i=start+1;i<=min((int)nums.size()-1,start+nums[start]);i++)
-    {
-         if(solve(i,nums,dp))
-         return dp[i]=true;
-    }
-    return dp[start]=false;
-}
     bool canJump(vector<int>& nums) {
-        vector<int>dp(nums.size()+1,-1);
-        return solve(0,nums,dp);
+        vector<bool> dp(nums.size(), false);
+        dp[nums.size() - 1] = true; // Can always reach end from the end
 
+        for (int i = nums.size() - 2; i >= 0; i--) {
+            int farthest = min((int)nums.size() - 1, i + nums[i]);
+            for (int j = i + 1; j <= farthest; j++) {
+                if (dp[j]) {
+                    dp[i] = true;
+                    break;
+                }
+            }
+        }
+        return dp[0];
     }
 };
