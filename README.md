@@ -210,6 +210,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0214-shortest-palindrome](https://github.com/Suvansh16/Leetcode/tree/master/0214-shortest-palindrome) |
 | [0241-different-ways-to-add-parentheses](https://github.com/Suvansh16/Leetcode/tree/master/0241-different-ways-to-add-parentheses) |
 | [0399-evaluate-division](https://github.com/Suvansh16/Leetcode/tree/master/0399-evaluate-division) |
+| [0433-minimum-genetic-mutation](https://github.com/Suvansh16/Leetcode/tree/master/0433-minimum-genetic-mutation) |
 | [0516-longest-palindromic-subsequence](https://github.com/Suvansh16/Leetcode/tree/master/0516-longest-palindromic-subsequence) |
 | [0539-minimum-time-difference](https://github.com/Suvansh16/Leetcode/tree/master/0539-minimum-time-difference) |
 | [0648-replace-words](https://github.com/Suvansh16/Leetcode/tree/master/0648-replace-words) |
@@ -554,6 +555,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0073-set-matrix-zeroes](https://github.com/Suvansh16/Leetcode/tree/master/0073-set-matrix-zeroes) |
 | [0133-clone-graph](https://github.com/Suvansh16/Leetcode/tree/master/0133-clone-graph) |
 | [0432-all-oone-data-structure](https://github.com/Suvansh16/Leetcode/tree/master/0432-all-oone-data-structure) |
+| [0433-minimum-genetic-mutation](https://github.com/Suvansh16/Leetcode/tree/master/0433-minimum-genetic-mutation) |
 | [0442-find-all-duplicates-in-an-array](https://github.com/Suvansh16/Leetcode/tree/master/0442-find-all-duplicates-in-an-array) |
 | [0594-longest-harmonious-subsequence](https://github.com/Suvansh16/Leetcode/tree/master/0594-longest-harmonious-subsequence) |
 | [0632-smallest-range-covering-elements-from-k-lists](https://github.com/Suvansh16/Leetcode/tree/master/0632-smallest-range-covering-elements-from-k-lists) |
@@ -727,6 +729,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0279-perfect-squares](https://github.com/Suvansh16/Leetcode/tree/master/0279-perfect-squares) |
 | [0322-coin-change](https://github.com/Suvansh16/Leetcode/tree/master/0322-coin-change) |
 | [0399-evaluate-division](https://github.com/Suvansh16/Leetcode/tree/master/0399-evaluate-division) |
+| [0433-minimum-genetic-mutation](https://github.com/Suvansh16/Leetcode/tree/master/0433-minimum-genetic-mutation) |
 | [0515-find-largest-value-in-each-tree-row](https://github.com/Suvansh16/Leetcode/tree/master/0515-find-largest-value-in-each-tree-row) |
 | [0547-number-of-provinces](https://github.com/Suvansh16/Leetcode/tree/master/0547-number-of-provinces) |
 | [0637-average-of-levels-in-binary-tree](https://github.com/Suvansh16/Leetcode/tree/master/0637-average-of-levels-in-binary-tree) |
