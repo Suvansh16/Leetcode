@@ -1,47 +1,52 @@
+class DSU{
+
+    public:
+    unordered_map<int,int>parent;
+    int find(int x)
+    {
+        if(!parent.count(x))
+        parent[x]=x;
+        if(parent[x]!=x)
+        parent[x]=find(parent[x]);
+        return parent[x];
+    }
+    void unite(int a,int b)
+    {
+        int px=find(a);
+        int py=find(b);
+        if(px!=py)
+        parent[px]=py;
+    }
+};
 class Solution {
 public:
-int solve(int start,vector<bool>&visited,unordered_map<int,vector<int>>&map)
-{
-    visited[start]=true;
-    int ans=1;
-    for(int i:map[start])
-    {
-
-        if(!visited[i])
-        {
-            ans+=solve(i,visited,map);
-        }
-    }
-    return ans;
-}
     int removeStones(vector<vector<int>>& stones) {
+        DSU dsu;
         unordered_map<int,vector<int>>map;
         for(int i=0;i<stones.size();i++)
         {
             for(int j=i+1;j<stones.size();j++)
             {
-                if(stones[j][0]==stones[i][0] || stones[j][1]==stones[i][1])
-                {
-                    map[i].push_back(j);
-                    map[j].push_back(i);
-                }
+                if(stones[i][0]==stones[j][0] || stones[i][1]==stones[j][1])
+                {map[i].push_back(j);
+                map[j].push_back(i);}
+
             }
         }
-        vector<bool>visited(stones.size(),false);
-        int count=0;
-        vector<int>ans;
-       for(int i=0;i<stones.size();i++)
-       {
-        
-        if(!visited[i])
+        for(auto i:map)
         {
-            
-            ans.push_back(solve(i,visited,map));
+            int a=i.first;
+            for(int j:i.second)
+            {
+                dsu.unite(a,j);
+            }
         }
-       }
-       int result=0;
-       for(auto i:ans)
-       result+=(i-1);
-       return result;
+        unordered_set<int> uniqueRoots;
+        for (int i = 0; i < stones.size(); ++i) {
+            uniqueRoots.insert(dsu.find(i));
+        }
+
+        // Max removable stones = total - number of components
+        return stones.size() - uniqueRoots.size();
     }
 };
