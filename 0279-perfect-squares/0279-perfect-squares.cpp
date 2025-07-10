@@ -1,26 +1,25 @@
 class Solution {
 public:
-int minans;
-int solve(int n,vector<int>&dp)
+int solve(int n,int t,vector<int>&dp)
 {
-    if(n==0)
-    return 0;
     if(n<0)
     return INT_MAX;
+    if(n==0)
+    return 0;
     if(dp[n]!=-1)
     return dp[n];
     int ans=INT_MAX;
-    for(int i=1;i*i<=n;i++)
+    for(int i=1;i<=t;i++)
     {
-         ans=min(ans,1+solve(n-i*i,dp));
+        int m=solve(n-i*i,t,dp);
+        if(m!=INT_MAX)
+        ans=min(ans,1+m);
     }
     return dp[n]=ans;
-
 }
     int numSquares(int n) {
-        minans=INT_MAX;
+        int t =sqrt(n);
         vector<int>dp(n+1,-1);
-        int a=solve(n,dp);
-        return a;
+        return solve(n,t,dp);
     }
 };
