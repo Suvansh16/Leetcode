@@ -1,25 +1,21 @@
 class Solution {
 public:
-int solve(int n,int t,vector<int>&dp)
-{
-    if(n<0)
-    return INT_MAX;
-    if(n==0)
-    return 0;
-    if(dp[n]!=-1)
-    return dp[n];
-    int ans=INT_MAX;
-    for(int i=1;i<=t;i++)
-    {
-        int m=solve(n-i*i,t,dp);
-        if(m!=INT_MAX)
-        ans=min(ans,1+m);
-    }
-    return dp[n]=ans;
-}
     int numSquares(int n) {
-        int t =sqrt(n);
-        vector<int>dp(n+1,-1);
-        return solve(n,t,dp);
+        vector<int>dp(n+1,INT_MAX);
+      if(n<=3)
+      return n;
+      dp[0]=0;
+      dp[1]=1;
+      dp[2]=2;
+      dp[3]=3;
+        for(int i=4;i<=n;i++)
+        {
+            for(int j=1;j*j<=i;j++)
+            {
+                dp[i]=min(dp[i],1+dp[i-j*j]);
+
+            }
+        }
+        return dp[n];
     }
 };
