@@ -1,30 +1,47 @@
 class Solution {
 public:
-int n;
-void dfs(vector<vector<int>>&stones,int index,vector<bool>&visited)
+int solve(int start,vector<bool>&visited,unordered_map<int,vector<int>>&map)
 {
-    visited[index]=true;
-    for(int i=0;i<n;i++)
+    visited[start]=true;
+    int ans=1;
+    for(int i:map[start])
     {
-        int r=stones[index][0];
-        int s=stones[index][1];
-        if(visited[i]==false && (r==stones[i][0] || s==stones[i][1]))
+
+        if(!visited[i])
         {
-            dfs(stones,i,visited);
+            ans+=solve(i,visited,map);
         }
     }
+    return ans;
 }
     int removeStones(vector<vector<int>>& stones) {
-        int group=0;
-        n=stones.size();
-        vector<bool>vis(n,false);
-        for(int i=0;i<n;i++)
+        unordered_map<int,vector<int>>map;
+        for(int i=0;i<stones.size();i++)
         {
-            if(vis[i]==true)
-            continue;
-            dfs(stones,i,vis);
-            group++;
+            for(int j=i+1;j<stones.size();j++)
+            {
+                if(stones[j][0]==stones[i][0] || stones[j][1]==stones[i][1])
+                {
+                    map[i].push_back(j);
+                    map[j].push_back(i);
+                }
+            }
         }
-        return n-group;
+        vector<bool>visited(stones.size(),false);
+        int count=0;
+        vector<int>ans;
+       for(int i=0;i<stones.size();i++)
+       {
+        
+        if(!visited[i])
+        {
+            
+            ans.push_back(solve(i,visited,map));
+        }
+       }
+       int result=0;
+       for(auto i:ans)
+       result+=(i-1);
+       return result;
     }
 };
