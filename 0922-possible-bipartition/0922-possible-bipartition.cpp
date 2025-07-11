@@ -1,35 +1,36 @@
 class Solution {
 public:
-bool dfs(unordered_map<int,vector<int>>&map,int curr,vector<int>&color,int currcolor)
+bool solve(int start,int c,vector<int>&color,unordered_map<int,vector<int>>&map)
 {
-    color[curr]=currcolor;
-    for(int &v:map[curr])
+    color[start]=c;
+    for(int i:map[start])
     {
-        if(color[v]==currcolor)
+        if(color[i]==c)
         return false;
-        if(color[v]==-1)
+        if(color[i]==-1)
         {
-            int colorv=1-color[curr];
-            if(dfs(map,v,color,colorv)==false)
+            bool t=solve(i,1-c,color,map);
+            if(!t)
             return false;
         }
     }
     return true;
+
 }
     bool possibleBipartition(int n, vector<vector<int>>& dislikes) {
-        unordered_map<int,vector<int>>map;
-        for(vector<int>&v:dislikes)
-        {
-            map[v[0]].push_back(v[1]);
-            map[v[1]].push_back(v[0]);
-        }
         vector<int>color(n+1,-1);
+        unordered_map<int,vector<int>>map;
+        for(int i=0;i<dislikes.size();i++)
+        {
+            map[dislikes[i][0]].push_back(dislikes[i][1]);
+            map[dislikes[i][1]].push_back(dislikes[i][0]);
+        }
         for(int i=1;i<=n;i++)
         {
-           if(color[i]==-1)
-           {
-                bool ans= dfs(map,i,color,0);
-                if(ans==false)
+            if(color[i]==-1)
+            {
+                bool t=solve(i,0,color,map);
+                if(t==false)
                 return false;
             }
         }
