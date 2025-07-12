@@ -1,43 +1,34 @@
 class Solution {
 public:
-    vector<int> DFS(unordered_map<int, vector<int>> &adj, int u, int parent, vector<int>& result, string &labels) {
-        vector<int> my_count(26, 0);
-        char mylabel = labels[u];
-        
-        my_count[mylabel - 'a'] = 1;
-        
-        for(int &v : adj[u]) {
-            if(v == parent)
-                continue;
-        
-            vector<int> child_count(26, 0);
-            child_count = DFS(adj, v, u, result, labels);
-
-            for(int i = 0; i<26; i++) {
-                my_count[i] += child_count[i];
+vector<int>solve(int start,int parent,string &labels,unordered_map<int,vector<int>>&map,vector<int>&result)
+{
+    vector<int>my_count(26,0);
+    char ch=labels[start];
+    my_count[ch-'a']=1;
+    for(auto i:map[start])
+    {
+        if(i!=parent)
+        {
+            vector<int>child(26,0);
+            child=solve(i,start,labels,map,result);
+            for(int i=0;i<26;i++)
+            {
+                my_count[i]+=child[i];
             }
         }
-        
-        result[u] = my_count[mylabel - 'a'];
-        
-        return my_count;
     }
-    
+    result[start]=my_count[ch-'a'];
+    return my_count;
+}
     vector<int> countSubTrees(int n, vector<vector<int>>& edges, string labels) {
-        unordered_map<int, vector<int>> adj;
-        
-        for(auto &vec : edges) {
-            int u = vec[0];
-            int v = vec[1];
-            
-            adj[u].push_back(v);
-            adj[v].push_back(u);
+        unordered_map<int,vector<int>>map;
+        for(auto i:edges)
+        {
+            map[i[0]].push_back(i[1]);
+            map[i[1]].push_back(i[0]);
         }
-        
-        vector<int> result(n, 0);
-        
-        DFS(adj, 0, -1, result, labels);
-        
+        vector<int>result(n,0);
+        solve(0,-1,labels,map,result);
         return result;
         
     }
