@@ -202,6 +202,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## String
 |  |
 | ------- |
+| [0005-longest-palindromic-substring](https://github.com/Suvansh16/Leetcode/tree/master/0005-longest-palindromic-substring) |
 | [0038-count-and-say](https://github.com/Suvansh16/Leetcode/tree/master/0038-count-and-say) |
 | [0072-edit-distance](https://github.com/Suvansh16/Leetcode/tree/master/0072-edit-distance) |
 | [0079-word-search](https://github.com/Suvansh16/Leetcode/tree/master/0079-word-search) |
@@ -269,6 +270,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Dynamic Programming
 |  |
 | ------- |
+| [0005-longest-palindromic-substring](https://github.com/Suvansh16/Leetcode/tree/master/0005-longest-palindromic-substring) |
 | [0045-jump-game-ii](https://github.com/Suvansh16/Leetcode/tree/master/0045-jump-game-ii) |
 | [0055-jump-game](https://github.com/Suvansh16/Leetcode/tree/master/0055-jump-game) |
 | [0064-minimum-path-sum](https://github.com/Suvansh16/Leetcode/tree/master/0064-minimum-path-sum) |
@@ -944,6 +946,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Two Pointers
 |  |
 | ------- |
+| [0005-longest-palindromic-substring](https://github.com/Suvansh16/Leetcode/tree/master/0005-longest-palindromic-substring) |
 | [0026-remove-duplicates-from-sorted-array](https://github.com/Suvansh16/Leetcode/tree/master/0026-remove-duplicates-from-sorted-array) |
 | [0031-next-permutation](https://github.com/Suvansh16/Leetcode/tree/master/0031-next-permutation) |
 | [0295-find-median-from-data-stream](https://github.com/Suvansh16/Leetcode/tree/master/0295-find-median-from-data-stream) |
