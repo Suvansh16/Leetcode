@@ -439,6 +439,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0988-flip-equivalent-binary-trees](https://github.com/Suvansh16/Leetcode/tree/master/0988-flip-equivalent-binary-trees) |
 | [1008-binary-tree-cameras](https://github.com/Suvansh16/Leetcode/tree/master/1008-binary-tree-cameras) |
 | [1218-lowest-common-ancestor-of-deepest-leaves](https://github.com/Suvansh16/Leetcode/tree/master/1218-lowest-common-ancestor-of-deepest-leaves) |
+| [1254-deepest-leaves-sum](https://github.com/Suvansh16/Leetcode/tree/master/1254-deepest-leaves-sum) |
 | [1484-linked-list-in-binary-tree](https://github.com/Suvansh16/Leetcode/tree/master/1484-linked-list-in-binary-tree) |
 | [1554-minimum-time-to-collect-all-apples-in-a-tree](https://github.com/Suvansh16/Leetcode/tree/master/1554-minimum-time-to-collect-all-apples-in-a-tree) |
 | [1643-number-of-nodes-in-the-sub-tree-with-the-same-label](https://github.com/Suvansh16/Leetcode/tree/master/1643-number-of-nodes-in-the-sub-tree-with-the-same-label) |
@@ -483,6 +484,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0988-flip-equivalent-binary-trees](https://github.com/Suvansh16/Leetcode/tree/master/0988-flip-equivalent-binary-trees) |
 | [1008-binary-tree-cameras](https://github.com/Suvansh16/Leetcode/tree/master/1008-binary-tree-cameras) |
 | [1218-lowest-common-ancestor-of-deepest-leaves](https://github.com/Suvansh16/Leetcode/tree/master/1218-lowest-common-ancestor-of-deepest-leaves) |
+| [1254-deepest-leaves-sum](https://github.com/Suvansh16/Leetcode/tree/master/1254-deepest-leaves-sum) |
 | [1484-linked-list-in-binary-tree](https://github.com/Suvansh16/Leetcode/tree/master/1484-linked-list-in-binary-tree) |
 | [1554-minimum-time-to-collect-all-apples-in-a-tree](https://github.com/Suvansh16/Leetcode/tree/master/1554-minimum-time-to-collect-all-apples-in-a-tree) |
 | [1643-number-of-nodes-in-the-sub-tree-with-the-same-label](https://github.com/Suvansh16/Leetcode/tree/master/1643-number-of-nodes-in-the-sub-tree-with-the-same-label) |
@@ -517,6 +519,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0988-flip-equivalent-binary-trees](https://github.com/Suvansh16/Leetcode/tree/master/0988-flip-equivalent-binary-trees) |
 | [1008-binary-tree-cameras](https://github.com/Suvansh16/Leetcode/tree/master/1008-binary-tree-cameras) |
 | [1218-lowest-common-ancestor-of-deepest-leaves](https://github.com/Suvansh16/Leetcode/tree/master/1218-lowest-common-ancestor-of-deepest-leaves) |
+| [1254-deepest-leaves-sum](https://github.com/Suvansh16/Leetcode/tree/master/1254-deepest-leaves-sum) |
 | [1484-linked-list-in-binary-tree](https://github.com/Suvansh16/Leetcode/tree/master/1484-linked-list-in-binary-tree) |
 | [2347-count-nodes-equal-to-average-of-subtree](https://github.com/Suvansh16/Leetcode/tree/master/2347-count-nodes-equal-to-average-of-subtree) |
 | [2493-reverse-odd-levels-of-binary-tree](https://github.com/Suvansh16/Leetcode/tree/master/2493-reverse-odd-levels-of-binary-tree) |
@@ -751,6 +754,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0945-snakes-and-ladders](https://github.com/Suvansh16/Leetcode/tree/master/0945-snakes-and-ladders) |
 | [1171-shortest-path-in-binary-matrix](https://github.com/Suvansh16/Leetcode/tree/master/1171-shortest-path-in-binary-matrix) |
 | [1218-lowest-common-ancestor-of-deepest-leaves](https://github.com/Suvansh16/Leetcode/tree/master/1218-lowest-common-ancestor-of-deepest-leaves) |
+| [1254-deepest-leaves-sum](https://github.com/Suvansh16/Leetcode/tree/master/1254-deepest-leaves-sum) |
 | [1554-minimum-time-to-collect-all-apples-in-a-tree](https://github.com/Suvansh16/Leetcode/tree/master/1554-minimum-time-to-collect-all-apples-in-a-tree) |
 | [1643-number-of-nodes-in-the-sub-tree-with-the-same-label](https://github.com/Suvansh16/Leetcode/tree/master/1643-number-of-nodes-in-the-sub-tree-with-the-same-label) |
 | [2038-nearest-exit-from-entrance-in-maze](https://github.com/Suvansh16/Leetcode/tree/master/2038-nearest-exit-from-entrance-in-maze) |
