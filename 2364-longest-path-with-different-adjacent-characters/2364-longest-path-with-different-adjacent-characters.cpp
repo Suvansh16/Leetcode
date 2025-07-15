@@ -1,58 +1,37 @@
 class Solution {
 public:
-    
-    int result;
-    
-    int DFS(unordered_map<int, vector<int>> &adj, int curr, int parent, string& s) {
-        
-        int longest = 0;
-        int second_longest = 0;
-        
-        for(int &child : adj[curr]) {
-            if(child == parent)
-                continue;
-            
-            int child_longest_length = DFS(adj, child, curr, s);
-            
-            if(s[child] == s[curr])
-                continue;
-            
-            if(child_longest_length > second_longest)
-                second_longest = child_longest_length;
-            
-            if(second_longest > longest)
-                swap(longest, second_longest);
+    int ans = 1;
+
+    int dfs(int node, unordered_map<int, vector<int>>& adj, string& s, int parent) {
+        int max1 = 0, max2 = 0; // Top two longest valid child paths
+
+        for (int child : adj[node]) {
+            if (child == parent) continue;
+            int len = dfs(child, adj, s, node);
+            if (s[child] != s[node]) {
+                if (len > max1) {
+                    max2 = max1;
+                    max1 = len;
+                } else if (len > max2) {
+                    max2 = len;
+                }
+            }
         }
-        
-        int koi_ek_acha     = max(longest, second_longest) + 1; //Why this 1 ? Because including the curr node itself
-        
-        int only_root_acha  = 1; //only curr node is valid, rest children have duplicate character
-        
-        int neeche_hi_milgaya_answer = longest + second_longest + 1;
-        
-        
-        
-        result = max({result, neeche_hi_milgaya_answer, koi_ek_acha, only_root_acha});
-        
-        return max(koi_ek_acha, only_root_acha);
-        
+
+        ans = max(ans, 1 + max1 + max2); // Path through this node
+        return 1 + max1; // Return longest single path going down
     }
-    
+
     int longestPath(vector<int>& parent, string s) {
-        int n = parent.size();
-        result = 0;
         unordered_map<int, vector<int>> adj;
-        
-        for(int i = 1; i<n; i++) {
-            int u = i;
-            int v = parent[i];
-            
-            adj[u].push_back(v);
-            adj[v].push_back(u);
+        int n = parent.size();
+
+        for (int i = 1; i < n; ++i) {
+            adj[i].push_back(parent[i]);
+            adj[parent[i]].push_back(i);
         }
-        
-        DFS(adj, 0, -1, s);
-        
-        return result;
+
+        dfs(0, adj, s, -1);
+        return ans;
     }
 };
