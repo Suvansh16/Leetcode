@@ -162,6 +162,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3427-special-array-ii](https://github.com/Suvansh16/Leetcode/tree/master/3427-special-array-ii) |
 | [3430-count-days-without-meetings](https://github.com/Suvansh16/Leetcode/tree/master/3430-count-days-without-meetings) |
 | [3475-minimum-operations-to-make-binary-array-elements-equal-to-one-i](https://github.com/Suvansh16/Leetcode/tree/master/3475-minimum-operations-to-make-binary-array-elements-equal-to-one-i) |
+| [3490-find-the-maximum-length-of-valid-subsequence-i](https://github.com/Suvansh16/Leetcode/tree/master/3490-find-the-maximum-length-of-valid-subsequence-i) |
 | [3522-find-the-power-of-k-size-subarrays-i](https://github.com/Suvansh16/Leetcode/tree/master/3522-find-the-power-of-k-size-subarrays-i) |
 | [3555-final-array-state-after-k-multiplication-operations-i](https://github.com/Suvansh16/Leetcode/tree/master/3555-final-array-state-after-k-multiplication-operations-i) |
 | [3621-minimum-operations-to-make-array-values-equal-to-k](https://github.com/Suvansh16/Leetcode/tree/master/3621-minimum-operations-to-make-array-values-equal-to-k) |
@@ -338,6 +339,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3142-longest-unequal-adjacent-groups-subsequence-ii](https://github.com/Suvansh16/Leetcode/tree/master/3142-longest-unequal-adjacent-groups-subsequence-ii) |
 | [3143-longest-unequal-adjacent-groups-subsequence-i](https://github.com/Suvansh16/Leetcode/tree/master/3143-longest-unequal-adjacent-groups-subsequence-i) |
 | [3243-count-the-number-of-powerful-integers](https://github.com/Suvansh16/Leetcode/tree/master/3243-count-the-number-of-powerful-integers) |
+| [3490-find-the-maximum-length-of-valid-subsequence-i](https://github.com/Suvansh16/Leetcode/tree/master/3490-find-the-maximum-length-of-valid-subsequence-i) |
 | [3831-find-x-value-of-array-i](https://github.com/Suvansh16/Leetcode/tree/master/3831-find-x-value-of-array-i) |
 ## Greedy
 |  |
