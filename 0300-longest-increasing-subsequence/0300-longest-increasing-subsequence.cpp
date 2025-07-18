@@ -1,38 +1,21 @@
 class Solution {
 public:
+int solve(int start,vector<int>&nums,int prev,vector<vector<int>>&dp){
+
+    if(start>=nums.size())
+    return 0;
+    int a=0,b=0;
+    if(dp[start][prev+1]!=-1)
+    return dp[start][prev+1];
+    if(prev==-1 || nums[start]>nums[prev])
+    {
+        a= 1+solve(start+1,nums,start,dp);
+    }
+    b=solve(start+1,nums,prev,dp);
+    return dp[start][prev+1]=max(a,b);
+}
     int lengthOfLIS(vector<int>& nums) {
-        int n=nums.size();
-        vector<int>dp(n,1);
-        vector<int>parent(n,-1);
-        int LIS=1;
-        for(int i=0;i<n;i++)
-        {
-            for(int j=0;j<=i-1;j++)
-            {
-                if(nums[i]>nums[j] && dp[i]<(dp[j]+1))
-                {
-                    dp[i]=dp[j]+1;
-                    LIS=max(LIS,dp[i]);
-                    parent[i]=j;
-                }
-            }
-        }
-        //find the LIS index
-        int ind=-1;
-        vector<int>result;
-        for(int i=0;i<n;i++)
-        {
-            if(dp[i]==LIS)
-            ind=i;
-        }
-        while(ind!=-1)
-        {
-            result.push_back(nums[ind]);
-            ind=parent[ind];
-        }
-        reverse(result.begin(),result.end());
-        for(int i:result)
-        cout<<i<<" ";
-        return LIS;
+        vector<vector<int>>dp(nums.size()+1,vector<int>(nums.size()+1,-1));
+        return solve(0,nums,-1,dp);
     }
 };
