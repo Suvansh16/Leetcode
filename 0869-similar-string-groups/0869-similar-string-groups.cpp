@@ -1,51 +1,52 @@
 class Solution {
 public:
-void dfs(unordered_map<int,vector<int>>&map,vector<bool>&visited,int start)
+void dfs(int start,vector<bool>&visited,unordered_map<int,vector<int>>&map)
 {
     visited[start]=true;
-    for(auto i:map[start])
+    for(int i:map[start])
     {
         if(!visited[i])
         {
-            dfs(map,visited,i);
+            dfs(i,visited,map);
         }
     }
 }
-bool issimilar(string a,string b)
+bool isSimilar(string a,string b)
 {
-    int len=a.length();
-    int i=0;
-    int sum=0;
-    while(i!=len)
+    int count=0;
+    if(a.length()!=b.length())
+    return false;
+    for(int i=0;i<a.size();i++)
     {
         if(a[i]!=b[i])
-        sum++;
-        i++;
+        count++;
     }
-    return sum>2?false:true;
+    return count<=2?true:false;
 }
     int numSimilarGroups(vector<string>& strs) {
         unordered_map<int,vector<int>>map;
-        for(int i=0;i<strs.size()-1;i++)
+        for(int i=0;i<strs.size();i++)
         {
             for(int j=i+1;j<strs.size();j++)
             {
-                if(issimilar(strs[i],strs[j]))
+                if(isSimilar(strs[i],strs[j]))
                 {
                     map[i].push_back(j);
                     map[j].push_back(i);
                 }
             }
         }
-        int count=0;
         vector<bool>visited(strs.size(),false);
+        int count=0;
         for(int i=0;i<strs.size();i++)
         {
-        if(!visited[i]) {   
-        count++;
-        dfs(map,visited,i);
-        }
+            if(!visited[i])
+            {
+                dfs(i,visited,map);
+                count++;
+            }
         }
         return count;
+
     }
 };
