@@ -1,109 +1,102 @@
 class DSU{
-    private:
-    int components;
-    vector<int>parent;
-    vector<int>rank;
-
+    vector<int>parent,rank;
     public:
-    DSU(int n){
+    DSU(int n)
+    {
         parent.resize(n+1);
-        rank.resize(n+1);
-        components=n;
-        for(int i=1;i<=n;i++)
+        rank.resize(n+1,0);
+        for(int i=0;i<=n;i++)
         parent[i]=i;
+
     }
-    int find(int x)
+    int find(int a)
     {
-        if(parent[x]==x)
-        return x;
-        return parent[x]=find(parent[x]);
+        if(parent[a]!=a)
+        parent[a]=find(parent[a]);
+        return parent[a];
     }
-    void Union(int x,int y)
+    void Unite(int a,int b)
     {
-        int x_parent=find(x);
-        int y_parent=find(y);
-        if(x_parent==y_parent)
-        return;
-        if(rank[x_parent]>rank[y_parent])
-        {
-            parent[y_parent]=x_parent;
-        }
-        else if(rank[y_parent]>rank[x_parent])
-        {
-            parent[x_parent]=y_parent;
-        }
+        int x=find(a);
+        int y=find(b);
+        if(x==y)
+        return ;
+        else if(rank[x]>rank[y])
+        parent[y]=x;
+        else if(rank[x]<rank[y])
+        parent[x]=y;
         else
         {
-            parent[y_parent]=x_parent;
-            rank[x_parent]++;
+            parent[y]=x;
+            rank[x]++;
         }
-        components--;
     }
-    bool issingle()
-    {
-        return components==1;
+    vector<int>get_par(){
+    return parent;
     }
+
+
 };
 class Solution {
 public:
-
     int maxNumEdgesToRemove(int n, vector<vector<int>>& edges) {
-        
+        int count=0;
         auto lambda=[&](vector<int>&v1,vector<int>&v2)
         {
             return v1[0]>v2[0];
         };
+        DSU dsu1(n);
+        DSU dsu2(n);
         sort(edges.begin(),edges.end(),lambda);
-        DSU alice(n);
-        DSU bob(n);
-
-        int addedge=0;
-        for(auto &edge:edges)
+        for(auto i:edges)
         {
-            int type=edge[0];
-            int u=edge[1];
-            int v=edge[2];
-            if(type==3)
+            int a=i[0];
+            int b=i[1];
+            int c=i[2];
+            if(a==3)
             {
-                bool add=false;
-                if(alice.find(u)!=alice.find(v))
-                {
-                    alice.Union(u,v);
-                    add=true;
-                }
-                if(bob.find(u)!=bob.find(v))
-                {
-                    bob.Union(u,v);
-                    add=true;
-                }
-                if(add)
-                addedge++;
-            }
-            else if(type==2)
-            {
-                if(bob.find(u)!=bob.find(v))
-                {
-                    bob.Union(u,v);
-                    addedge++;
-                }
-            }
-            else
-            {
-                if(alice.find(u)!=alice.find(v))
-                {
-                    alice.Union(u,v);
-                    addedge++;
+                int m=dsu1.find(b);
+                int n=dsu1.find(c);                
+                if(m!=n)
+                dsu1.Unite(b,c);
+                int o=dsu2.find(b);
+                int p=dsu2.find(c);
+                if(o!=p)
+                dsu2.Unite(b,c);
+                if(m==n && o==p)
+                count++;
 
-                }
             }
-        }
-        if(alice.issingle() && bob.issingle())
-        {
-            return edges.size()-addedge;
+            else if(a==1){
+                 int m=dsu1.find(b);
+                int n=dsu1.find(c);                
+                if(m!=n)
+                dsu1.Unite(b,c);
+                 else 
+                count++;
+            }
+            else if(a==2)
+            {
+                  int o=dsu2.find(b);
+                int p=dsu2.find(c);
+                if(o!=p)
+                dsu2.Unite(b,c);
+                else
+                count++;
+            }
 
         }
+        vector<int>v1=dsu1.get_par();
+        vector<int>v2=dsu2.get_par();
+        unordered_set<int>st1;
+        unordered_set<int>st2;
+        for(int i=1;i<=n;i++)
+        {
+            st1.insert(dsu1.find(i));
+            st2.insert(dsu2.find(i));
+        }
+        if(st1.size()>1 || st2.size()>1)
         return -1;
-
-
+        return count;
     }
 };
