@@ -1,36 +1,34 @@
 class Solution {
 public:
-vector<vector<int>>directions={{1,0},{0,1}};
-int dp[101][101];
-int solve(int i,int j,int end_i,int end_j,vector<vector<bool>>&visited,vector<vector<int>>&grid)
-{
-    if(i==end_i && j==end_j)
-    return 1;
-    if(dp[i][j]!=-1)
-    return dp[i][j];
-    visited[i][j]=true;
-    int ans=0;
-    for(vector<int>dir:directions)
-    {
-        int new_i=i+dir[0];
-        int new_j=j+dir[1];
-        if(new_i>=0 && new_j>=0 && new_i<=end_i && new_j<=end_j && !visited[new_i][new_j] && grid[new_i][new_j]==0)
-        {
-            if(solve(new_i,new_j,end_i,end_j,visited,grid))
-            ans+=solve(new_i,new_j,end_i,end_j,visited,grid);
-
+    int uniquePathsWithObstacles(vector<vector<int>>& v) {
+        int m=v.size(),n=v[0].size();
+        vector<vector<int>>dp(m,vector<int>(n,-1));
+        bool z=false;
+        for (int i=0;i<m;i++){
+            if (v[i][0]==1){
+                z=true;
+            }
+            if (!z)   dp[i][0]=1;
+            else dp[i][0]=0;
         }
-    }
-    visited[i][j]=false;
-    return dp[i][j]=ans;
-}
-    int uniquePathsWithObstacles(vector<vector<int>>& obstacleGrid) {
-        int m=obstacleGrid.size();
-        int n=obstacleGrid[0].size();
-        vector<vector<bool>>visited(m,vector<bool>(n,false));
-        if(obstacleGrid[0][0]==1)
-        return 0;
-        memset(dp,-1,sizeof(dp));
-        return solve(0,0,m-1,n-1,visited,obstacleGrid);        
+         z=false;
+        for (int i=0;i<n;i++){
+             if (v[0][i]==1){
+                z=true;
+            }
+            if (!z)   dp[0][i]=1;
+            else dp[0][i]=0;
+        }
+        for (int i =1;i<m;i++){
+            for (int j=1;j<n;j++){
+                if (v[i][j]==1) {
+                    dp[i][j]=0;
+                }
+                else dp[i][j]=dp[i-1][j]+dp[i][j-1];
+            }
+        }
+        return dp[m-1][n-1];
+        
+
     }
 };
