@@ -275,6 +275,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0005-longest-palindromic-substring](https://github.com/Suvansh16/Leetcode/tree/master/0005-longest-palindromic-substring) |
 | [0045-jump-game-ii](https://github.com/Suvansh16/Leetcode/tree/master/0045-jump-game-ii) |
 | [0055-jump-game](https://github.com/Suvansh16/Leetcode/tree/master/0055-jump-game) |
+| [0062-unique-paths](https://github.com/Suvansh16/Leetcode/tree/master/0062-unique-paths) |
 | [0064-minimum-path-sum](https://github.com/Suvansh16/Leetcode/tree/master/0064-minimum-path-sum) |
 | [0070-climbing-stairs](https://github.com/Suvansh16/Leetcode/tree/master/0070-climbing-stairs) |
 | [0072-edit-distance](https://github.com/Suvansh16/Leetcode/tree/master/0072-edit-distance) |
@@ -639,6 +640,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Math
 |  |
 | ------- |
+| [0062-unique-paths](https://github.com/Suvansh16/Leetcode/tree/master/0062-unique-paths) |
 | [0070-climbing-stairs](https://github.com/Suvansh16/Leetcode/tree/master/0070-climbing-stairs) |
 | [0241-different-ways-to-add-parentheses](https://github.com/Suvansh16/Leetcode/tree/master/0241-different-ways-to-add-parentheses) |
 | [0279-perfect-squares](https://github.com/Suvansh16/Leetcode/tree/master/0279-perfect-squares) |
@@ -1091,6 +1093,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Combinatorics
 |  |
 | ------- |
+| [0062-unique-paths](https://github.com/Suvansh16/Leetcode/tree/master/0062-unique-paths) |
 | [0956-number-of-music-playlists](https://github.com/Suvansh16/Leetcode/tree/master/0956-number-of-music-playlists) |
 | [1993-sum-of-all-subset-xor-totals](https://github.com/Suvansh16/Leetcode/tree/master/1993-sum-of-all-subset-xor-totals) |
 | [2415-count-the-number-of-ideal-arrays](https://github.com/Suvansh16/Leetcode/tree/master/2415-count-the-number-of-ideal-arrays) |
