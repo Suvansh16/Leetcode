@@ -1,25 +1,28 @@
 class Solution {
 public:
-    unordered_map<string, priority_queue<string, vector<string>, greater<string>>> adj;
-    vector<string> result;
-    void dfs(string u) {
-        auto & edges = adj[u];
-        
-        while (!edges.empty())
-        {
-            string v = edges.top();
-            edges.pop();
-            dfs(v);
-        }
-        result.push_back(u);
-    }
+unordered_map<string, priority_queue<string,vector<string>,greater<string>>>map;
+vector<string>result;
+void solve(string start)
+{
     
+    auto &i=map[start];
+    while(!i.empty())
+    {
+        string a=i.top();
+        i.pop();
+        solve(a);
+    }
+    result.push_back(start);
+
+}
     vector<string> findItinerary(vector<vector<string>>& tickets) {
-        for (auto e : tickets)
-            adj[e[0]].push(e[1]);
-        
-        dfs("JFK");
-        reverse(result.begin(), result.end());
+        for(auto i:tickets)
+        {
+            map[i[0]].push(i[1]);
+
+        }
+        solve("JFK");
+        reverse(result.begin(),result.end());
         return result;
     }
 };
