@@ -1,58 +1,52 @@
 class Graph {
 public:
-void floyd_warshall(unordered_map<int,vector<pair<int,int>>>&map,vector<vector<int>>&a,int n)
+unordered_map<int,vector<pair<int,int>>>map;
+int size;
+int dijkstra(int node1,int node2)
 {
-    for(auto i:map)
+    vector<int>distances(size,INT_MAX);
+    distances[node1]=0;
+    priority_queue<pair<int,int>,vector<pair<int,int>>,greater<>>pq;
+    pq.push({0,node1});
+    while(!pq.empty())
     {
-        for(auto j:map[i.first])
+        int currnode=pq.top().second;
+        int currdis=pq.top().first;
+        pq.pop();
+        if(currdis>distances[currnode])
+        continue;
+        if(currnode==node2)
+        return currdis;
+        for(auto i:map[currnode])
         {
-            a[i.first][j.first]=min(j.second,a[i.first][j.first]);
-        }
-    }
-    for(int k=0;k<n;k++)
-    {
-        for(int i=0;i<n;i++)
-        {
-            for(int j=0;j<n;j++)
+            int neigh=i.first;
+            int cost=i.second;
+            int newrout=currdis+cost;
+            if(distances[neigh]>newrout)
             {
-                if(a[i][k]==INT_MAX || a[k][j]==INT_MAX)
-                continue;
-                a[i][j]=min(a[i][j],a[i][k]+a[k][j]);
+                distances[neigh]=newrout;
+                pq.push({newrout,neigh});
             }
         }
     }
-}
-vector<vector<int>>adj_matrix;
-unordered_map<int,vector<pair<int,int>>>map;
-int size;
-    Graph(int n, vector<vector<int>>& edges) {
-        for(int i=0;i<edges.size();i++)
-        {
-            int a=edges[i][0];
-            int b=edges[i][1];
-            int c=edges[i][2];
-            map[a].push_back({b,c});
 
+    return distances[node2]==INT_MAX?-1:distances[node2];
+}
+    Graph(int n, vector<vector<int>>& edges) {
+        for(auto i:edges)
+        {
+            map[i[0]].push_back({i[1],i[2]});
         }
         size=n;
-        adj_matrix.resize(n,vector<int>(n,INT_MAX));
-        for(int i=0;i<n;i++)
-        adj_matrix[i][i]=0;
-        floyd_warshall(map,adj_matrix,n);
 
     }
     
     void addEdge(vector<int> edge) {
-        int a=edge[0];
-        int b=edge[1];
-        int c=edge[2];
-        map[a].push_back({b,c});
-        adj_matrix[a][b]=min(adj_matrix[a][b],c);
-        floyd_warshall(map,adj_matrix,size);
+        map[edge[0]].push_back({edge[1],edge[2]});
     }
     
     int shortestPath(int node1, int node2) {
-        return adj_matrix[node1][node2]==INT_MAX?-1:adj_matrix[node1][node2];
+        return dijkstra(node1,node2);
     }
 };
 
