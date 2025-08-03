@@ -4,10 +4,10 @@ void floyd_warshall(unordered_map<int,vector<pair<int,int>>>&map,vector<vector<i
 {
     for(auto i:map)
     {
-       for(auto j:map[i.first])
-       {
-        a[i.first][j.first]=min(j.second,a[i.first][j.first]);
-       }
+        for(auto j:map[i.first])
+        {
+            a[i.first][j.first]=min(j.second,a[i.first][j.first]);
+        }
     }
     for(int k=0;k<n;k++)
     {
@@ -22,24 +22,22 @@ void floyd_warshall(unordered_map<int,vector<pair<int,int>>>&map,vector<vector<i
         }
     }
 }
-  vector<vector<int>>adj_matrix;
-  unordered_map<int,vector<pair<int,int>>>map;
-  int size;
+vector<vector<int>>adj_matrix;
+unordered_map<int,vector<pair<int,int>>>map;
+int size;
     Graph(int n, vector<vector<int>>& edges) {
-        
         for(int i=0;i<edges.size();i++)
         {
             int a=edges[i][0];
             int b=edges[i][1];
             int c=edges[i][2];
             map[a].push_back({b,c});
-            
+
         }
         size=n;
-      adj_matrix.resize(n,vector<int>(n,INT_MAX));
-       for (int i = 0; i < n; ++i) {
-            adj_matrix[i][i] = 0; // Distance to itself is 0
-        }
+        adj_matrix.resize(n,vector<int>(n,INT_MAX));
+        for(int i=0;i<n;i++)
+        adj_matrix[i][i]=0;
         floyd_warshall(map,adj_matrix,n);
 
     }
@@ -49,16 +47,12 @@ void floyd_warshall(unordered_map<int,vector<pair<int,int>>>&map,vector<vector<i
         int b=edge[1];
         int c=edge[2];
         map[a].push_back({b,c});
-      
-         adj_matrix[a][b] = min(adj_matrix[a][b], c);
-         floyd_warshall(map,adj_matrix,size);
+        adj_matrix[a][b]=min(adj_matrix[a][b],c);
+        floyd_warshall(map,adj_matrix,size);
     }
     
     int shortestPath(int node1, int node2) {
-        int ans=0;
-
         return adj_matrix[node1][node2]==INT_MAX?-1:adj_matrix[node1][node2];
-
     }
 };
 
