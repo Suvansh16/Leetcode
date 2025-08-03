@@ -1,51 +1,46 @@
 class Solution {
 public:
     int numBusesToDestination(vector<vector<int>>& routes, int source, int target) {
-        unordered_map<int,vector<int>>map; //one route can present in many buses therefore vector banaya
-        
+        unordered_map<int,vector<int>>map;
         if(source==target)
         return 0;
-        
-       
-        queue<int>q;
         for(int i=0;i<routes.size();i++)
         {
-            for(int j=0;j<routes[i].size();j++)
-            {
-                map[routes[i][j]].push_back(i);
-            }
+            for(int j:routes[i])
+            map[j].push_back(i);
         }
-        unordered_set<int>visitedbus;
-        for(int &i:map[source]){
-        q.push(i);
-        visitedbus.insert(i);
+        queue<int>q;
+        unordered_set<int>visited_bus;
+        for(int i:map[source])
+        {
+            q.push(i);
+            visited_bus.insert(i);
         }
         int count=0;
-       
         while(!q.empty())
         {
             count++;
             int size=q.size();
             while(size--)
             {
-                int a=q.front();
+                int t=q.front();
                 q.pop();
-               
-                for(int i=0;i<routes[a].size();i++)
+                for(int a:routes[t])
                 {
-                    if(routes[a][i]==target)
+                    if(a==target)
                     return count;
-               }
-               for(int i=0;i<routes[a].size();i++){
-               for(int &j:map[routes[a][i]])
-               {
-                 if(visitedbus.find(j)==visitedbus.end()){
-                    q.push(j);
-                    visitedbus.insert(j);
-                 }
-                
-               }
-               }
+                }
+                for(int a:routes[t])
+                {
+                    for(int j:map[a])
+                    {
+                        if(!visited_bus.count(j))
+                        {
+                            visited_bus.insert(j);
+                            q.push(j);
+                        }
+                    }
+                }
             }
         }
         return -1;
