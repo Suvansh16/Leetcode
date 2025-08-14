@@ -1,73 +1,51 @@
+/************************************************ C++ ************************************************/
+//Approach-1 (Using DSU)
 class Solution {
 public:
-    bool validateBinaryTreeNodes(int n, vector<int>& leftChild, vector<int>& rightChild) {
-        //approach apply binary tree properties
-        //sabhi ka ek hi parent except for one
-        //no disconnected component apply bfs for this
-        unordered_map<int ,int>parent;
-        unordered_map<int,vector<int>>adjlist;
-        for(int i=0;i<n;i++)
-        {
-            
-            int leftc=leftChild[i];
-            int rightc=rightChild[i];
-            if(leftc!=-1)
-            {
-                adjlist[i].push_back(leftc);
-                if(parent.find(leftc)!=parent.end())
-                return false;
-                parent[leftc]=i;
-            }
-            if(rightc!=-1)
-            {
-                 adjlist[i].push_back(rightc);
-                if(parent.find(rightc)!=parent.end())
-                return false;
-                parent[rightc]=i;
-            }
-        }
-        int root=-1;
-        for(int i=0;i<n;i++)
-        {
-              if(parent.find(i)==parent.end())
-              {
-                 if(root!=-1)
-               {
-                return false;
-               }
-               root=i;
-              }
-        }
-        if(root==-1)
-        return false;
-        //applying bfs traversal 
-        int count=0;
-        queue<int>q;
-        unordered_map<int,bool>visited;
-        q.push(root);
-        visited[root]=true;
-        count=1;
-        while(!q.empty())
-        {
-            int node=q.front();
-            q.pop();
-            for(int &v:adjlist[node])
-            {
-                if(visited[v]==true)
-                {
-                    return false;
-                }
-                if(!visited[v])
-                {
-                    visited[v]=true;
-                    q.push(v);
-                    count++;
-                }
-            }
-        }
-        if(count==n)
-        return true;
-        return false;
+    vector<int> parent;
+    int components;
 
+    int find(int x) {
+        if(parent[x] == x)
+            return x;
+        
+        return parent[x] = find(parent[x]);
+    }
+
+    bool Union(int par, int child) {
+        int child_ka_parent  = find(child);
+    
+        //child_ka_parent != child --> Child had already some other parent
+        if(child_ka_parent != child)
+            return false;
+        
+        int parent_ka_parent = find(par);
+        //parent_ka_parent == child_ka_parent ---> Parallel edge (It means, already they were connected by another edge)
+        if (parent_ka_parent == child_ka_parent) {
+            return false;
+        }
+        
+        parent[child] = par;
+        components--;
+        return true;
+    }
+    
+    bool validateBinaryTreeNodes(int n, vector<int>& leftChild, vector<int>& rightChild) {
+        components = n;
+        parent.resize(n);
+        for(int i = 0; i<n; i++) {
+            parent[i] = i;
+        }
+
+        for (int i = 0; i < n; i++) {
+            if (leftChild[i] >= 0 && !Union(i, leftChild[i])) {
+                return false;
+            }
+            if (rightChild[i] >= 0 && !Union(i, rightChild[i])) {
+                return false;
+            }
+        }
+        
+        return components == 1;
     }
 };
