@@ -1,21 +1,20 @@
 class Solution {
 public:
-int solve(int start,vector<int>&nums,int prev,vector<vector<int>>&dp){
-
+int dp[2502][2502];
+int solve(int start,int prev,vector<int>&nums)
+{
     if(start>=nums.size())
     return 0;
-    int a=0,b=0;
     if(dp[start][prev+1]!=-1)
     return dp[start][prev+1];
-    if(prev==-1 || nums[start]>nums[prev])
-    {
-        a= 1+solve(start+1,nums,start,dp);
-    }
-    b=solve(start+1,nums,prev,dp);
-    return dp[start][prev+1]=max(a,b);
+    int max1=0,max2=0;
+    if(prev<0 ||  nums[start]>nums[prev])
+    max1=1+solve(start+1,start,nums);
+    max2=solve(start+1,prev,nums);
+    return dp[start][prev+1]=max(max1,max2);
 }
     int lengthOfLIS(vector<int>& nums) {
-        vector<vector<int>>dp(nums.size()+1,vector<int>(nums.size()+1,-1));
-        return solve(0,nums,-1,dp);
+        memset(dp,-1,sizeof(dp));
+        return solve(0,-1,nums);
     }
 };
