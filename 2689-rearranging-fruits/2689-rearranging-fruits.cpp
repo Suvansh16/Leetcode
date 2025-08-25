@@ -47,7 +47,7 @@ public:
             int used = min(p1.second, p2.second);
 
             // \U0001f511 The fix: allow using global minimum element
-            ans += 1LL * used * min(min(p1.first, p2.first), 2 * mn);
+          ans += 1LL * used * min(min(p1.first, p2.first), 2*mn);
 
             if (p1.second > used) pq1.push({p1.first, p1.second - used});
             if (p2.second > used) pq2.push({p2.first, p2.second - used});
