@@ -38,6 +38,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0695-max-area-of-island](https://github.com/Suvansh16/Leetcode/tree/master/0695-max-area-of-island) |
 | [0729-my-calendar-i](https://github.com/Suvansh16/Leetcode/tree/master/0729-my-calendar-i) |
 | [0733-flood-fill](https://github.com/Suvansh16/Leetcode/tree/master/0733-flood-fill) |
+| [0753-open-the-lock](https://github.com/Suvansh16/Leetcode/tree/master/0753-open-the-lock) |
 | [0780-max-chunks-to-make-sorted](https://github.com/Suvansh16/Leetcode/tree/master/0780-max-chunks-to-make-sorted) |
 | [0787-sliding-puzzle](https://github.com/Suvansh16/Leetcode/tree/master/0787-sliding-puzzle) |
 | [0797-rabbits-in-forest](https://github.com/Suvansh16/Leetcode/tree/master/0797-rabbits-in-forest) |
@@ -227,6 +228,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0516-longest-palindromic-subsequence](https://github.com/Suvansh16/Leetcode/tree/master/0516-longest-palindromic-subsequence) |
 | [0539-minimum-time-difference](https://github.com/Suvansh16/Leetcode/tree/master/0539-minimum-time-difference) |
 | [0648-replace-words](https://github.com/Suvansh16/Leetcode/tree/master/0648-replace-words) |
+| [0753-open-the-lock](https://github.com/Suvansh16/Leetcode/tree/master/0753-open-the-lock) |
 | [0768-partition-labels](https://github.com/Suvansh16/Leetcode/tree/master/0768-partition-labels) |
 | [0812-rotate-string](https://github.com/Suvansh16/Leetcode/tree/master/0812-rotate-string) |
 | [0868-push-dominoes](https://github.com/Suvansh16/Leetcode/tree/master/0868-push-dominoes) |
@@ -607,6 +609,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0594-longest-harmonious-subsequence](https://github.com/Suvansh16/Leetcode/tree/master/0594-longest-harmonious-subsequence) |
 | [0632-smallest-range-covering-elements-from-k-lists](https://github.com/Suvansh16/Leetcode/tree/master/0632-smallest-range-covering-elements-from-k-lists) |
 | [0648-replace-words](https://github.com/Suvansh16/Leetcode/tree/master/0648-replace-words) |
+| [0753-open-the-lock](https://github.com/Suvansh16/Leetcode/tree/master/0753-open-the-lock) |
 | [0768-partition-labels](https://github.com/Suvansh16/Leetcode/tree/master/0768-partition-labels) |
 | [0797-rabbits-in-forest](https://github.com/Suvansh16/Leetcode/tree/master/0797-rabbits-in-forest) |
 | [0833-bus-routes](https://github.com/Suvansh16/Leetcode/tree/master/0833-bus-routes) |
@@ -791,6 +794,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0684-redundant-connection](https://github.com/Suvansh16/Leetcode/tree/master/0684-redundant-connection) |
 | [0695-max-area-of-island](https://github.com/Suvansh16/Leetcode/tree/master/0695-max-area-of-island) |
 | [0733-flood-fill](https://github.com/Suvansh16/Leetcode/tree/master/0733-flood-fill) |
+| [0753-open-the-lock](https://github.com/Suvansh16/Leetcode/tree/master/0753-open-the-lock) |
 | [0787-sliding-puzzle](https://github.com/Suvansh16/Leetcode/tree/master/0787-sliding-puzzle) |
 | [0801-is-graph-bipartite](https://github.com/Suvansh16/Leetcode/tree/master/0801-is-graph-bipartite) |
 | [0813-all-paths-from-source-to-target](https://github.com/Suvansh16/Leetcode/tree/master/0813-all-paths-from-source-to-target) |
