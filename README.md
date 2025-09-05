@@ -8,6 +8,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0031-next-permutation](https://github.com/Suvansh16/Leetcode/tree/master/0031-next-permutation) |
 | [0040-combination-sum-ii](https://github.com/Suvansh16/Leetcode/tree/master/0040-combination-sum-ii) |
 | [0045-jump-game-ii](https://github.com/Suvansh16/Leetcode/tree/master/0045-jump-game-ii) |
+| [0047-permutations-ii](https://github.com/Suvansh16/Leetcode/tree/master/0047-permutations-ii) |
 | [0055-jump-game](https://github.com/Suvansh16/Leetcode/tree/master/0055-jump-game) |
 | [0063-unique-paths-ii](https://github.com/Suvansh16/Leetcode/tree/master/0063-unique-paths-ii) |
 | [0064-minimum-path-sum](https://github.com/Suvansh16/Leetcode/tree/master/0064-minimum-path-sum) |
@@ -710,6 +711,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Sorting
 |  |
 | ------- |
+| [0047-permutations-ii](https://github.com/Suvansh16/Leetcode/tree/master/0047-permutations-ii) |
 | [0295-find-median-from-data-stream](https://github.com/Suvansh16/Leetcode/tree/master/0295-find-median-from-data-stream) |
 | [0368-largest-divisible-subset](https://github.com/Suvansh16/Leetcode/tree/master/0368-largest-divisible-subset) |
 | [0539-minimum-time-difference](https://github.com/Suvansh16/Leetcode/tree/master/0539-minimum-time-difference) |
@@ -990,6 +992,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0040-combination-sum-ii](https://github.com/Suvansh16/Leetcode/tree/master/0040-combination-sum-ii) |
+| [0047-permutations-ii](https://github.com/Suvansh16/Leetcode/tree/master/0047-permutations-ii) |
 | [0078-subsets](https://github.com/Suvansh16/Leetcode/tree/master/0078-subsets) |
 | [0079-word-search](https://github.com/Suvansh16/Leetcode/tree/master/0079-word-search) |
 | [0090-subsets-ii](https://github.com/Suvansh16/Leetcode/tree/master/0090-subsets-ii) |
