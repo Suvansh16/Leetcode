@@ -524,6 +524,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1218-lowest-common-ancestor-of-deepest-leaves](https://github.com/Suvansh16/Leetcode/tree/master/1218-lowest-common-ancestor-of-deepest-leaves) |
 | [1254-deepest-leaves-sum](https://github.com/Suvansh16/Leetcode/tree/master/1254-deepest-leaves-sum) |
 | [1275-validate-binary-tree-nodes](https://github.com/Suvansh16/Leetcode/tree/master/1275-validate-binary-tree-nodes) |
+| [1431-all-ancestors-of-a-node-in-a-directed-acyclic-graph](https://github.com/Suvansh16/Leetcode/tree/master/1431-all-ancestors-of-a-node-in-a-directed-acyclic-graph) |
 | [1475-maximum-sum-bst-in-binary-tree](https://github.com/Suvansh16/Leetcode/tree/master/1475-maximum-sum-bst-in-binary-tree) |
 | [1484-linked-list-in-binary-tree](https://github.com/Suvansh16/Leetcode/tree/master/1484-linked-list-in-binary-tree) |
 | [1554-minimum-time-to-collect-all-apples-in-a-tree](https://github.com/Suvansh16/Leetcode/tree/master/1554-minimum-time-to-collect-all-apples-in-a-tree) |
@@ -818,6 +819,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1218-lowest-common-ancestor-of-deepest-leaves](https://github.com/Suvansh16/Leetcode/tree/master/1218-lowest-common-ancestor-of-deepest-leaves) |
 | [1254-deepest-leaves-sum](https://github.com/Suvansh16/Leetcode/tree/master/1254-deepest-leaves-sum) |
 | [1275-validate-binary-tree-nodes](https://github.com/Suvansh16/Leetcode/tree/master/1275-validate-binary-tree-nodes) |
+| [1431-all-ancestors-of-a-node-in-a-directed-acyclic-graph](https://github.com/Suvansh16/Leetcode/tree/master/1431-all-ancestors-of-a-node-in-a-directed-acyclic-graph) |
 | [1554-minimum-time-to-collect-all-apples-in-a-tree](https://github.com/Suvansh16/Leetcode/tree/master/1554-minimum-time-to-collect-all-apples-in-a-tree) |
 | [1643-number-of-nodes-in-the-sub-tree-with-the-same-label](https://github.com/Suvansh16/Leetcode/tree/master/1643-number-of-nodes-in-the-sub-tree-with-the-same-label) |
 | [2038-nearest-exit-from-entrance-in-maze](https://github.com/Suvansh16/Leetcode/tree/master/2038-nearest-exit-from-entrance-in-maze) |
@@ -878,6 +880,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0984-most-stones-removed-with-same-row-or-column](https://github.com/Suvansh16/Leetcode/tree/master/0984-most-stones-removed-with-same-row-or-column) |
 | [1032-satisfiability-of-equality-equations](https://github.com/Suvansh16/Leetcode/tree/master/1032-satisfiability-of-equality-equations) |
 | [1275-validate-binary-tree-nodes](https://github.com/Suvansh16/Leetcode/tree/master/1275-validate-binary-tree-nodes) |
+| [1431-all-ancestors-of-a-node-in-a-directed-acyclic-graph](https://github.com/Suvansh16/Leetcode/tree/master/1431-all-ancestors-of-a-node-in-a-directed-acyclic-graph) |
 | [1456-find-the-city-with-the-smallest-number-of-neighbors-at-a-threshold-distance](https://github.com/Suvansh16/Leetcode/tree/master/1456-find-the-city-with-the-smallest-number-of-neighbors-at-a-threshold-distance) |
 | [1661-minimum-number-of-vertices-to-reach-all-nodes](https://github.com/Suvansh16/Leetcode/tree/master/1661-minimum-number-of-vertices-to-reach-all-nodes) |
 | [1701-remove-max-number-of-edges-to-keep-graph-fully-traversable](https://github.com/Suvansh16/Leetcode/tree/master/1701-remove-max-number-of-edges-to-keep-graph-fully-traversable) |
@@ -914,6 +917,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0210-course-schedule-ii](https://github.com/Suvansh16/Leetcode/tree/master/0210-course-schedule-ii) |
 | [0310-minimum-height-trees](https://github.com/Suvansh16/Leetcode/tree/master/0310-minimum-height-trees) |
 | [0820-find-eventual-safe-states](https://github.com/Suvansh16/Leetcode/tree/master/0820-find-eventual-safe-states) |
+| [1431-all-ancestors-of-a-node-in-a-directed-acyclic-graph](https://github.com/Suvansh16/Leetcode/tree/master/1431-all-ancestors-of-a-node-in-a-directed-acyclic-graph) |
 | [2090-number-of-ways-to-arrive-at-destination](https://github.com/Suvansh16/Leetcode/tree/master/2090-number-of-ways-to-arrive-at-destination) |
 | [2176-parallel-courses-iii](https://github.com/Suvansh16/Leetcode/tree/master/2176-parallel-courses-iii) |
 | [2364-longest-path-with-different-adjacent-characters](https://github.com/Suvansh16/Leetcode/tree/master/2364-longest-path-with-different-adjacent-characters) |
