@@ -1,43 +1,53 @@
 class Solution {
 public:
-    int findTheCity(int n, vector<vector<int>>& edges, int distanceThreshold) {
-        vector<vector<int>>node(n,vector<int>(n,INT_MAX));
-        for(int i=0;i<n;i++)
-        node[i][i]=0;
-
-        for (auto& edge : edges) {
-            int u = edge[0], v = edge[1], w = edge[2];
-            node[u][v] = w;
-            node[v][u] = w; // Since the graph is undirected
-        }
-        for(int k=0;k<n;k++)
+void dijkstra(int i, unordered_map<int,vector<pair<int,int>>>map, vector<vector<int>>&adjmatrix)
+{
+    priority_queue<pair<int,int>,vector<pair<int,int>>,greater<pair<int,int>>>pq;
+    pq.push({0,i});
+    while(!pq.empty())
+    {
+        int dist=pq.top().first;
+        int node=pq.top().second;
+        pq.pop();
+        for(auto &it:map[node])
         {
-            for(int i=0;i<n;i++)
+            int edge=it.first;
+            int cost=it.second;
+            if(adjmatrix[i][edge]>dist+cost)
             {
-                for(int j=0;j<n;j++)
-                {
-                    if(node[i][k]!=INT_MAX && node[k][j]!=INT_MAX)
-                    node[i][j]=min(node[i][j],node[i][k]+node[k][j]);
-
-                }
+                adjmatrix[i][edge]=dist+cost;
+                pq.push({dist+cost,edge});
             }
         }
-        int mincount=INT_MAX;
+    }
+}
+    int findTheCity(int n, vector<vector<int>>& edges, int distanceThreshold) {
+        unordered_map<int,vector<pair<int,int>>>map;
+        for(int i=0;i<edges.size();i++)
+        {
+            map[edges[i][0]].push_back({edges[i][1],edges[i][2]});
+            map[edges[i][1]].push_back({edges[i][0],edges[i][2]});
+        }
+        vector<vector<int>>adjmatrix(n,vector<int>(n,INT_MAX));
+        for(int i=0;i<n;i++)
+        {
+            dijkstra(i,map,adjmatrix);
+        }
         int ans=-1;
+        int mincount=INT_MAX;
         for(int i=0;i<n;i++)
         {
             int count=0;
             for(int j=0;j<n;j++)
             {
-                if(i!=j)
+                if(i==j)
+                continue;
+                if(adjmatrix[i][j]<=distanceThreshold)
                 {
-                    if(node[i][j]<=distanceThreshold)
-                    {
-                        count++;
-                    }
+                    count++;
                 }
             }
-            if(mincount>=count)
+            if(count<=mincount)
             {
                 mincount=count;
                 ans=i;
