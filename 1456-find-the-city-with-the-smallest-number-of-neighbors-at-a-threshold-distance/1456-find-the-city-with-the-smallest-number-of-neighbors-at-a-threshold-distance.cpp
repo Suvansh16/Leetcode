@@ -1,58 +1,40 @@
 class Solution {
 public:
-void dijkstra(int i, unordered_map<int,vector<pair<int,int>>>map, vector<vector<int>>&adjmatrix)
-{
-    priority_queue<pair<int,int>,vector<pair<int,int>>,greater<pair<int,int>>>pq;
-    pq.push({0,i});
-    while(!pq.empty())
-    {
-        int dist=pq.top().first;
-        int node=pq.top().second;
-        pq.pop();
-        for(auto &it:map[node])
+    int findTheCity(int n, vector<vector<int>>& edges, int dt) {
+        vector<vector<int>>dist(n,vector<int>(n,1e9));
+        for(auto i:edges)
         {
-            int edge=it.first;
-            int cost=it.second;
-            if(adjmatrix[i][edge]>dist+cost)
-            {
-                adjmatrix[i][edge]=dist+cost;
-                pq.push({dist+cost,edge});
-            }
+            dist[i[0]][i[1]]=i[2];
+            dist[i[1]][i[0]]=i[2];
         }
-    }
-}
-    int findTheCity(int n, vector<vector<int>>& edges, int distanceThreshold) {
-        unordered_map<int,vector<pair<int,int>>>map;
-        for(int i=0;i<edges.size();i++)
-        {
-            map[edges[i][0]].push_back({edges[i][1],edges[i][2]});
-            map[edges[i][1]].push_back({edges[i][0],edges[i][2]});
-        }
-        vector<vector<int>>adjmatrix(n,vector<int>(n,INT_MAX));
+        for(int k=0;k<n;k++){
         for(int i=0;i<n;i++)
         {
-            dijkstra(i,map,adjmatrix);
+            for(int j=0;j<n;j++)
+            {
+                if(dist[i][k]+dist[k][j]<dist[i][j])
+                {
+                    dist[i][j]=dist[i][k]+dist[k][j];
+                }
+            }
         }
-        int ans=-1;
-        int mincount=INT_MAX;
+
+        }
+        int mini=INT_MAX,idx=-1;
         for(int i=0;i<n;i++)
         {
             int count=0;
             for(int j=0;j<n;j++)
             {
-                if(i==j)
-                continue;
-                if(adjmatrix[i][j]<=distanceThreshold)
-                {
-                    count++;
-                }
+                if(i!=j && dist[i][j]<=dt)
+                count++;
             }
-            if(count<=mincount)
+            if(count<=mini)
             {
-                mincount=count;
-                ans=i;
+                mini=count;
+                idx=i;
             }
         }
-        return ans;
+        return idx;
     }
 };
