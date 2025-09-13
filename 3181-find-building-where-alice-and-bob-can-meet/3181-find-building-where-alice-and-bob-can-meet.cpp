@@ -1,64 +1,98 @@
-struct IndexedQuery {
-  int queryIndex;
-  int a;  // Alice's index
-  int b;  // Bob's index
-};
-
 class Solution {
- public:
-  // Similar to 2736. Maximum Sum Queries
-  vector<int> leftmostBuildingQueries(vector<int>& heights,
-                                      vector<vector<int>>& queries) {
-    vector<int> ans(queries.size(), -1);
-    // Store indices (heightsIndex) of heights with heights[heightsIndex] in
-    // descending order.
-    vector<int> stack;
-
-    // Iterate through queries and heights simultaneously.
-    int heightsIndex = heights.size() - 1;
-    for (const auto& [queryIndex, a, b] : getIndexedQueries(queries)) {
-      if (a == b || heights[a] < heights[b]) {
-        // 1. Alice and Bob are already in the same index (a == b) or
-        // 2. Alice can jump from a -> b (heights[a] < heights[b]).
-        ans[queryIndex] = b;
-      } else {
-        // Now, a < b and heights[a] >= heights[b].
-        // Gradually add heights with an index > b to the monotonic stack.
-        while (heightsIndex > b) {
-          // heights[heightsIndex] is a better candidate, given that
-          // heightsIndex is smaller than the indices in the stack and
-          // heights[heightsIndex] is larger or equal to the heights mapped in
-          // the stack.
-          while (!stack.empty() &&
-                 heights[stack.back()] <= heights[heightsIndex])
-            stack.pop_back();
-          stack.push_back(heightsIndex--);
+public:
+int n,m;
+void build(vector<int>&seg,vector<int>&heights,int i,int l,int r)
+{
+    if(l==r)
+    {
+        seg[i]=l;
+        return ;
+    }
+    int mid = l + (r - l) / 2;
+    build(seg,heights,2*i+1,l,mid);
+    build(seg,heights,2*i+2,mid+1,r);
+    int left=heights[seg[2*i+1]];
+    int right=heights[seg[2*i+2]];
+    if(left>=right)
+    seg[i]=seg[2*i+1];
+    else
+    {
+        seg[i]=seg[2*i+2];
+    }
+    return ;
+}
+int find_max(int i,int l,int r,int start,int end,vector<int>&seg,vector<int>&heights)
+{
+    if(l>end || r<start)
+    return -1;
+    else if(l>=start && r<=end)
+    return seg[i];
+    else 
+    {
+         int mid = l + (r - l) / 2;
+        int t=find_max(2*i+1,l,mid,start,end,seg,heights);
+        int q=find_max(2*i+2,mid+1,r,start,end,seg,heights);
+        if(t==-1)
+        return q;
+        if(q==-1)
+        return t;
+        if(heights[t]>=heights[q])
+        {
+            return t;
         }
-        // Binary search to find the smallest index j such that j > b and
-        // heights[j] > heights[a], thereby ensuring heights[j] > heights[b].
-        if (const auto it = upper_bound(
-                stack.rbegin(), stack.rend(), a,
-                [&](int a, int b) { return heights[a] < heights[b]; });
-            it != stack.rend())
-          ans[queryIndex] = *it;
-      }
+        else
+        {
+            return q;
+        }
     }
+}
+int RMIQ(vector<int>&seg,vector<int>&heights,int n,int a,int b)
+{
+    return find_max(0,0,n-1,a,b,seg,heights);
+}
+    vector<int> leftmostBuildingQueries(vector<int>& heights, vector<vector<int>>& queries) {
+        n=heights.size();
+        m=queries.size();
+        vector<int>seq(4*heights.size());
+        build(seq,heights,0,0,n-1);
+        vector<int>ans;
+       for(auto query:queries)
+       {
+        int alice=min(query[0],query[1]);
+        int bob=max(query[0],query[1]);
+        if(alice==bob || heights[bob]>heights[alice]){
+        ans.push_back(bob);
+        continue;
+       }
+       int l=bob+1;
+       int r=n-1;
+       int result_idx=INT_MAX;
+       while(l<=r)
+       {
+        int mid = l + (r - l) / 2;
+        int idx=RMIQ(seq,heights,n,l,mid);
+        if(heights[idx]>max(heights[alice],heights[bob]))
+        {
+            r=mid-1;
+            result_idx=min(result_idx,idx);
 
-    return ans;
-  }
+        }
+        else
+        {
+            l=mid+1;
+        }
+       }
+       if(result_idx==INT_MAX)
+       {
+        ans.push_back(-1);
 
- private:
-  vector<IndexedQuery> getIndexedQueries(const vector<vector<int>>& queries) {
-    vector<IndexedQuery> indexedQueries;
-    for (int i = 0; i < queries.size(); ++i) {
-      // Make sure that a <= b.
-      const int a = min(queries[i][0], queries[i][1]);
-      const int b = max(queries[i][0], queries[i][1]);
-      indexedQueries.push_back({i, a, b});
+       }
+       else
+       {
+        ans.push_back(result_idx);
+       }
+
+       }
+        return ans;
     }
-    ranges::sort(
-        indexedQueries,
-        [](const IndexedQuery& a, const IndexedQuery& b) { return a.b > b.b; });
-    return indexedQueries;
-  }
 };
