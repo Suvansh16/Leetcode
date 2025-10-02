@@ -1,48 +1,39 @@
 class Solution {
 public:
+int solve(int start,vector<int>& status, vector<int>& candies, vector<vector<int>>& keys, vector<vector<int>>& containedBoxes, unordered_set<int>&visited,unordered_set<int>&foundbox)
+{
+    if(visited.count(start))
+    return 0;
+    if(status[start]==0)
+    {
+        foundbox.insert(start);
+        return 0;
+
+    }
+    visited.insert(start);
+    int ans=candies[start];
+    for(int i:containedBoxes[start])
+    {
+        ans+=solve(i,status,candies,keys,containedBoxes,visited,foundbox);
+    }
+    for(int i:keys[start])
+    {
+        status[i]=1;
+        if(foundbox.count(i))
+        {
+            ans+=solve(i,status,candies,keys,containedBoxes,visited,foundbox);
+        }
+    }
+    return ans;
+}
     int maxCandies(vector<int>& status, vector<int>& candies, vector<vector<int>>& keys, vector<vector<int>>& containedBoxes, vector<int>& initialBoxes) {
-        queue<int>q;
-        unordered_set<int>visited,foundbox;
+        unordered_set<int>visited;
+        unordered_set<int>foundbox;
         int ans=0;
         for(int i:initialBoxes)
         {
-            if(status[i] && !visited.count(i))
-            {
-                ans+=candies[i];
-                visited.insert(i);
-                q.push(i);
-            }
-           
-                foundbox.insert(i);
-         
-        }
-        while(!q.empty())
-        {
-            int a=q.front();
-            q.pop();
-            for(int i:containedBoxes[a])
-            {
-                if(status[i]==1 && !visited.count(i))
-                {
-                     ans+=candies[i];
-                    visited.insert(i);
-                    q.push(i);
-                }
-               
-                    foundbox.insert(i);
-                
-            }
-            for(int i:keys[a])
-            {
-                status[i]=1;
-                if(foundbox.count(i)  && !visited.count(i))
-                {
-                    ans+=candies[i];
-                    visited.insert(i);
-                    q.push(i);
-                }
-            }
-
+            if(!visited.count(i))
+            ans+=solve(i,status,candies,keys,containedBoxes,visited,foundbox);
         }
         return ans;
     }
