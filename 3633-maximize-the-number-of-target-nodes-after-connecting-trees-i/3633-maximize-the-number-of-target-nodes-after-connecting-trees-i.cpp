@@ -1,29 +1,49 @@
 class Solution {
 public:
-    vector<vector<int>> buildList(const vector<vector<int>>& edges) {
-        vector<vector<int>> adj(edges.size() + 1);
-        for (auto &e : edges) {
-            adj[e[0]].push_back(e[1]);
-            adj[e[1]].push_back(e[0]);
-        }
-        return adj;
+int dfs(int start,int par,unordered_map<int,vector<int>>&map,int val)
+{
+    if(val<=0)
+    return 0;
+    int ans=0;
+    for(int i:map[start])
+    {
+        if(i!=par)
+        ans+=1+dfs(i,start,map,val-1);
     }
-    
-    int dfs(const vector<vector<int>>& adj, int u, int p, int k) {
-        if (k < 0) return 0;
-        int cnt = 1;
-        for (int v : adj[u])
-            if (v != p) cnt += dfs(adj, v, u, k-1);
-        return cnt;
-    }
-    
-    vector<int> maxTargetNodes(vector<vector<int>>& edges1, vector<vector<int>>& edges2, int k) {
-        auto adj1 = buildList(edges1), adj2 = buildList(edges2);
-        int n = adj1.size(), m = adj2.size(), maxiB = 0;
-        vector<int> res(n);
+    return ans;
 
-        for (int i = 0; i < m; i++) maxiB = max(maxiB, dfs(adj2, i, -1, k - 1));
-        for (int i = 0; i < n; i++) res[i] = dfs(adj1, i, -1, k) + maxiB;
-        return res;
+}
+    vector<int> maxTargetNodes(vector<vector<int>>& edges1, vector<vector<int>>& edges2, int k) {
+        unordered_map<int,vector<int>>map1,map2;
+        for(auto i:edges1)
+        {
+            map1[i[0]].push_back(i[1]);
+            map1[i[1]].push_back(i[0]);
+        }
+        for(auto i:edges2)
+        {
+            map2[i[0]].push_back(i[1]);
+            map2[i[1]].push_back(i[0]);
+        }
+        int n=edges1.size(),m=edges2.size();
+        vector<int>ans;
+        vector<int>t(m+1,0);
+        for(int j=0;j<=m;j++)
+        {
+            int l=dfs(j,-1,map2,k-1);
+            t[j]=l+1;
+        }
+        int s=*max_element(t.begin(),t.end());
+
+        for(int i=0;i<=n;i++)
+        {
+            int a=dfs(i,-1,map1,k);
+            if(k!=0)
+            ans.push_back(a+s+1);
+            else
+            ans.push_back(1);
+        }
+        return ans;
+
     }
 };
