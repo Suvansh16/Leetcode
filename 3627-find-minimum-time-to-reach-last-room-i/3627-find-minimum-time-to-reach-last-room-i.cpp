@@ -1,34 +1,43 @@
 class Solution {
 public:
-typedef pair<int,int> p;
-    int minTimeToReach(vector<vector<int>>& a) {
-        int n=a.size(),m=a[0].size();
-        priority_queue<pair<int,pair<int,int>>>q;
-        q.push({0,{0,0}});
-        vector<vector<int>>dist(n,vector<int>(m,INT_MAX));
-        while(!q.empty())
+vector<vector<int>>directions={{-1,0},{1,0},{0,-1},{0,1}};
+typedef pair<int,pair<int,int>> P;
+    int minTimeToReach(vector<vector<int>>& moveTime) {
+        int m=moveTime.size();
+        int n=moveTime[0].size();
+        vector<vector<int>>result(m,vector<int>(n,INT_MAX));
+        priority_queue<P,vector<P>,greater<P>>pq;
+        result[0][0]=0;
+        pq.push({0,{0,0}});
+        while(!pq.empty())
         {
-            int newdist=q.top().first;
-            int b=q.top().second.first;
-            int c=q.top().second.second;
-            q.pop();
-            if(b+1<n && dist[b+1][c]>max(newdist+1,a[b+1][c]+1)){
-            q.push({max(newdist+1,a[b+1][c]+1),{b+1,c}});
-            dist[b+1][c]=max(newdist+1,a[b+1][c]+1);
+            int currtime=pq.top().first;
+            auto cell=pq.top().second;
+            int i=cell.first;
+            int j=cell.second;
+            pq.pop();
+            if(i==m-1 && j==n-1)
+            {
+                return currtime;
+
             }
-            if(b-1>=0 && dist[b-1][c]>max(newdist+1,a[b-1][c]+1)){
-            q.push({max(newdist+1,a[b-1][c]+1),{b-1,c}});
-            dist[b-1][c]=max(newdist+1,a[b-1][c]+1);
-            }
-            if(c-1>=0 && dist[b][c-1]>max(newdist+1,a[b][c-1]+1)){
-            q.push({max(newdist+1,a[b][c-1]+1),{b,c-1}});
-            dist[b][c-1]=max(newdist+1,a[b][c-1]+1);
-            }
-            if(c+1<m && dist[b][c+1]>max(newdist+1,a[b][c+1]+1)){
-            q.push({max(newdist+1,a[b][c+1]+1),{b,c+1}});
-            dist[b][c+1]=max(newdist+1,a[b][c+1]+1);
+            for(auto &dir:directions)
+            {
+                int i_=i+dir[0];
+                int j_=j+dir[1];
+                if(i_>=0 && i_<m && j_>=0 && j_<n)
+                {
+                    int wait=max(moveTime[i_][j_]-currtime,0);
+                    int arrtime=currtime+wait+1;
+                    if(result[i_][j_]>arrtime)
+                    {
+                        result[i_][j_]=arrtime;
+                        pq.push({arrtime,{i_,j_}});
+                    }
+                }
             }
         }
-        return dist[n-1][m-1];
+        return -1;
+
     }
 };
