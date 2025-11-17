@@ -21,12 +21,11 @@ public:
                     if (bannedSet.count(word) == 0)
                         freq[word]++;
 
-                    word = ""; // reset
+                    word = ""; 
                 }
             }
         }
 
-        // find max occurring word
         int best = 0;
         string ans = "";
         for (auto &p : freq) {
