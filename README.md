@@ -64,6 +64,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0967-minimum-falling-path-sum](https://github.com/Suvansh16/Leetcode/tree/master/0967-minimum-falling-path-sum) |
 | [0983-validate-stack-sequences](https://github.com/Suvansh16/Leetcode/tree/master/0983-validate-stack-sequences) |
 | [0993-tallest-billboard](https://github.com/Suvansh16/Leetcode/tree/master/0993-tallest-billboard) |
+| [0997-find-the-town-judge](https://github.com/Suvansh16/Leetcode/tree/master/0997-find-the-town-judge) |
 | [1025-minimum-cost-for-tickets](https://github.com/Suvansh16/Leetcode/tree/master/1025-minimum-cost-for-tickets) |
 | [1032-satisfiability-of-equality-equations](https://github.com/Suvansh16/Leetcode/tree/master/1032-satisfiability-of-equality-equations) |
 | [1049-minimum-domino-rotations-for-equal-row](https://github.com/Suvansh16/Leetcode/tree/master/1049-minimum-domino-rotations-for-equal-row) |
@@ -651,6 +652,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0940-fruit-into-baskets](https://github.com/Suvansh16/Leetcode/tree/master/0940-fruit-into-baskets) |
 | [0966-binary-subarrays-with-sum](https://github.com/Suvansh16/Leetcode/tree/master/0966-binary-subarrays-with-sum) |
 | [0984-most-stones-removed-with-same-row-or-column](https://github.com/Suvansh16/Leetcode/tree/master/0984-most-stones-removed-with-same-row-or-column) |
+| [0997-find-the-town-judge](https://github.com/Suvansh16/Leetcode/tree/master/0997-find-the-town-judge) |
 | [1147-flip-columns-for-maximum-number-of-equal-rows](https://github.com/Suvansh16/Leetcode/tree/master/1147-flip-columns-for-maximum-number-of-equal-rows) |
 | [1218-lowest-common-ancestor-of-deepest-leaves](https://github.com/Suvansh16/Leetcode/tree/master/1218-lowest-common-ancestor-of-deepest-leaves) |
 | [1227-number-of-equivalent-domino-pairs](https://github.com/Suvansh16/Leetcode/tree/master/1227-number-of-equivalent-domino-pairs) |
@@ -1238,4 +1240,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0164-maximum-gap](https://github.com/Suvansh16/Leetcode/tree/master/0164-maximum-gap) |
+## Graph Theory
+|  |
+| ------- |
+| [0997-find-the-town-judge](https://github.com/Suvansh16/Leetcode/tree/master/0997-find-the-town-judge) |
 <!---LeetCode Topics End-->
